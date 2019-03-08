@@ -1,0 +1,94 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x0000018C32AB9EB8>, <DataNoGmap.CustomerNoGmap object at 0x0000018C32AB9E80>, <DataNoGmap.CustomerNoGmap object at 0x0000018C32AB9E48>, <DataNoGmap.CustomerNoGmap object at 0x0000018C2EB6F5C0>, <DataNoGmap.CustomerNoGmap object at 0x0000018C2EB6F588>, <DataNoGmap.CustomerNoGmap object at 0x0000018C32AC3048>], [<DataNoGmap.CustomerNoGmap object at 0x0000018C32AC31D0>, <DataNoGmap.CustomerNoGmap object at 0x0000018C32AC3160>, <DataNoGmap.CustomerNoGmap object at 0x0000018C32AC3438>]]
+
+{'lng': 106.677597, 'lat': 10.799542}
+{'lng': 106.657301, 'lat': 10.771048}
+{'lng': 106.695201, 'lat': 10.7801688}
+{'lng': 106.702432, 'lat': 10.7887654}
+{'lng': 106.653311, 'lat': 10.776861}
+{'lng': 106.6296637, 'lat': 10.7883491}
+
+{'lng': 106.719758, 'lat': 10.799096}
+{'lng': 106.7753504, 'lat': 10.8478509}
+{'lng': 106.7561567, 'lat': 10.851093}
+population 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 2
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 0
+route 3 vehicle 0 DC 0: 5
+route 4 vehicle 0 DC 0: 6
+Distance: 18.51276386650372
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 6.487601578944442
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 1
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 6
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 3
+Distance: 21.382841077928454
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 5
+Distance: 6.0734153713973384
+Total Cost of DC 0: 7.091251289865159
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 2
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 1
+route 2 vehicle 0 DC 0: 5
+route 3 vehicle 0 DC 0: 2
+route 4 vehicle 0 DC 0: 6
+Distance: 21.885612187701696
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 8.045179088132413
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 3
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 2
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 5
+route 3 vehicle 0 DC 0: 3
+route 4 vehicle 0 DC 0: 6
+Distance: 27.791060857192605
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 8.343260977082219
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 8
+Distance: 22.783482581327178
+Total Cost of DC 1: 5.356696516265435
+_______________________________________
+Mutation:
+population chosen: 3
+DC chosen: 1
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+weight: 750,volume: 15000
+accepted
+The thread 'MainThread' (0x2934) has exited with code 0 (0x0).
+The program '[15276] python.exe' has exited with code 0 (0x0).

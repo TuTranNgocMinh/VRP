@@ -1,0 +1,113 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x000001AC20BB88D0>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB8898>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB8860>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB8828>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB87F0>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB87B8>], [<DataNoGmap.CustomerNoGmap object at 0x000001AC20BB8A90>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB8B00>, <DataNoGmap.CustomerNoGmap object at 0x000001AC20BB8D68>]]
+
+{'lat': 10.799542, 'lng': 106.677597}
+{'lat': 10.771048, 'lng': 106.657301}
+{'lat': 10.7801688, 'lng': 106.695201}
+{'lat': 10.7887654, 'lng': 106.702432}
+{'lat': 10.776861, 'lng': 106.653311}
+{'lat': 10.7883491, 'lng': 106.6296637}
+
+{'lat': 10.799096, 'lng': 106.719758}
+{'lat': 10.8478509, 'lng': 106.7753504}
+{'lat': 10.851093, 'lng': 106.7561567}
+population 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 1
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 5
+population index: 0
+DCIndex: 0
+Vehicle index: 0
+Distance: 16.132272361091633 :)
+route 0 vehicle 1 DC 0: 2
+route 1 vehicle 1 DC 0: 0
+route 2 vehicle 1 DC 0: 6
+population index: 0
+DCIndex: 0
+Vehicle index: 1
+Distance: 16.033610092319933 :)
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 8
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 7
+population index: 0
+DCIndex: 1
+Vehicle index: 0
+Distance: 26.734051035938013 :)
+
+population 1
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 0
+route 3 vehicle 0 DC 0: 5
+population index: 1
+DCIndex: 0
+Vehicle index: 0
+Distance: 15.291382344380366 :)
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 6
+population index: 1
+DCIndex: 0
+Vehicle index: 1
+Distance: 9.60003114930511 :)
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+population index: 1
+DCIndex: 1
+Vehicle index: 0
+Distance: 20.844995755487208 :)
+population 2
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 5
+route 4 vehicle 0 DC 0: 2
+population index: 2
+DCIndex: 0
+Vehicle index: 0
+Distance: 25.468033346048845 :)
+route 0 vehicle 1 DC 0: 1
+population index: 2
+DCIndex: 0
+Vehicle index: 1
+Distance: 5.925244028218489 :)
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+population index: 2
+DCIndex: 1
+Vehicle index: 0
+Distance: 26.734051035938016 :)
+
+population 3
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 1
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 6
+population index: 3
+DCIndex: 0
+Vehicle index: 0
+Distance: 19.280740045564464
+route 0 vehicle 1 DC 0: 0
+route 1 vehicle 1 DC 0: 5
+route 2 vehicle 1 DC 0: 2
+population index: 3
+DCIndex: 0
+Vehicle index: 1
+Distance: 15.329356964181901
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+population index: 3
+DCIndex: 1
+Vehicle index: 0
+Distance: 20.844995755487208
+The thread 'MainThread' (0x3ac4) has exited with code 0 (0x0).
+The program '[9072] python.exe' has exited with code 0 (0x0).

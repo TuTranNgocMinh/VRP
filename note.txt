@@ -1,0 +1,5 @@
+users must follow developer's format
+
+left widget: tab with dockable widgets
+
+use signal to define arrived location and inform user using colors or status

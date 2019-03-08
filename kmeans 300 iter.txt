@@ -1,0 +1,9 @@
+﻿[{'lat': 26, 'lng': 10}, {'lat': 8, 'lng': 3}, {'lat': 31, 'lng': 45}, {'lat': 45, 'lng': 36}, {'lat': 50, 'lng': 8}, {'lat': 50, 'lng': 6}, {'lat': 29, 'lng': 11}, {'lat': 46, 'lng': 33}, {'lat': 49, 'lng': 5}, {'lat': 37, 'lng': 16}, {'lat': 10, 'lng': 41}, {'lat': 9, 'lng': 43}, {'lat': 20, 'lng': 22}, {'lat': 49, 'lng': 22}, {'lat': 1, 'lng': 30}, {'lat': 13, 'lng': 23}, {'lat': 40, 'lng': 5}, {'lat': 18, 'lng': 24}, {'lat': 5, 'lng': 9}, {'lat': 42, 'lng': 7}, {'lat': 9, 'lng': 32}, {'lat': 41, 'lng': 2}, {'lat': 20, 'lng': 29}, {'lat': 32, 'lng': 25}, {'lat': 14, 'lng': 2}, {'lat': 7, 'lng': 6}, {'lat': 38, 'lng': 2}, {'lat': 20, 'lng': 48}, {'lat': 15, 'lng': 7}, {'lat': 43, 'lng': 23}]
+centroid 0
+[{'lat': 45, 'lng': 36}, {'lat': 50, 'lng': 8}, {'lat': 50, 'lng': 6}, {'lat': 46, 'lng': 33}, {'lat': 49, 'lng': 5}, {'lat': 49, 'lng': 22}, {'lat': 43, 'lng': 23}]
+centroid 1
+[{'lat': 29, 'lng': 11}, {'lat': 37, 'lng': 16}, {'lat': 40, 'lng': 5}, {'lat': 42, 'lng': 7}, {'lat': 41, 'lng': 2}, {'lat': 38, 'lng': 2}]
+centroid 2
+[{'lat': 26, 'lng': 10}, {'lat': 8, 'lng': 3}, {'lat': 31, 'lng': 45}, {'lat': 10, 'lng': 41}, {'lat': 9, 'lng': 43}, {'lat': 20, 'lng': 22}, {'lat': 1, 'lng': 30}, {'lat': 13, 'lng': 23}, {'lat': 18, 'lng': 24}, {'lat': 5, 'lng': 9}, {'lat': 9, 'lng': 32}, {'lat': 20, 'lng': 29}, {'lat': 32, 'lng': 25}, {'lat': 14, 'lng': 2}, {'lat': 7, 'lng': 6}, {'lat': 20, 'lng': 48}, {'lat': 15, 'lng': 7}]
+The thread 'MainThread' (0x29dc) has exited with code 0 (0x0).
+The program '[11224] python.exe' has exited with code 0 (0x0).

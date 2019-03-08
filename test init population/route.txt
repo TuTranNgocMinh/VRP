@@ -1,0 +1,39 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x000001563C22E208>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E1D0>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E198>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E160>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E128>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E0F0>], [<DataNoGmap.CustomerNoGmap object at 0x000001563C22E400>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E3C8>, <DataNoGmap.CustomerNoGmap object at 0x000001563C22E6A0>]]
+
+{'lat': 10.799542, 'lng': 106.677597}
+{'lat': 10.771048, 'lng': 106.657301}
+{'lat': 10.7801688, 'lng': 106.695201}
+{'lat': 10.7887654, 'lng': 106.702432}
+{'lat': 10.776861, 'lng': 106.653311}
+{'lat': 10.7883491, 'lng': 106.6296637}
+
+{'lat': 10.799096, 'lng': 106.719758}
+{'lat': 10.8478509, 'lng': 106.7753504}
+{'lat': 10.851093, 'lng': 106.7561567}
+population 0
+number of vehicle in DC 0: 2
+route: [{'lat': 10.776861, 'lng': 106.653311}, {'lat': 10.7883491, 'lng': 106.6296637}, {'lat': 10.7887654, 'lng': 106.702432}]
+route: [{'lat': 10.771048, 'lng': 106.657301}, {'lat': 10.7801688, 'lng': 106.695201}, {'lat': 10.799542, 'lng': 106.677597}]
+number of vehicle in DC 1: 1
+route: [{'lat': 10.8478509, 'lng': 106.7753504}, {'lat': 10.851093, 'lng': 106.7561567}, {'lat': 10.799096, 'lng': 106.719758}]
+population 1
+number of vehicle in DC 0: 2
+route: [{'lat': 10.799542, 'lng': 106.677597}, {'lat': 10.776861, 'lng': 106.653311}, {'lat': 10.7887654, 'lng': 106.702432}]
+route: [{'lat': 10.771048, 'lng': 106.657301}, {'lat': 10.7801688, 'lng': 106.695201}, {'lat': 10.7883491, 'lng': 106.6296637}]
+number of vehicle in DC 1: 1
+route: [{'lat': 10.8478509, 'lng': 106.7753504}, {'lat': 10.799096, 'lng': 106.719758}, {'lat': 10.851093, 'lng': 106.7561567}]
+population 2
+number of vehicle in DC 0: 2
+route: [{'lat': 10.771048, 'lng': 106.657301}, {'lat': 10.7801688, 'lng': 106.695201}, {'lat': 10.776861, 'lng': 106.653311}, {'lat': 10.7883491, 'lng': 106.6296637}]
+route: [{'lat': 10.7887654, 'lng': 106.702432}, {'lat': 10.799542, 'lng': 106.677597}]
+number of vehicle in DC 1: 1
+route: [{'lat': 10.799096, 'lng': 106.719758}, {'lat': 10.8478509, 'lng': 106.7753504}, {'lat': 10.851093, 'lng': 106.7561567}]
+population 3
+number of vehicle in DC 0: 2
+route: [{'lat': 10.7887654, 'lng': 106.702432}, {'lat': 10.771048, 'lng': 106.657301}, {'lat': 10.7801688, 'lng': 106.695201}]
+route: [{'lat': 10.776861, 'lng': 106.653311}, {'lat': 10.7883491, 'lng': 106.6296637}, {'lat': 10.799542, 'lng': 106.677597}]
+number of vehicle in DC 1: 1
+route: [{'lat': 10.851093, 'lng': 106.7561567}, {'lat': 10.799096, 'lng': 106.719758}, {'lat': 10.8478509, 'lng': 106.7753504}]
+The thread 'MainThread' (0x3994) has exited with code 0 (0x0).
+The program '[24044] python.exe' has exited with code 0 (0x0).

@@ -1,0 +1,93 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E240>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E208>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E1D0>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E198>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E160>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E128>], [<DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E0F0>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E0B8>, <DataNoGmap.CustomerNoGmap object at 0x000001BE7D81E668>]]
+
+{'lng': 106.677597, 'lat': 10.799542}
+{'lng': 106.657301, 'lat': 10.771048}
+{'lng': 106.695201, 'lat': 10.7801688}
+{'lng': 106.702432, 'lat': 10.7887654}
+{'lng': 106.653311, 'lat': 10.776861}
+{'lng': 106.6296637, 'lat': 10.7883491}
+
+{'lng': 106.719758, 'lat': 10.799096}
+{'lng': 106.7753504, 'lat': 10.8478509}
+{'lng': 106.7561567, 'lat': 10.851093}
+weight: 3000
+volume: 50000
+population 0
+weight 0: 100.0
+volume 0: 2000.0
+weight 1: 50.0
+volume 1: 1000.0
+weight 0: 150.0
+volume 0: 3000.0
+weight 1: 100.0
+volume 1: 2000.0
+weight 0: 250.0
+volume 0: 5000.0
+weight 1: 150.0
+volume 1: 3000.0
+weight 0: 270.0
+volume 0: 5400.0
+weight 0: 320.0
+volume 0: 6400.0
+weight 0: 370.0
+volume 0: 7400.0
+population 1
+weight 0: 50.0
+volume 0: 1000.0
+weight 1: 50.0
+volume 1: 1000.0
+weight 0: 150.0
+volume 0: 3000.0
+weight 1: 100.0
+volume 1: 2000.0
+weight 0: 170.0
+volume 0: 3400.0
+weight 1: 150.0
+volume 1: 3000.0
+weight 0: 220.0
+volume 0: 4400.0
+weight 0: 270.0
+volume 0: 5400.0
+weight 0: 370.0
+volume 0: 7400.0
+population 2
+weight 0: 100.0
+volume 0: 2000.0
+weight 1: 50.0
+volume 1: 1000.0
+weight 0: 150.0
+volume 0: 3000.0
+weight 1: 100.0
+volume 1: 2000.0
+weight 0: 200.0
+volume 0: 4000.0
+weight 1: 150.0
+volume 1: 3000.0
+weight 0: 220.0
+volume 0: 4400.0
+weight 0: 270.0
+volume 0: 5400.0
+weight 0: 370.0
+volume 0: 7400.0
+population 3
+weight 0: 20.0
+volume 0: 400.0
+weight 1: 50.0
+volume 1: 1000.0
+weight 0: 120.0
+volume 0: 2400.0
+weight 1: 100.0
+volume 1: 2000.0
+weight 0: 220.0
+volume 0: 4400.0
+weight 1: 150.0
+volume 1: 3000.0
+weight 0: 270.0
+volume 0: 5400.0
+weight 0: 320.0
+volume 0: 6400.0
+weight 0: 370.0
+volume 0: 7400.0
+The thread 'MainThread' (0x458c) has exited with code 0 (0x0).
+The program '[2488] python.exe' has exited with code -1073741510 (0xc000013a).

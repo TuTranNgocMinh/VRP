@@ -1,0 +1,103 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x00000150B61386D8>, <DataNoGmap.CustomerNoGmap object at 0x00000150B61386A0>, <DataNoGmap.CustomerNoGmap object at 0x00000150B6138668>, <DataNoGmap.CustomerNoGmap object at 0x00000150B6138630>, <DataNoGmap.CustomerNoGmap object at 0x00000150B61385F8>, <DataNoGmap.CustomerNoGmap object at 0x00000150B61385C0>], [<DataNoGmap.CustomerNoGmap object at 0x00000150B6138908>, <DataNoGmap.CustomerNoGmap object at 0x00000150B6138898>, <DataNoGmap.CustomerNoGmap object at 0x00000150B6138B70>]]
+
+{'lat': 10.799542, 'lng': 106.677597}
+{'lat': 10.771048, 'lng': 106.657301}
+{'lat': 10.7801688, 'lng': 106.695201}
+{'lat': 10.7887654, 'lng': 106.702432}
+{'lat': 10.776861, 'lng': 106.653311}
+{'lat': 10.7883491, 'lng': 106.6296637}
+
+{'lat': 10.799096, 'lng': 106.719758}
+{'lat': 10.8478509, 'lng': 106.7753504}
+{'lat': 10.851093, 'lng': 106.7561567}
+population 0
+weight 0: 250.0
+volume 0: 5000.0
+weight 1: 250.0
+volume 1: 5000.0
+weight 0: 500.0
+volume 0: 10000.0
+weight 1: 500.0
+volume 1: 10000.0
+weight 0: 540.0
+volume 0: 10800.0
+weight 1: 750.0
+volume 1: 15000.0
+weight 0: 1540.0
+volume 0: 30800.0
+weight 0: 2540.0
+volume 0: 50800.0
+DC 0: 1
+weight after adding vehicle 0: 1000.0
+volume after adding vehicle 0: 20000.0
+weight 0: 1250.0
+volume 0: 25000.0
+population 1
+weight 0: 250.0
+volume 0: 5000.0
+weight 1: 250.0
+volume 1: 5000.0
+weight 0: 500.0
+volume 0: 10000.0
+weight 1: 500.0
+volume 1: 10000.0
+weight 0: 750.0
+volume 0: 15000.0
+weight 1: 750.0
+volume 1: 15000.0
+weight 0: 1750.0
+volume 0: 35000.0
+weight 0: 2750.0
+volume 0: 55000.0
+DC 0: 1
+weight after adding vehicle 0: 1000.0
+volume after adding vehicle 0: 20000.0
+weight 0: 1040.0
+volume 0: 20800.0
+population 2
+weight 0: 1000.0
+volume 0: 20000.0
+weight 1: 250.0
+volume 1: 5000.0
+weight 0: 1040.0
+volume 0: 20800.0
+weight 1: 500.0
+volume 1: 10000.0
+weight 0: 2040.0
+volume 0: 40800.0
+weight 1: 750.0
+volume 1: 15000.0
+weight 0: 2290.0
+volume 0: 45800.0
+DC 0: 1
+weight after adding vehicle 0: 250.0
+volume after adding vehicle 0: 5000.0
+weight 0: 500.0
+volume 0: 10000.0
+weight 0: 750.0
+volume 0: 15000.0
+population 3
+weight 0: 250.0
+volume 0: 5000.0
+weight 1: 250.0
+volume 1: 5000.0
+weight 0: 500.0
+volume 0: 10000.0
+weight 1: 500.0
+volume 1: 10000.0
+weight 0: 750.0
+volume 0: 15000.0
+weight 1: 750.0
+volume 1: 15000.0
+weight 0: 790.0
+volume 0: 15800.0
+weight 0: 1790.0
+volume 0: 35800.0
+weight 0: 2790.0
+volume 0: 55800.0
+DC 0: 1
+weight after adding vehicle 0: 1000.0
+volume after adding vehicle 0: 20000.0
+The thread 'MainThread' (0x73ec) has exited with code 0 (0x0).
+The program '[16764] python.exe' has exited with code 0 (0x0).

@@ -1,0 +1,239 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x000002754F7D1438>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7D1320>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7D12E8>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7D12B0>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7D1278>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7D1240>], [<DataNoGmap.CustomerNoGmap object at 0x000002754F7D1208>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7D11D0>, <DataNoGmap.CustomerNoGmap object at 0x000002754F7CACF8>]]
+
+{'lng': 106.677597, 'lat': 10.799542}
+{'lng': 106.657301, 'lat': 10.771048}
+{'lng': 106.695201, 'lat': 10.7801688}
+{'lng': 106.702432, 'lat': 10.7887654}
+{'lng': 106.653311, 'lat': 10.776861}
+{'lng': 106.6296637, 'lat': 10.7883491}
+
+{'lng': 106.719758, 'lat': 10.799096}
+{'lng': 106.7753504, 'lat': 10.8478509}
+{'lng': 106.7561567, 'lat': 10.851093}
+population 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 5
+Distance: 17.948021677971816
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 6
+Distance: 9.60003114930511
+Total Cost of DC 0: 7.109610565455386
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 1
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 6
+route 2 vehicle 0 DC 0: 2
+Distance: 25.04515129886421
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 0
+route 2 vehicle 1 DC 0: 5
+Distance: 12.82319897272007
+Total Cost of DC 0: 9.173670054316856
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 2
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 6
+route 4 vehicle 0 DC 0: 3
+Distance: 29.220600681696872
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 8.629168941983073
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 3
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 1
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 0
+Distance: 13.610177040902284
+route 0 vehicle 1 DC 0: 6
+route 1 vehicle 1 DC 0: 2
+route 2 vehicle 1 DC 0: 5
+Distance: 17.197984630869747
+Total Cost of DC 0: 7.761632334354408
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+_______________________________________
+Mutation:
+population chosen: 1
+DC chosen: 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 6
+route 2 vehicle 0 DC 0: 2
+Distance: 17.137436566815783
+weight: 540,volume: 10800
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 0
+route 2 vehicle 1 DC 0: 3
+Distance: 14.967437419757612
+weight: 2250,volume: 45000
+accepted
+__________________________________________
+crossover: 
+parent 1 chosen: 0, parent 2 chosen: 3
+DC Index: 0
+Customer list copy: 1
+Customer list copy: 3
+Customer list copy: 0
+vehicle length of DC 0: 2
+vehicle length of DC 0: 1
+
+feasible list: [{'Cost': 14.149285048163696, 'Position': 0, 'vIndex': 0}, {'Cost': 12.07992376337644, 'Position': 1, 'vIndex': 0}, {'Cost': 13.03983716340133, 'Position': 2, 'vIndex': 0}, {'Cost': 9.60003114930511, 'Position': 0, 'vIndex': 1}, {'Cost': 9.60003114930511, 'Position': 1, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 9.60003114930511, 'Position': 0, 'vIndex': 1}, {'Cost': 9.60003114930511, 'Position': 1, 'vIndex': 1}, {'Cost': 12.07992376337644, 'Position': 1, 'vIndex': 0}, {'Cost': 13.03983716340133, 'Position': 2, 'vIndex': 0}, {'Cost': 14.149285048163696, 'Position': 0, 'vIndex': 0}]
+random number: 0.3388641136819549
+vehicle length of DC 0: 3
+vehicle length of DC 0: 1
+
+feasible list: [{'Cost': 16.177736623877628, 'Position': 0, 'vIndex': 1}, {'Cost': 16.177736623877628, 'Position': 1, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 16.177736623877628, 'Position': 0, 'vIndex': 1}, {'Cost': 16.177736623877628, 'Position': 1, 'vIndex': 1}]
+random number: 0.6584900350600288
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+feasible list: [{'Cost': 17.425409289695928, 'Position': 0, 'vIndex': 0}, {'Cost': 16.642216328507082, 'Position': 1, 'vIndex': 0}, {'Cost': 16.107201803030254, 'Position': 2, 'vIndex': 0}, {'Cost': 17.850308164243987, 'Position': 3, 'vIndex': 0}, {'Cost': 16.34462699013271, 'Position': 0, 'vIndex': 1}, {'Cost': 16.576363811536567, 'Position': 1, 'vIndex': 1}, {'Cost': 20.87499395749024, 'Position': 2, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 16.107201803030254, 'Position': 2, 'vIndex': 0}, {'Cost': 16.34462699013271, 'Position': 0, 'vIndex': 1}, {'Cost': 16.576363811536567, 'Position': 1, 'vIndex': 1}, {'Cost': 16.642216328507082, 'Position': 1, 'vIndex': 0}, {'Cost': 17.425409289695928, 'Position': 0, 'vIndex': 0}, {'Cost': 17.850308164243987, 'Position': 3, 'vIndex': 0}, {'Cost': 20.87499395749024, 'Position': 2, 'vIndex': 1}]
+random number: 0.21400623989905343
+DC Index: 0
+Customer list copy: 0
+Customer list copy: 1
+Customer list copy: 2
+Customer list copy: 5
+vehicle length of DC 0: 1
+vehicle length of DC 0: 1
+
+feasible list: [{'Cost': 10.50717361921545, 'Position': 0, 'vIndex': 0}, {'Cost': 10.507173619215449, 'Position': 1, 'vIndex': 0}, {'Cost': 10.810294661529673, 'Position': 0, 'vIndex': 1}, {'Cost': 10.810294661529673, 'Position': 1, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 10.507173619215449, 'Position': 1, 'vIndex': 0}, {'Cost': 10.50717361921545, 'Position': 0, 'vIndex': 0}, {'Cost': 10.810294661529673, 'Position': 0, 'vIndex': 1}, {'Cost': 10.810294661529673, 'Position': 1, 'vIndex': 1}]
+random number: 0.751104758550852
+vehicle length of DC 0: 2
+vehicle length of DC 0: 1
+
+feasible list: [{'Cost': 14.967437419757612, 'Position': 0, 'vIndex': 0}, {'Cost': 16.719410916179431, 'Position': 1, 'vIndex': 0}, {'Cost': 13.610177040902284, 'Position': 2, 'vIndex': 0}, {'Cost': 9.60003114930511, 'Position': 0, 'vIndex': 1}, {'Cost': 9.60003114930511, 'Position': 1, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 9.60003114930511, 'Position': 0, 'vIndex': 1}, {'Cost': 9.60003114930511, 'Position': 1, 'vIndex': 1}, {'Cost': 13.610177040902284, 'Position': 2, 'vIndex': 0}, {'Cost': 14.967437419757612, 'Position': 0, 'vIndex': 0}, {'Cost': 16.719410916179431, 'Position': 1, 'vIndex': 0}]
+random number: 0.29513754678668547
+vehicle length of DC 0: 3
+vehicle length of DC 0: 1
+
+feasible list: [{'Cost': 14.98045200290364, 'Position': 0, 'vIndex': 1}, {'Cost': 14.98045200290364, 'Position': 1, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 14.98045200290364, 'Position': 0, 'vIndex': 1}, {'Cost': 14.98045200290364, 'Position': 1, 'vIndex': 1}]
+random number: 0.31008130450823224
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+feasible list: [{'Cost': 17.197984630869747, 'Position': 0, 'vIndex': 1}, {'Cost': 15.236443683833194, 'Position': 1, 'vIndex': 1}, {'Cost': 17.137436566815783, 'Position': 2, 'vIndex': 1}]
+sorted feasible List: [{'Cost': 15.236443683833194, 'Position': 1, 'vIndex': 1}, {'Cost': 17.137436566815783, 'Position': 2, 'vIndex': 1}, {'Cost': 17.197984630869747, 'Position': 0, 'vIndex': 1}]
+random number: 0.28024447202511027
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 4
+Customer list copy: 8
+vehicle length of DC 1: 0
+
+feasible list: [{'Cost': 0, 'Position': 0, 'vIndex': 0}]
+sorted feasible List: [{'Cost': 0, 'Position': 0, 'vIndex': 0}]
+random number: 0.8447131739118376
+vehicle length of DC 1: 1
+
+feasible list: [{'Cost': 19.840949671694531, 'Position': 0, 'vIndex': 0}, {'Cost': 19.840949671694531, 'Position': 1, 'vIndex': 0}]
+sorted feasible List: [{'Cost': 19.840949671694531, 'Position': 0, 'vIndex': 0}, {'Cost': 19.840949671694531, 'Position': 1, 'vIndex': 0}]
+random number: 0.8569778989604898
+vehicle length of DC 1: 2
+
+feasible list: [{'Cost': 26.734051035938013, 'Position': 0, 'vIndex': 0}, {'Cost': 20.844995755487208, 'Position': 1, 'vIndex': 0}, {'Cost': 22.783482581327178, 'Position': 2, 'vIndex': 0}]
+sorted feasible List: [{'Cost': 20.844995755487208, 'Position': 1, 'vIndex': 0}, {'Cost': 22.783482581327178, 'Position': 2, 'vIndex': 0}, {'Cost': 26.734051035938013, 'Position': 0, 'vIndex': 0}]
+random number: 0.7585978854551847
+DC Index: 1
+Customer list copy: 8
+Customer list copy: 4
+Customer list copy: 7
+vehicle length of DC 1: 0
+
+feasible list: [{'Cost': 0, 'Position': 0, 'vIndex': 0}]
+sorted feasible List: [{'Cost': 0, 'Position': 0, 'vIndex': 0}]
+random number: 0.7278100827366983
+vehicle length of DC 1: 1
+
+feasible list: [{'Cost': 19.532456881312953, 'Position': 0, 'vIndex': 0}, {'Cost': 19.53245688131295, 'Position': 1, 'vIndex': 0}]
+sorted feasible List: [{'Cost': 19.53245688131295, 'Position': 1, 'vIndex': 0}, {'Cost': 19.532456881312953, 'Position': 0, 'vIndex': 0}]
+random number: 0.21284342417450386
+vehicle length of DC 1: 2
+
+feasible list: [{'Cost': 26.734051035938016, 'Position': 0, 'vIndex': 0}, {'Cost': 22.783482581327178, 'Position': 1, 'vIndex': 0}, {'Cost': 20.844995755487208, 'Position': 2, 'vIndex': 0}]
+sorted feasible List: [{'Cost': 20.844995755487208, 'Position': 2, 'vIndex': 0}, {'Cost': 22.783482581327178, 'Position': 1, 'vIndex': 0}, {'Cost': 26.734051035938016, 'Position': 0, 'vIndex': 0}]
+random number: 0.871847270960349
+population 0
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 5
+vehicle 1: 1
+vehicle 1: 6
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+population 1
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 2
+vehicle 1: 1
+vehicle 1: 0
+vehicle 1: 3
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+population 2
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 6
+vehicle 0: 3
+vehicle 1: 1
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+population 3
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 3
+vehicle 0: 0
+vehicle 1: 6
+vehicle 1: 2
+vehicle 1: 5
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+The thread 'MainThread' (0x2ca0) has exited with code 0 (0x0).
+The program '[15952] python.exe' has exited with code 0 (0x0).
