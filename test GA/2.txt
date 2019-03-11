@@ -1,0 +1,2000 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x0000023B5E71EE80>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5E71EE48>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5E71EE10>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5E71EDD8>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5A7EF5C0>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5A7EF5F8>], [<DataNoGmap.CustomerNoGmap object at 0x0000023B5E729128>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5E7290F0>, <DataNoGmap.CustomerNoGmap object at 0x0000023B5E7293C8>]]
+
+{'lat': 10.799542, 'lng': 106.677597}
+{'lat': 10.771048, 'lng': 106.657301}
+{'lat': 10.7801688, 'lng': 106.695201}
+{'lat': 10.7887654, 'lng': 106.702432}
+{'lat': 10.776861, 'lng': 106.653311}
+{'lat': 10.7883491, 'lng': 106.6296637}
+
+{'lat': 10.799096, 'lng': 106.719758}
+{'lat': 10.8478509, 'lng': 106.7753504}
+{'lat': 10.851093, 'lng': 106.7561567}
+population 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 1
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 2
+route 4 vehicle 0 DC 0: 5
+Distance: 23.961102693790025
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 8.460277189350078
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 1
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 2
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 1
+route 3 vehicle 0 DC 0: 6
+route 4 vehicle 0 DC 0: 5
+Distance: 20.256455385539738
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 7.719347727700022
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 2
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 5
+Distance: 13.500355955768889
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 6
+Distance: 9.60003114930511
+Total Cost of DC 0: 6.2200774210148
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 8
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 4
+Distance: 22.783482581327174
+Total Cost of DC 1: 5.356696516265435
+population 3
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 1
+Distance: 14.1492850481637
+route 0 vehicle 1 DC 0: 3
+route 1 vehicle 1 DC 0: 6
+route 2 vehicle 1 DC 0: 0
+Distance: 20.87499395749024
+Total Cost of DC 0: 8.604855801130787
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 4
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 3
+route 3 vehicle 0 DC 0: 6
+Distance: 19.17091896043107
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 0
+Distance: 9.201368269750716
+Total Cost of DC 0: 7.274457446036358
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 8
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 4
+Distance: 22.783482581327174
+Total Cost of DC 1: 5.356696516265435
+population 5
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 6
+Distance: 16.85247411057092
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 5
+Distance: 6.0734153713973384
+Total Cost of DC 0: 6.185177896393652
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 6
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 6
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 1
+route 3 vehicle 0 DC 0: 5
+route 4 vehicle 0 DC 0: 0
+Distance: 21.35059766222487
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 7.938176183037049
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 7
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 2
+route 4 vehicle 0 DC 0: 3
+Distance: 25.004671780897805
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 7.785983161823259
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 8
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 5
+Distance: 13.196159305659876
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 2
+route 2 vehicle 1 DC 0: 6
+Distance: 17.50140320296573
+Total Cost of DC 0: 7.739512501725121
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 9
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 2
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 1
+Distance: 14.218936383234537
+route 0 vehicle 1 DC 0: 6
+route 1 vehicle 1 DC 0: 0
+route 2 vehicle 1 DC 0: 5
+Distance: 14.432125364499026
+Total Cost of DC 0: 7.330212349546713
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 10
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 6
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 5
+route 3 vehicle 0 DC 0: 1
+route 4 vehicle 0 DC 0: 0
+Distance: 21.885612187701696
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 8.045179088132413
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 11
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 1
+route 1 vehicle 0 DC 0: 5
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 0
+route 4 vehicle 0 DC 0: 6
+Distance: 19.662646035585762
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 7.600585857709227
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 12
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 2
+route 3 vehicle 0 DC 0: 1
+Distance: 16.107201803030254
+route 0 vehicle 1 DC 0: 3
+route 1 vehicle 1 DC 0: 6
+Distance: 16.177736623877628
+Total Cost of DC 0: 8.056987685381577
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 13
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 6
+route 2 vehicle 0 DC 0: 1
+route 3 vehicle 0 DC 0: 0
+route 4 vehicle 0 DC 0: 2
+Distance: 20.256455385539738
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+Total Cost of DC 0: 7.719347727700022
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 8
+Distance: 22.783482581327178
+Total Cost of DC 1: 5.356696516265435
+population 14
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 6
+route 2 vehicle 0 DC 0: 1
+route 3 vehicle 0 DC 0: 0
+Distance: 15.03313995474948
+route 0 vehicle 1 DC 0: 3
+route 1 vehicle 1 DC 0: 2
+Distance: 11.115932961547703
+Total Cost of DC 0: 6.829814583259436
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 15
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 1
+route 2 vehicle 0 DC 0: 2
+Distance: 12.07992376337644
+route 0 vehicle 1 DC 0: 3
+route 1 vehicle 1 DC 0: 6
+route 2 vehicle 1 DC 0: 0
+Distance: 20.87499395749024
+Total Cost of DC 0: 8.190983544173337
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 8
+Distance: 22.783482581327178
+Total Cost of DC 1: 5.356696516265435
+population 16
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 1
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 2
+Distance: 24.137973137058417
+route 0 vehicle 1 DC 0: 3
+route 1 vehicle 1 DC 0: 5
+Distance: 13.029268939404796
+Total Cost of DC 0: 9.033448415292643
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 8
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 7
+Distance: 26.734051035938013
+Total Cost of DC 1: 6.1468102071876025
+population 17
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 1
+route 2 vehicle 0 DC 0: 0
+Distance: 16.71941091617943
+route 0 vehicle 1 DC 0: 5
+route 1 vehicle 1 DC 0: 6
+route 2 vehicle 1 DC 0: 2
+Distance: 17.137436566815783
+Total Cost of DC 0: 8.371369496599042
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 18
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 1
+Distance: 13.63688416160979
+route 0 vehicle 1 DC 0: 6
+route 1 vehicle 1 DC 0: 0
+route 2 vehicle 1 DC 0: 5
+Distance: 14.432125364499026
+Total Cost of DC 0: 7.213801905221763
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 8
+Distance: 26.734051035938016
+Total Cost of DC 1: 6.146810207187603
+population 19
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 0
+route 4 vehicle 0 DC 0: 5
+Distance: 25.00467178089781
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 7.7859831618232604
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 8
+Distance: 22.783482581327178
+Total Cost of DC 1: 5.356696516265435
+_________________________
+random individual chosen: 14,17
+random number chosen: 0.5102034978142792
+random individual chosen: 1,7
+random number chosen: 0.9063584052589375
+__________________________________________
+crossover: 
+parent chosen: 14, 7
+DC Index: 0
+Customer list copy: 5
+Customer list copy: 0
+Customer list copy: 6
+Customer list copy: 2
+Customer list copy: 3
+vehicle length of DC 0: 1
+vehicle length of DC 0: 0
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 4.6619120560976173, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 6.0734153713973384, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 6.0734153713973384, 'Position': 1}]
+random number: 0.8535570126338715
+vehicle length of DC 0: 1
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 8.3629351721779077, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 8.3629351721779077, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 9.2013682697507164, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 9.2013682697507164, 'Position': 1}]
+random number: 0.8063463433177878
+vehicle length of DC 0: 1
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 9.60003114930511, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 9.60003114930511, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 11.971045007909494, 'Position': 2}, {'vIndex': 1, 'feasible': True, 'Cost': 12.967279225441816, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 14.432125364499026, 'Position': 0}]
+random number: 0.6520834124288464
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 12.181952527964919, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 13.586250602968166, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 15.329356964181901, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 15.606539541284214, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 17.501403202965729, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 18.467445824291691, 'Position': 0}]
+random number: 0.11707756180532058
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 13.500355955768889, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 14.358537327855439, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 17.118073795733824, 'Position': 2}, {'vIndex': 1, 'feasible': True, 'Cost': 17.948021677971816, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 19.280740045564464, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 19.664730445265675, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 20.549309411272098, 'Position': 3}]
+random number: 0.8972882249924905
+DC Index: 0
+Customer list copy: 5
+Customer list copy: 6
+Customer list copy: 1
+Customer list copy: 0
+vehicle length of DC 0: 2
+vehicle length of DC 0: 0
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 4.6619120560976173, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 13.333465589513809, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 13.804918647992128, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 19.995690731408786, 'Position': 1}]
+random number: 0.8305762303498546
+vehicle length of DC 0: 2
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 8.2700218918292023, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 8.2700218918292023, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 16.685583744315842, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 16.953386332464962, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 25.045151298864209, 'Position': 1}]
+random number: 0.3638471958341656
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 9.6815252071289226, 'Position': 2}, {'vIndex': 1, 'feasible': True, 'Cost': 9.7482024924839585, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 11.757015713217251, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 13.636884161609791, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 14.218936383234537, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 19.449795066626308, 'Position': 1}]
+random number: 0.5754800101626664
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 11.282823327802783, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 11.669551641411012, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 12.957649448661151, 'Position': 3}, {'vIndex': 1, 'feasible': True, 'Cost': 14.378782540741538, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 15.730489050005708, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 15.843628679798748, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 16.431308808451654, 'Position': 2}]
+random number: 0.7419861107019194
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 8
+Customer list copy: 7
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 0, 'Position': 0}]
+random number: 0.0667301310752908
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 19.53245688131295, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 19.532456881312953, 'Position': 1}]
+random number: 0.6378647752280268
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 20.844995755487208, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 22.783482581327174, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 26.734051035938013, 'Position': 2}]
+random number: 0.11729679975304308
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 8
+Customer list copy: 7
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 0, 'Position': 0}]
+random number: 0.0191108194635079
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 19.53245688131295, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 19.532456881312953, 'Position': 1}]
+random number: 0.8342802975530613
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 20.844995755487208, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 22.783482581327174, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 26.734051035938013, 'Position': 2}]
+random number: 0.5641636473384903
+__________________________________________
+population chosen: 14
+DC chosen: 1
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 8
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 7
+Distance: 26.734051035938013
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 23.961102693790025
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.460277189350078
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 5
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.500355955768889
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 9.60003114930511
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 3
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 14.1492850481637
+vehicle 1: 3
+vehicle 1: 6
+vehicle 1: 0
+distance travelled: 20.87499395749024
+total weighted cost: 8.604855801130787
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 4
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 19.17091896043107
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.274457446036358
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 5
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+distance travelled: 16.85247411057092
+vehicle 1: 1
+vehicle 1: 5
+distance travelled: 6.0734153713973384
+total weighted cost: 6.185177896393652
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 6
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 0
+distance travelled: 21.35059766222487
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.938176183037049
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 7
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+distance travelled: 25.004671780897805
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.785983161823259
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 8
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 13.196159305659876
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 6
+distance travelled: 17.50140320296573
+total weighted cost: 7.739512501725121
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 9
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 1
+distance travelled: 14.218936383234537
+vehicle 1: 6
+vehicle 1: 0
+vehicle 1: 5
+distance travelled: 14.432125364499026
+total weighted cost: 7.330212349546713
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 10
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 21.885612187701696
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.045179088132413
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 11
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 6
+distance travelled: 19.662646035585762
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.600585857709227
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 12
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 16.107201803030254
+vehicle 1: 3
+vehicle 1: 6
+distance travelled: 16.177736623877628
+total weighted cost: 8.056987685381577
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 13
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 2
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 14
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 15.03313995474948
+vehicle 1: 3
+vehicle 1: 2
+distance travelled: 11.115932961547703
+total weighted cost: 6.829814583259436
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 4
+vehicle 0: 7
+distance travelled: 26.734051035938013
+total weighted cost: 4.968999151097441
+population 15
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 2
+distance travelled: 12.07992376337644
+vehicle 1: 3
+vehicle 1: 6
+vehicle 1: 0
+distance travelled: 20.87499395749024
+total weighted cost: 8.190983544173337
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 16
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 2
+distance travelled: 24.137973137058417
+vehicle 1: 3
+vehicle 1: 5
+distance travelled: 13.029268939404796
+total weighted cost: 9.033448415292643
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 4
+vehicle 0: 7
+distance travelled: 26.734051035938013
+total weighted cost: 6.1468102071876025
+population 17
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 16.71941091617943
+vehicle 1: 5
+vehicle 1: 6
+vehicle 1: 2
+distance travelled: 17.137436566815783
+total weighted cost: 8.371369496599042
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 18
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 13.63688416160979
+vehicle 1: 6
+vehicle 1: 0
+vehicle 1: 5
+distance travelled: 14.432125364499026
+total weighted cost: 7.213801905221763
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 19
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 5
+distance travelled: 25.00467178089781
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.7859831618232604
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+
+child 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 1
+distance travelled: 9.60003114930511
+vehicle 1: 0
+vehicle 1: 3
+vehicle 1: 2
+vehicle 1: 5
+distance travelled: 13.500355955768889
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 18
+parent with least fit: 16
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 23.961102693790025
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.460277189350078
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 5
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.500355955768889
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 9.60003114930511
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 3
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 14.1492850481637
+vehicle 1: 3
+vehicle 1: 6
+vehicle 1: 0
+distance travelled: 20.87499395749024
+total weighted cost: 8.604855801130787
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 4
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 19.17091896043107
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.274457446036358
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 5
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+distance travelled: 16.85247411057092
+vehicle 1: 1
+vehicle 1: 5
+distance travelled: 6.0734153713973384
+total weighted cost: 6.185177896393652
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 6
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 0
+distance travelled: 21.35059766222487
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.938176183037049
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 7
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+distance travelled: 25.004671780897805
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.785983161823259
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 8
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 13.196159305659876
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 6
+distance travelled: 17.50140320296573
+total weighted cost: 7.739512501725121
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 9
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 1
+distance travelled: 14.218936383234537
+vehicle 1: 6
+vehicle 1: 0
+vehicle 1: 5
+distance travelled: 14.432125364499026
+total weighted cost: 7.330212349546713
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 10
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 21.885612187701696
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.045179088132413
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 11
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 6
+distance travelled: 19.662646035585762
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.600585857709227
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 12
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 16.107201803030254
+vehicle 1: 3
+vehicle 1: 6
+distance travelled: 16.177736623877628
+total weighted cost: 8.056987685381577
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 13
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 2
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 14
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 15.03313995474948
+vehicle 1: 3
+vehicle 1: 2
+distance travelled: 11.115932961547703
+total weighted cost: 6.829814583259436
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 4
+vehicle 0: 7
+distance travelled: 26.734051035938013
+total weighted cost: 4.968999151097441
+population 15
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 2
+distance travelled: 12.07992376337644
+vehicle 1: 3
+vehicle 1: 6
+vehicle 1: 0
+distance travelled: 20.87499395749024
+total weighted cost: 8.190983544173337
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 16
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 16.71941091617943
+vehicle 1: 5
+vehicle 1: 6
+vehicle 1: 2
+distance travelled: 17.137436566815783
+total weighted cost: 8.371369496599042
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 17
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 5
+distance travelled: 25.00467178089781
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.7859831618232604
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 18
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 1
+distance travelled: 9.60003114930511
+vehicle 1: 0
+vehicle 1: 3
+vehicle 1: 2
+vehicle 1: 5
+distance travelled: 13.500355955768889
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 19
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+_________________________
+random individual chosen: 12,10
+random number chosen: 0.44298501287665626
+random individual chosen: 18,7
+random number chosen: 0.34148967216947135
+__________________________________________
+crossover: 
+parent chosen: 12, 18
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 1
+vehicle length of DC 0: 3
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 16.177736623877628, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 16.177736623877628, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 17.194360438699754, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 18.190594656232076, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 19.155901385736307, 'Position': 3}, {'vIndex': 0, 'feasible': True, 'Cost': 23.299540039485606, 'Position': 2}]
+random number: 0.1660226318411001
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 14.572855043719823, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 14.997753918267886, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 16.107201803030254, 'Position': 3}, {'vIndex': 1, 'feasible': True, 'Cost': 17.118073795733824, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 18.829707364699171, 'Position': 2}, {'vIndex': 1, 'feasible': True, 'Cost': 19.280740045564464, 'Position': 2}, {'vIndex': 1, 'feasible': True, 'Cost': 19.664730445265675, 'Position': 0}]
+random number: 0.471448721846896
+DC Index: 0
+Customer list copy: 5
+Customer list copy: 0
+Customer list copy: 2
+Customer list copy: 1
+vehicle length of DC 0: 1
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 8.2700218918292023, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 8.2700218918292023, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 13.029268939404796, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 13.029268939404796, 'Position': 1}]
+random number: 0.6922016838523544
+vehicle length of DC 0: 2
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 10.507173619215449, 'Position': 1}, {'vIndex': 1, 'feasible': True, 'Cost': 10.50717361921545, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 11.971045007909494, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 12.967279225441816, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 14.432125364499026, 'Position': 1}]
+random number: 0.8410075445689094
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'feasible': True, 'Cost': 11.282823327802783, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 11.669551641411013, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 15.236443683833194, 'Position': 0}, {'vIndex': 1, 'feasible': True, 'Cost': 15.730489050005708, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 17.137436566815783, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 17.197984630869747, 'Position': 1}]
+random number: 0.8659816461152955
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 9.6815252071289244, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 9.7482024924839585, 'Position': 1}, {'vIndex': 0, 'feasible': True, 'Cost': 11.757015713217253, 'Position': 2}, {'vIndex': 1, 'feasible': False, 'Cost': 13.803774527864872, 'Position': 0}, {'vIndex': 1, 'feasible': False, 'Cost': 15.743087128344945, 'Position': 3}, {'vIndex': 1, 'feasible': False, 'Cost': 17.495060624766765, 'Position': 2}, {'vIndex': 1, 'feasible': False, 'Cost': 19.61668543288139, 'Position': 1}]
+random number: 0.9238860929687952
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 0, 'Position': 0}]
+random number: 0.4156453579208307
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 13.700520098617552, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 13.700520098617554, 'Position': 1}]
+random number: 0.44075970483868665
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 20.844995755487208, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 22.783482581327174, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 26.734051035938013, 'Position': 1}]
+random number: 0.420241378963764
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 0, 'Position': 0}]
+random number: 0.1083480514372589
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 13.700520098617552, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 13.700520098617554, 'Position': 1}]
+random number: 0.6852109623281728
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'feasible': True, 'Cost': 20.844995755487208, 'Position': 0}, {'vIndex': 0, 'feasible': True, 'Cost': 22.783482581327174, 'Position': 2}, {'vIndex': 0, 'feasible': True, 'Cost': 26.734051035938013, 'Position': 1}]
+random number: 0.5580595320506936
+__________________________________________
+population chosen: 15
+DC chosen: 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 1
+route 2 vehicle 0 DC 0: 2
+Distance: 12.07992376337644
+route 0 vehicle 1 DC 0: 0
+route 1 vehicle 1 DC 0: 6
+route 2 vehicle 1 DC 0: 3
+Distance: 20.87499395749024
+population chosen: 0
+DC chosen: 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 0
+route 1 vehicle 0 DC 0: 1
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 5
+route 4 vehicle 0 DC 0: 2
+Distance: 21.99956174675347
+route 0 vehicle 1 DC 0: 3
+Distance: 10.340283252960369
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 5
+vehicle 0: 2
+distance travelled: 21.99956174675347
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.460277189350078
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 5
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.500355955768889
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 9.60003114930511
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 3
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 14.1492850481637
+vehicle 1: 3
+vehicle 1: 6
+vehicle 1: 0
+distance travelled: 20.87499395749024
+total weighted cost: 8.604855801130787
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 4
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 19.17091896043107
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.274457446036358
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 5
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+distance travelled: 16.85247411057092
+vehicle 1: 1
+vehicle 1: 5
+distance travelled: 6.0734153713973384
+total weighted cost: 6.185177896393652
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 6
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 0
+distance travelled: 21.35059766222487
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.938176183037049
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 7
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+distance travelled: 25.004671780897805
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.785983161823259
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 8
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 13.196159305659876
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 6
+distance travelled: 17.50140320296573
+total weighted cost: 7.739512501725121
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 9
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 1
+distance travelled: 14.218936383234537
+vehicle 1: 6
+vehicle 1: 0
+vehicle 1: 5
+distance travelled: 14.432125364499026
+total weighted cost: 7.330212349546713
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 10
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 21.885612187701696
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.045179088132413
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 11
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 6
+distance travelled: 19.662646035585762
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.600585857709227
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 12
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 16.107201803030254
+vehicle 1: 3
+vehicle 1: 6
+distance travelled: 16.177736623877628
+total weighted cost: 8.056987685381577
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 13
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 2
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 14
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 15.03313995474948
+vehicle 1: 3
+vehicle 1: 2
+distance travelled: 11.115932961547703
+total weighted cost: 6.829814583259436
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 4
+vehicle 0: 7
+distance travelled: 26.734051035938013
+total weighted cost: 4.968999151097441
+population 15
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 2
+distance travelled: 12.07992376337644
+vehicle 1: 0
+vehicle 1: 6
+vehicle 1: 3
+distance travelled: 20.87499395749024
+total weighted cost: 8.190983544173337
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 16
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 16.71941091617943
+vehicle 1: 5
+vehicle 1: 6
+vehicle 1: 2
+distance travelled: 17.137436566815783
+total weighted cost: 8.371369496599042
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 17
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 5
+distance travelled: 25.00467178089781
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.7859831618232604
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 18
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 1
+distance travelled: 9.60003114930511
+vehicle 1: 0
+vehicle 1: 3
+vehicle 1: 2
+vehicle 1: 5
+distance travelled: 13.500355955768889
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 19
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 2
+distance travelled: 14.572855043719823
+vehicle 1: 6
+vehicle 1: 3
+distance travelled: 16.177736623877628
+total weighted cost: 7.75011833351949
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 6
+distance travelled: 9.681525207128924
+vehicle 1: 2
+vehicle 1: 3
+vehicle 1: 0
+distance travelled: 11.282823327802783
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 15
+parent with least fit: 15
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 5
+vehicle 0: 2
+distance travelled: 21.99956174675347
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.460277189350078
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 1
+vehicle 0: 6
+vehicle 0: 5
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.500355955768889
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 9.60003114930511
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 3
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 14.1492850481637
+vehicle 1: 3
+vehicle 1: 6
+vehicle 1: 0
+distance travelled: 20.87499395749024
+total weighted cost: 8.604855801130787
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 4
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 19.17091896043107
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.274457446036358
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 7
+vehicle 0: 4
+distance travelled: 22.783482581327174
+total weighted cost: 5.356696516265435
+population 5
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+distance travelled: 16.85247411057092
+vehicle 1: 1
+vehicle 1: 5
+distance travelled: 6.0734153713973384
+total weighted cost: 6.185177896393652
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 6
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 0
+distance travelled: 21.35059766222487
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.938176183037049
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 7
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+distance travelled: 25.004671780897805
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.785983161823259
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 8
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 13.196159305659876
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 6
+distance travelled: 17.50140320296573
+total weighted cost: 7.739512501725121
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 9
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 1
+distance travelled: 14.218936383234537
+vehicle 1: 6
+vehicle 1: 0
+vehicle 1: 5
+distance travelled: 14.432125364499026
+total weighted cost: 7.330212349546713
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 10
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 21.885612187701696
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 8.045179088132413
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 11
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 6
+distance travelled: 19.662646035585762
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.600585857709227
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 4
+vehicle 0: 8
+distance travelled: 26.734051035938016
+total weighted cost: 6.146810207187603
+population 12
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 1
+distance travelled: 16.107201803030254
+vehicle 1: 3
+vehicle 1: 6
+distance travelled: 16.177736623877628
+total weighted cost: 8.056987685381577
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 13
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 2
+distance travelled: 20.256455385539738
+vehicle 1: 3
+distance travelled: 10.340283252960369
+total weighted cost: 7.719347727700022
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 14
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 6
+vehicle 0: 1
+vehicle 0: 0
+distance travelled: 15.03313995474948
+vehicle 1: 3
+vehicle 1: 2
+distance travelled: 11.115932961547703
+total weighted cost: 6.829814583259436
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 4
+vehicle 0: 7
+distance travelled: 26.734051035938013
+total weighted cost: 4.968999151097441
+population 15
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 5
+distance travelled: 25.00467178089781
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.7859831618232604
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 16
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 1
+distance travelled: 9.60003114930511
+vehicle 1: 0
+vehicle 1: 3
+vehicle 1: 2
+vehicle 1: 5
+distance travelled: 13.500355955768889
+total weighted cost: 6.2200774210148
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 17
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 18
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 1
+vehicle 0: 0
+vehicle 0: 2
+distance travelled: 14.572855043719823
+vehicle 1: 6
+vehicle 1: 3
+distance travelled: 16.177736623877628
+total weighted cost: 7.75011833351949
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 19
+Distribution Center 0
+vehicle 0: 1
+vehicle 0: 5
+vehicle 0: 6
+distance travelled: 9.681525207128924
+vehicle 1: 2
+vehicle 1: 3
+vehicle 1: 0
+distance travelled: 11.282823327802783
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+The thread 'MainThread' (0x3d84) has exited with code 0 (0x0).
+The program '[3952] python.exe' has exited with code 0 (0x0).

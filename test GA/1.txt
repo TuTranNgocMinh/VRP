@@ -1,0 +1,1631 @@
+﻿
+[[<DataNoGmap.CustomerNoGmap object at 0x0000021DCD250320>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD2502E8>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD2502B0>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD250278>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD250240>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD250208>], [<DataNoGmap.CustomerNoGmap object at 0x0000021DCD2501D0>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD2504A8>, <DataNoGmap.CustomerNoGmap object at 0x0000021DCD250780>]]
+
+{'lng': 106.677597, 'lat': 10.799542}
+{'lng': 106.657301, 'lat': 10.771048}
+{'lng': 106.695201, 'lat': 10.7801688}
+{'lng': 106.702432, 'lat': 10.7887654}
+{'lng': 106.653311, 'lat': 10.776861}
+{'lng': 106.6296637, 'lat': 10.7883491}
+
+{'lng': 106.719758, 'lat': 10.799096}
+{'lng': 106.7753504, 'lat': 10.8478509}
+{'lng': 106.7561567, 'lat': 10.851093}
+population 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 3
+route 1 vehicle 0 DC 0: 6
+route 2 vehicle 0 DC 0: 0
+route 3 vehicle 0 DC 0: 2
+route 4 vehicle 0 DC 0: 5
+Distance: 28.31584201624661
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 8.44821720889302
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+population 1
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 6
+route 1 vehicle 0 DC 0: 2
+route 2 vehicle 0 DC 0: 3
+route 3 vehicle 0 DC 0: 5
+Distance: 19.374569430760268
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 0
+Distance: 9.201368269750716
+Total Cost of DC 0: 7.3151875401021975
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 7
+route 2 vehicle 0 DC 1: 8
+Distance: 22.783482581327178
+Total Cost of DC 1: 5.356696516265435
+population 2
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 2
+route 1 vehicle 0 DC 0: 3
+route 2 vehicle 0 DC 0: 6
+Distance: 16.953386332464962
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 5
+route 2 vehicle 1 DC 0: 0
+Distance: 9.774438487477628
+Total Cost of DC 0: 6.945564963988518
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 8
+route 1 vehicle 0 DC 1: 4
+route 2 vehicle 0 DC 1: 7
+Distance: 26.734051035938013
+Total Cost of DC 1: 6.1468102071876025
+population 3
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 5
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 6
+route 3 vehicle 0 DC 0: 3
+route 4 vehicle 0 DC 0: 2
+Distance: 25.27247436904693
+route 0 vehicle 1 DC 0: 1
+Distance: 5.925244028218489
+Total Cost of DC 0: 7.839543679453085
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 7
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 4
+Distance: 20.844995755487208
+Total Cost of DC 1: 4.968999151097441
+_________________________
+random individual chosen: 3,1
+random number chosen: 0.5932737921654067
+random individual chosen: 2,3
+random number chosen: 0.6737931250637595
+__________________________________________
+crossover: 
+parent chosen: 1, 3
+DC Index: 0
+Customer list copy: 1
+vehicle length of DC 0: 4
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.2013682697507164, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 9.2013682697507164, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 19.936758509181526, 'Position': 3, 'feasible': False}, {'vIndex': 0, 'Cost': 20.000656969140842, 'Position': 1, 'feasible': False}, {'vIndex': 0, 'Cost': 20.786072746059986, 'Position': 4, 'feasible': False}, {'vIndex': 0, 'Cost': 22.861563252148319, 'Position': 0, 'feasible': False}, {'vIndex': 0, 'Cost': 27.708431535838876, 'Position': 2, 'feasible': False}]
+random number: 0.12248121894418607
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 2
+Customer list copy: 3
+Customer list copy: 5
+vehicle length of DC 0: 1
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.60003114930511, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 9.60003114930511, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 10.810294661529673, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 10.810294661529673, 'Position': 1, 'feasible': True}]
+random number: 0.2148516812963095
+vehicle length of DC 0: 1
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 9.9644198999988127, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 9.9644198999988127, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.606539541284214, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 17.501403202965729, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 18.467445824291691, 'Position': 0, 'feasible': True}]
+random number: 0.9097325405875838
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 11.282823327802783, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 11.669551641411013, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 15.730489050005708, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 17.118073795733824, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 19.280740045564464, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 19.664730445265675, 'Position': 0, 'feasible': True}]
+random number: 0.41657873290476133
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.6815252071289226, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 9.7482024924839585, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 11.757015713217253, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.500355955768891, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 14.904654030772136, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 17.505941764072418, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 20.162581097663868, 'Position': 1, 'feasible': True}]
+random number: 0.4806891510731496
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.30707454053683547
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.560380713943003
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.9996056337134549
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 7
+Customer list copy: 8
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.20660886040204796
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 19.840949671694531, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 19.840949671694531, 'Position': 1, 'feasible': True}]
+random number: 0.06803344183232674
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938016, 'Position': 2, 'feasible': True}]
+random number: 0.277637301324982
+__________________________________________
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 28.31584201624661
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 8.44821720889302
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 2
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.953386332464962
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 0
+distance travelled: 9.774438487477628
+total weighted cost: 6.945564963988518
+Distribution Center 1
+vehicle 0: 8
+vehicle 0: 4
+vehicle 0: 7
+distance travelled: 26.734051035938013
+total weighted cost: 6.1468102071876025
+population 3
+Distribution Center 0
+vehicle 0: 5
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 25.27247436904693
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 7.839543679453085
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 2
+parent with least fit: 2
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 28.31584201624661
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 8.44821720889302
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 2
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+_________________________
+random individual chosen: 3,1
+random number chosen: 0.938987116660062
+random individual chosen: 0,1
+random number chosen: 0.49852802467600377
+random individual chosen: 0,1
+random number chosen: 0.27816591791082856
+random individual chosen: 2,1
+random number chosen: 0.5504367987596854
+__________________________________________
+crossover: 
+parent chosen: 1, 2
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 2
+Customer list copy: 3
+Customer list copy: 5
+vehicle length of DC 0: 0
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 6.11303732791706, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 12.876155390837337, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 14.297288482917724, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.270558462071834, 'Position': 2, 'feasible': True}]
+random number: 0.015034994817295977
+vehicle length of DC 0: 1
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 12.485371100060901, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 14.424683700540974, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 14.98045200290364, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 14.98045200290364, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.207876661729818, 'Position': 0, 'feasible': True}]
+random number: 0.0924543427589366
+vehicle length of DC 0: 1
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 13.803774527864872, 'Position': 2, 'feasible': False}, {'vIndex': 1, 'Cost': 14.772555063097849, 'Position': 1, 'feasible': False}, {'vIndex': 0, 'Cost': 16.177736623877628, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 16.177736623877628, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 18.251440250067795, 'Position': 3, 'feasible': False}, {'vIndex': 1, 'Cost': 20.00341374648962, 'Position': 0, 'feasible': False}]
+random number: 0.6550244822598131
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 12.633542443239751, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 13.593455843264641, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 16.107201803030254, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 16.637378775136384, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 17.850308164243987, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 18.334721187789771, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 18.866722310322057, 'Position': 0, 'feasible': True}]
+random number: 0.9564051768458861
+DC Index: 0
+Customer list copy: 1
+Customer list copy: 0
+vehicle length of DC 0: 4
+vehicle length of DC 0: 0
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 5.9252440282184891, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 19.936758509181526, 'Position': 3, 'feasible': False}, {'vIndex': 0, 'Cost': 20.000656969140842, 'Position': 1, 'feasible': False}, {'vIndex': 0, 'Cost': 20.786072746059986, 'Position': 4, 'feasible': False}, {'vIndex': 0, 'Cost': 22.861563252148319, 'Position': 0, 'feasible': False}, {'vIndex': 0, 'Cost': 27.708431535838876, 'Position': 2, 'feasible': False}]
+random number: 0.6237212460593569
+vehicle length of DC 0: 4
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.2013682697507164, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 9.2013682697507164, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 20.42772752017656, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 20.474304813540275, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 23.075592546840554, 'Position': 4, 'feasible': True}, {'vIndex': 0, 'Cost': 23.989125519218273, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 24.071826764372883, 'Position': 0, 'feasible': True}]
+random number: 0.6318462412712299
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 8
+Customer list copy: 7
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.7621047375249865
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 19.53245688131295, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 19.532456881312953, 'Position': 1, 'feasible': True}]
+random number: 0.9623023420552314
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 2, 'feasible': True}]
+random number: 0.8034403427477663
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 7
+Customer list copy: 8
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.8727647262881922
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 19.840949671694531, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 19.840949671694531, 'Position': 1, 'feasible': True}]
+random number: 0.09015173909037488
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938016, 'Position': 2, 'feasible': True}]
+random number: 0.04037953914598935
+__________________________________________
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+vehicle 0: 0
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 28.31584201624661
+vehicle 1: 1
+distance travelled: 5.925244028218489
+total weighted cost: 8.44821720889302
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 7
+vehicle 0: 8
+distance travelled: 22.783482581327178
+total weighted cost: 5.356696516265435
+population 2
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.177736623877628
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 0
+distance travelled: 12.633542443239751
+total weighted cost: 7.3622558134234755
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 0
+vehicle 1: 1
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 0
+parent with least fit: 0
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.177736623877628
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 0
+distance travelled: 12.633542443239751
+total weighted cost: 7.3622558134234755
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 0
+vehicle 1: 1
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+_________________________
+random individual chosen: 2,1
+random number chosen: 0.8403909356400753
+random individual chosen: 0,3
+random number chosen: 0.6587430209492001
+__________________________________________
+crossover: 
+parent chosen: 2, 3
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 2
+Customer list copy: 3
+Customer list copy: 5
+vehicle length of DC 0: 0
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 6.11303732791706, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 12.876155390837337, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 14.297288482917724, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.270558462071834, 'Position': 2, 'feasible': True}]
+random number: 0.8131191416301721
+vehicle length of DC 0: 1
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 12.485371100060901, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 14.424683700540974, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 14.98045200290364, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 14.98045200290364, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.207876661729818, 'Position': 0, 'feasible': True}]
+random number: 0.504504094857804
+vehicle length of DC 0: 1
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 13.803774527864872, 'Position': 2, 'feasible': False}, {'vIndex': 1, 'Cost': 14.772555063097849, 'Position': 1, 'feasible': False}, {'vIndex': 0, 'Cost': 16.177736623877628, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 16.177736623877628, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 18.251440250067795, 'Position': 3, 'feasible': False}, {'vIndex': 1, 'Cost': 20.00341374648962, 'Position': 0, 'feasible': False}]
+random number: 0.2602904975724767
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 12.633542443239751, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 13.593455843264641, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 16.107201803030254, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 16.637378775136384, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 17.850308164243987, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 18.334721187789771, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 18.866722310322057, 'Position': 0, 'feasible': True}]
+random number: 0.6204107125199736
+DC Index: 0
+Customer list copy: 3
+Customer list copy: 6
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.333465589513809, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 13.610177040902284, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 13.804918647992128, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 14.96743741975761, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 16.719410916179431, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 19.995690731408786, 'Position': 2, 'feasible': True}]
+random number: 0.7268128190411661
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 12.876155390837337, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 14.297288482917724, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.270558462071834, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 16.941575425245397, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 18.842568308227985, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 19.17091896043107, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 27.262683926830316, 'Position': 1, 'feasible': True}]
+random number: 0.08731571993648057
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.18366016837223853
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.3421032957546404
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.5719277499884442
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.6587905421457386
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.8081526079912046
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.7475751305426892
+__________________________________________
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.177736623877628
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 0
+distance travelled: 12.633542443239751
+total weighted cost: 7.3622558134234755
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 0
+vehicle 1: 1
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.177736623877628
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 0
+distance travelled: 12.633542443239751
+total weighted cost: 7.3622558134234755
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.333465589513809
+vehicle 1: 0
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 12.876155390837337
+total weighted cost: 6.841924196070229
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 2
+parent with least fit: 2
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.177736623877628
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 0
+distance travelled: 12.633542443239751
+total weighted cost: 7.3622558134234755
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.333465589513809
+vehicle 1: 0
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 12.876155390837337
+total weighted cost: 6.841924196070229
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+_________________________
+random individual chosen: 0,1
+random number chosen: 0.8369980951936985
+random individual chosen: 0,1
+random number chosen: 0.12346772702010445
+random individual chosen: 2,3
+random number chosen: 0.07635772654397155
+__________________________________________
+crossover: 
+parent chosen: 1, 3
+DC Index: 0
+Customer list copy: 3
+Customer list copy: 2
+Customer list copy: 5
+vehicle length of DC 0: 1
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 10.507173619215449, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 10.50717361921545, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 17.118073795733824, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 19.280740045564464, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 19.664730445265675, 'Position': 0, 'feasible': True}]
+random number: 0.4180598909039295
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 11.282823327802783, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 11.669551641411013, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.606539541284214, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 15.730489050005708, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 17.501403202965729, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 18.467445824291691, 'Position': 0, 'feasible': True}]
+random number: 0.9219282666654783
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.6815252071289226, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 9.7482024924839585, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 11.757015713217253, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.500355955768891, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 14.904654030772136, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 17.505941764072418, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 20.162581097663868, 'Position': 1, 'feasible': True}]
+random number: 0.5028859469528161
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 5
+Customer list copy: 1
+vehicle length of DC 0: 2
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 10.810294661529673, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 10.810294661529673, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 16.685583744315842, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 16.953386332464962, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 25.045151298864209, 'Position': 1, 'feasible': True}]
+random number: 0.029601752496013267
+vehicle length of DC 0: 2
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 11.971045007909494, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 12.967279225441816, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.333465589513809, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 13.804918647992128, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 14.432125364499026, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 19.995690731408789, 'Position': 1, 'feasible': True}]
+random number: 0.044706670872356136
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 12.957649448661151, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 13.449225608564248, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 13.636884161609791, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 14.218936383234539, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 15.458038829297543, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 16.431308808451654, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 19.449795066626308, 'Position': 1, 'feasible': True}]
+random number: 0.8358523048843362
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 8
+Customer list copy: 7
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.9559902307527697
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 19.53245688131295, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 19.532456881312953, 'Position': 1, 'feasible': True}]
+random number: 0.8412819009604342
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 2, 'feasible': True}]
+random number: 0.8166127158084061
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.1453259253682515
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.7417235434521195
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.9144421683283996
+__________________________________________
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 6
+distance travelled: 16.177736623877628
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 2
+vehicle 1: 0
+distance travelled: 12.633542443239751
+total weighted cost: 7.3622558134234755
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+vehicle 0: 5
+distance travelled: 13.333465589513809
+vehicle 1: 0
+vehicle 1: 1
+vehicle 1: 6
+distance travelled: 12.876155390837337
+total weighted cost: 6.841924196070229
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.115932961547703
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 12.95764944866115
+total weighted cost: 6.41471648204177
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 2
+parent with least fit: 2
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.115932961547703
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 12.95764944866115
+total weighted cost: 6.41471648204177
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+_________________________
+random individual chosen: 2,0
+random number chosen: 0.5419238908691872
+random individual chosen: 0,1
+random number chosen: 0.14913555506550946
+__________________________________________
+crossover: 
+parent chosen: 2, 1
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 5
+Customer list copy: 1
+vehicle length of DC 0: 3
+vehicle length of DC 0: 0
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 6.11303732791706, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 16.852474110570924, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 17.352013520123901, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 21.650643666077571, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 25.212041665119287, 'Position': 1, 'feasible': True}]
+random number: 0.6249119103727456
+vehicle length of DC 0: 3
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 8.2700218918292023, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 8.2700218918292023, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 13.500355955768891, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 14.904654030772136, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 17.505941764072418, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 20.162581097663868, 'Position': 1, 'feasible': True}]
+random number: 0.7425952873951591
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.6815252071289244, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 9.7482024924839585, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 11.757015713217253, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 13.803774527864872, 'Position': 0, 'feasible': False}, {'vIndex': 0, 'Cost': 15.743087128344945, 'Position': 3, 'feasible': False}, {'vIndex': 0, 'Cost': 17.495060624766765, 'Position': 2, 'feasible': False}, {'vIndex': 0, 'Cost': 19.61668543288139, 'Position': 1, 'feasible': False}]
+random number: 0.03724363033853062
+DC Index: 0
+Customer list copy: 6
+Customer list copy: 5
+Customer list copy: 1
+vehicle length of DC 0: 3
+vehicle length of DC 0: 0
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 6.11303732791706, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 16.852474110570924, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 17.352013520123901, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 21.650643666077571, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 25.212041665119287, 'Position': 1, 'feasible': True}]
+random number: 0.6222622986658704
+vehicle length of DC 0: 3
+vehicle length of DC 0: 1
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 8.2700218918292023, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 8.2700218918292023, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 13.500355955768891, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 14.904654030772136, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 17.505941764072418, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 20.162581097663868, 'Position': 1, 'feasible': True}]
+random number: 0.16497521956970085
+vehicle length of DC 0: 3
+vehicle length of DC 0: 2
+
+sorted feasible List: [{'vIndex': 1, 'Cost': 9.6815252071289244, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 9.7482024924839585, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 11.757015713217253, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 13.803774527864872, 'Position': 0, 'feasible': False}, {'vIndex': 0, 'Cost': 15.743087128344945, 'Position': 3, 'feasible': False}, {'vIndex': 0, 'Cost': 17.495060624766765, 'Position': 2, 'feasible': False}, {'vIndex': 0, 'Cost': 19.61668543288139, 'Position': 1, 'feasible': False}]
+random number: 0.7767678729097857
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.3525031211727431
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.7915519686681526
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.2726262194824597
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.8650865813137752
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.09271333946340121
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.30119686163029225
+__________________________________________
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 6
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 5
+distance travelled: 19.374569430760268
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 9.201368269750716
+total weighted cost: 7.3151875401021975
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.115932961547703
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+vehicle 1: 0
+distance travelled: 12.95764944866115
+total weighted cost: 6.41471648204177
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 3
+parent with least fit: 0
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+_________________________
+random individual chosen: 2,1
+random number chosen: 0.9291249425391335
+random individual chosen: 1,2
+random number chosen: 0.5498714047700827
+__________________________________________
+crossover: 
+parent chosen: 1, 2
+DC Index: 0
+Customer list copy: 2
+Customer list copy: 3
+Customer list copy: 0
+vehicle length of DC 0: 0
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 9.410801220135502, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 15.688033599108024, 'Position': 3, 'feasible': True}, {'vIndex': 1, 'Cost': 17.75739488389528, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 18.548939882115505, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 18.609487946169466, 'Position': 1, 'feasible': True}]
+random number: 0.6815230342882582
+vehicle length of DC 0: 1
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 11.115932961547703, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 11.115932961547703, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 17.199567853557639, 'Position': 3, 'feasible': False}, {'vIndex': 1, 'Cost': 19.740382196823212, 'Position': 2, 'feasible': False}, {'vIndex': 1, 'Cost': 19.74622450308949, 'Position': 0, 'feasible': False}, {'vIndex': 1, 'Cost': 20.278225625621776, 'Position': 1, 'feasible': False}]
+random number: 0.35781615440040704
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 11.282823327802783, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 11.669551641411013, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 12.957649448661151, 'Position': 3, 'feasible': True}, {'vIndex': 1, 'Cost': 14.378782540741538, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 15.730489050005708, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.843628679798748, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 16.431308808451654, 'Position': 2, 'feasible': True}]
+random number: 0.6641044991314102
+DC Index: 0
+Customer list copy: 2
+Customer list copy: 3
+Customer list copy: 0
+vehicle length of DC 0: 0
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 9.410801220135502, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 15.688033599108026, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 17.757394883895284, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 18.548939882115505, 'Position': 3, 'feasible': True}, {'vIndex': 1, 'Cost': 18.60948794616947, 'Position': 2, 'feasible': True}]
+random number: 0.03735616065855252
+vehicle length of DC 0: 1
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 11.115932961547703, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 11.115932961547703, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 17.199567853557639, 'Position': 0, 'feasible': False}, {'vIndex': 1, 'Cost': 19.740382196823219, 'Position': 1, 'feasible': False}, {'vIndex': 1, 'Cost': 19.746224503089493, 'Position': 3, 'feasible': False}, {'vIndex': 1, 'Cost': 20.278225625621776, 'Position': 2, 'feasible': False}]
+random number: 0.576477680602545
+vehicle length of DC 0: 2
+vehicle length of DC 0: 3
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 11.282823327802783, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 11.669551641411013, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 12.957649448661149, 'Position': 0, 'feasible': True}, {'vIndex': 1, 'Cost': 14.378782540741538, 'Position': 3, 'feasible': True}, {'vIndex': 0, 'Cost': 15.730489050005708, 'Position': 1, 'feasible': True}, {'vIndex': 1, 'Cost': 15.843628679798746, 'Position': 2, 'feasible': True}, {'vIndex': 1, 'Cost': 16.431308808451657, 'Position': 1, 'feasible': True}]
+random number: 0.16045716003450416
+DC Index: 1
+Customer list copy: 4
+Customer list copy: 8
+Customer list copy: 7
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.7212032962457563
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 19.53245688131295, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 19.532456881312953, 'Position': 1, 'feasible': True}]
+random number: 0.021821512280103317
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 1, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 2, 'feasible': True}]
+random number: 0.23205144223482854
+DC Index: 1
+Customer list copy: 7
+Customer list copy: 8
+Customer list copy: 4
+vehicle length of DC 1: 0
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 0, 'Position': 0, 'feasible': True}]
+random number: 0.98057204325745
+vehicle length of DC 1: 1
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 13.700520098617552, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 13.700520098617554, 'Position': 1, 'feasible': True}]
+random number: 0.21690545091432767
+vehicle length of DC 1: 2
+
+sorted feasible List: [{'vIndex': 0, 'Cost': 20.844995755487208, 'Position': 0, 'feasible': True}, {'vIndex': 0, 'Cost': 22.783482581327174, 'Position': 2, 'feasible': True}, {'vIndex': 0, 'Cost': 26.734051035938013, 'Position': 1, 'feasible': True}]
+random number: 0.8616870961934401
+__________________________________________
+population chosen: 0
+DC chosen: 1
+number of vehicle in DC 1: 1
+route 0 vehicle 0 DC 1: 4
+route 1 vehicle 0 DC 1: 8
+route 2 vehicle 0 DC 1: 7
+Distance: 20.844995755487208
+population chosen: 2
+DC chosen: 0
+number of vehicle in DC 0: 2
+route 0 vehicle 0 DC 0: 2
+route 1 vehicle 0 DC 0: 0
+route 2 vehicle 0 DC 0: 3
+Distance: 15.730489050005708
+route 0 vehicle 1 DC 0: 1
+route 1 vehicle 1 DC 0: 5
+route 2 vehicle 1 DC 0: 6
+Distance: 9.681525207128924
+_________________________
+population 0
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 3
+distance travelled: 15.730489050005708
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+child 0
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+child 1
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+parent with least fit: 0
+parent with least fit: 0
+____________________________
+population 0
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 0
+vehicle 0: 3
+distance travelled: 15.730489050005708
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 1
+Distribution Center 0
+vehicle 0: 2
+vehicle 0: 3
+vehicle 0: 0
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 2
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.282823327802783
+vehicle 1: 6
+vehicle 1: 5
+vehicle 1: 1
+distance travelled: 9.681525207128923
+total weighted cost: 5.792869706986341
+Distribution Center 1
+vehicle 0: 7
+vehicle 0: 8
+vehicle 0: 4
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+population 3
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 3
+vehicle 0: 2
+distance travelled: 11.282823327802783
+vehicle 1: 1
+vehicle 1: 5
+vehicle 1: 6
+distance travelled: 9.681525207128924
+total weighted cost: 5.792869706986343
+Distribution Center 1
+vehicle 0: 4
+vehicle 0: 8
+vehicle 0: 7
+distance travelled: 20.844995755487208
+total weighted cost: 4.968999151097441
+
+The thread 'MainThread' (0x311c) has exited with code 0 (0x0).
+The program '[14736] python.exe' has exited with code 0 (0x0).

@@ -1,6 +1,0 @@
-Regex
-	weight=https://regex101.com/r/AkAyYn/2
-		\b((w.*t$)|(k.+g$))|(cap.*)\b
-	volume
-	time
-	quantity
