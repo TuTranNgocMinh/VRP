@@ -354,7 +354,7 @@ class App(QMainWindow):
             col=list.shape[1]
             self.setdatatable(row=row,column=col,data=list,header=header)
             for i in range(len(list.index)):                
-                self.customerlist.append(customer(list[header[0]][i],list[header[1]][i],list[header[2]][i],
+                self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
                                                   list[header[3]][i],list[header[4]][i],list[header[5]][i]))
                 self.origins.append(self.customerlist[i].location.coordinates) #add customer locations to origin list
         self.calcbutton.setEnabled(True)

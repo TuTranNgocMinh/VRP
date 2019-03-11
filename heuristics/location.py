@@ -24,7 +24,8 @@ class dist_matrix:
     def __init__(self,origins,destinations):
         self.__origins=origins
         self.__destinations=destinations
-        
+        self.__distance=0
+        self.__time=0
         return
     def get_realdistance(self):
         """get distance matrix from origin points to destination points using google map API"""
@@ -53,12 +54,18 @@ class dist_matrix:
                                                      self.__destinations[j]['lng'],self.__origins[i]['lng'])
                 self.__time[i][j]=self.__distance[i][j]/40
         return
+    #Get origin list
     def getOriginsList(self):
         return self.__origins
+    #get Destination list
     def getDestinationsList(self):
         return self.__destinations
+    #get distance matrix
     def getDistance(self):
         return self.__distance
+     #get time matrix
+    def getTime(self):
+        return self.__time
     def display(self):
         print("origins: {0}".format(self.__origins))
         print("destinations: {0}".format(self.__destinations))
