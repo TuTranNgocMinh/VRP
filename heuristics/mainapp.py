@@ -8,7 +8,7 @@ import pandas as pd
 import location as loc
 import vehicle
 from customer import *
-
+from model import model_GA
 class VehicleDialog(QDialog): #may change layout to table if there are multiple weight and size vehicles
     """create declare vehicle dialog"""
     def __init__(self):
@@ -145,7 +145,7 @@ class leftwidget(QWidget):
         self.VTable=QTableWidget()
         self.VTable.setRowCount(1)
         self.VTable.setColumnCount(4)
-        self.VTable.setHorizontalHeaderLabels(['Name','Weight','Size','Qty'])
+        self.VTable.setHorizontalHeaderLabels(['Name','Size','Weight','Qty'])
         for i in range(self.VTable.rowCount()):
             for j in range(4):
                 self.VTable.setItem(i,j,QTableWidgetItem("_"))
@@ -369,6 +369,7 @@ class App(QMainWindow):
                 item=QTableWidgetItem(str(data.iat[i,j]))
                 item.setFlags(Qt.ItemIsEnabled)
                 self.leftwidget.datatable.setItem(i,j, item)
+        self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3],header[4],header[5]])
         #set hide button enabled
         self.leftwidget.hidebtn.setEnabled(True)
         return
@@ -411,7 +412,11 @@ class App(QMainWindow):
                 print("error when converting to integer. Size, Weight and Quantity must be numbers!")
                 return 1
         #calculation module
-
+        GA=model_GA(self.customerlist,VehicleList,distance,self.DCList,0.8,0.2)
+        print("")
+        LocGroup=GA.initGroup()
+        GA.initpopulation(4,LocGroup)
+        GA.mainloop(5,0.8)
         self.result()
         return
     def result(self):
