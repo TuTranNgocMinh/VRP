@@ -29,12 +29,12 @@ class dist_matrix:
         return
     def get_realdistance(self):
         """get distance matrix from origin points to destination points using google map API"""
-        __client=googlemaps.Client('AIzaSyDV8WkL5FcxNXI7AGp83YnI6rLuaKuO7r0')
-        matrix=__client.distance_matrix(self.__origins,self.__destinations)
+        __client=googlemaps.Client('AIzaSyDV8WkL5FcxNXI7AGp83YnI6rLuaKuO7r0')        
         self.__distance=[[] for i in range(len(self.__destinations))]
-        for i in range(len(self.__origins)):
+        for i in range(len(self.__origins)):            
             for j in range(len(self.__destinations)):
-                self.__distance[i].append((matrix['rows'][i]['elements'][j]['distance']['value']))
+                matrix=__client.distance_matrix(self.__origins[i],self.__destinations[j])
+                self.__distance[i].append((matrix['rows'][0]['elements'][0]['distance']['value']))
         return
     def __haversine(self,lat2,lat1,lng2,lng1):
         dlng = lng2 - lng1
@@ -70,5 +70,5 @@ class dist_matrix:
         print("origins: {0}".format(self.__origins))
         print("destinations: {0}".format(self.__destinations))
         print("distance matrix: {0}".format(self.__distance))
-        print("time travel matrix: {0}".format(self.__time))
+        #print("time travel matrix: {0}".format(self.__time))
         return

@@ -8,7 +8,7 @@ class customer:
         self.__quantity=quantity
         self.__volume=volume
         self.__weight=weight
-        self.location=location(address)
+        self.location=address
         self.__deadline=self.__convert(deadline)
         return
     def __convert(self,time):
@@ -40,7 +40,7 @@ class customer:
 class DistributionCenter:
     """Distribution Center class for GA"""
     def __init__(self,address,id):
-        self.__location=location(address)
+        self.__location=address
         self.VehicleList=[]
         self.__id=id
         self.__TotalCost=0
@@ -64,7 +64,7 @@ class DistributionCenter:
         self.__TotalCost=TotalCost
         return
     def getCoord(self):
-        return self.__location.coordinates
+        return self.__location
     #add vehicle
     def addVehicle(self,Type,Volume,Weight,fuel_consumption=0):
         self.VehicleList.append(vehicle(Type,Volume,Weight,fuel_consumption))

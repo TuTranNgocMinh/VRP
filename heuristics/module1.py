@@ -12,11 +12,10 @@ def test2():
     list=pandas.read_csv("test.csv")
     print(list['destination'])
     for i in range(len(list['destination'])):
-        loc.append(location.location(list['destination'][i]))
-        origins.append(loc[i].coordinates)
+        origins.append(list['destination'][i])
     mat=location.dist_matrix(origins,origins)
     mat.get_realdistance()
-    print(mat)
+    mat.display()
     return
 def VRP():
     DC=location.location("100 Truong chinh, Tan Binh, Ho Chi Minh")
@@ -99,4 +98,4 @@ def testGA():
             print(LocGroup[i][j].getLocation())
     GA.initpopulation(4,LocGroup)
     GA.mainloop(5,0.8)
-testGA()
+test2()

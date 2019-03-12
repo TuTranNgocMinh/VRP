@@ -356,7 +356,7 @@ class App(QMainWindow):
             for i in range(len(list.index)):                
                 self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
                                                   list[header[3]][i],list[header[4]][i],list[header[5]][i]))
-                self.origins.append(self.customerlist[i].location.coordinates) #add customer locations to origin list
+                self.origins.append(self.customerlist[i].location) #add customer locations to origin list
         self.calcbutton.setEnabled(True)
         return
     def setdatatable(self,row,column,data,header):
@@ -381,14 +381,14 @@ class App(QMainWindow):
         for i in range(len(self.leftwidget.DClist)):
             address=self.leftwidget.DClist[i].text()
             if(address):                
-                self.DCList.append(DistributionCenter(address))
+                self.DCList.append(DistributionCenter(address,i))
                 self.origins.append(self.DCList[i].getCoord()) #add DC to origin list
             else:
                 print("Error: DC is null")
                 return 1
         #get distance matrix
         distance=loc.dist_matrix(self.origins,self.origins)
-        distance.get_approxdistance()
+        distance.get_realdistance()
         distance.display()
         #check Vehicle list
         for i in range(self.leftwidget.VTable.rowCount()):
@@ -412,11 +412,11 @@ class App(QMainWindow):
                 print("error when converting to integer. Size, Weight and Quantity must be numbers!")
                 return 1
         #calculation module
-        GA=model_GA(self.customerlist,VehicleList,distance,self.DCList,0.8,0.2)
-        print("")
-        LocGroup=GA.initGroup()
-        GA.initpopulation(4,LocGroup)
-        GA.mainloop(5,0.8)
+        #GA=model_GA(self.customerlist,VehicleList,distance,self.DCList,0.8,0.2)
+        #print("")
+        #LocGroup=GA.initGroup()
+        #GA.initpopulation(4,LocGroup)
+        #A.mainloop(5,0.8)
         self.result()
         return
     def result(self):
