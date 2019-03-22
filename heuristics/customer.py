@@ -8,8 +8,8 @@ class customer:
         self.__quantity=quantity
         self.__volume=volume
         self.__weight=weight
-        self.location=address
-        self.__deadline=self.__convert(deadline)
+        self.__location=location(address)
+        #self.__deadline=self.__convert(deadline)
         return
     def __convert(self,time):
         try:
@@ -32,7 +32,7 @@ class customer:
         return self.__weight
     #get location
     def getLocation(self):
-        return self.location
+        return self.__location.coordinates
     def display(self):
         """display info of customer"""
         print("name: {0},quantity: {1}, volume: {2}, weight:{3},location: {4} deadline: {5}".format(self.name,self.quantity,self.volume,self.weight,self.location.coordinates,self.deadline))
@@ -40,7 +40,7 @@ class customer:
 class DistributionCenter:
     """Distribution Center class for GA"""
     def __init__(self,address,id):
-        self.__location=address
+        self.__location=location(address)
         self.VehicleList=[]
         self.__id=id
         self.__TotalCost=0
@@ -64,11 +64,13 @@ class DistributionCenter:
         self.__TotalCost=TotalCost
         return
     def getCoord(self):
-        return self.__location
+        return self.__location.coordinates
     #add vehicle
     def addVehicle(self,Type,Volume,Weight,fuel_consumption=0):
         self.VehicleList.append(vehicle(Type,Volume,Weight,fuel_consumption))
-        return    
+        return
+    def GetNumberVehicles(self):
+        return len(self.VehicleList)    
     def display(self):
         for i in range(len(self.VehicleList)):
             print("Vehicle {0}:".format(i))

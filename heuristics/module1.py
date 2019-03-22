@@ -96,6 +96,6 @@ def testGA():
         print("")
         for j in range(len(LocGroup[i])):
             print(LocGroup[i][j].getLocation())
-    GA.initpopulation(4,LocGroup)
-    GA.mainloop(5,0.8)
-test2()
+    GA.initpopulation(7,LocGroup)
+    GA.mainloop(10,0.8)
+testGA()
