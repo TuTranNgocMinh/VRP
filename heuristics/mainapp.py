@@ -419,31 +419,43 @@ class App(QMainWindow):
         GA=model_GA(self.customerlist,VehicleList,distance,self.DCList,0.8,0.2)
         print("")
         LocGroup=GA.initGroup()
-        GA.initpopulation(40,LocGroup)
-        GA.mainloop(50,0.8)
-        self.result()
+        GA.initpopulation(10,LocGroup)
+        GA.mainloop(10,0.8)
+        BestSolution=GA.getBestSolution()
+        self.result(BestSolution)
         return
-    def result(self):
-        number=3
-        maxroutenumber=3
-        self.CreateRoutes(number,maxroutenumber)
+    def result(self,BestSolution):
+        #get vehicle number
+        number=0
+        for DCIndex in range(len(BestSolution)):
+            number+=BestSolution[DCIndex].GetNumberVehicles()
+        #get max route number
+        maxroutenumber=len(self.customerlist)/(len(self.DCList)-1)
+        self.CreateRoutes(number,maxroutenumber,BestSolution)
         #create google map display
         if (self.webdisp.getFrameNumber()<1):
             self.webdisp.addwebframe("https://www.google.com/maps")
         else:
             self.webdisp.frame1.changeurl("https://www.google.com/")
         return
-    def CreateRoutes(self,number,maxroutenumber):
+    def CreateRoutes(self,number,maxroutenumber,BestSolution):
         """create routing table based on the calculation."""
         self.corrwidget.vehicletable.setRowCount(number)
-        self.corrwidget.vehicletable.setColumnCount(maxroutenumber+1)
-        for i in range(number):
-            rlist=["loc 1","loc 2","loc 3"]
-            item=QTableWidgetItem("vehicle "+str(i+1))
-            self.corrwidget.vehicletable.setItem(i,0, item) #set vehicle and vehicle number item
-            for j in range(1,len(rlist)+1):
-                routeitem=QTableWidgetItem(rlist[j-1])
-                self.corrwidget.vehicletable.setItem(i,j, routeitem) #set route list item   
+        self.corrwidget.vehicletable.setColumnCount(maxroutenumber+2)
+        #set Solution to vehicle table
+        i=0  
+        for DCIndex in range(len(self.DCList)):
+            for vIndex in range(BestSolution[DCIndex].GetNumberVehicles()):
+                j=2
+                vItem=QTableWidgetItem("vehicle "+str(i+1))
+                self.corrwidget.vehicletable.setItem(i,0, vItem) #set vehicle and vehicle number item
+                DCItem=QTableWidgetItem("DC "+str(DCIndex+1))
+                self.corrwidget.vehicletable.setItem(i,1, DCItem)
+                for cIndex in range(BestSolution[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
+                    routeitem=QTableWidgetItem(str(BestSolution[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
+                    self.corrwidget.vehicletable.setItem(i,j, routeitem)
+                    j+=1
+                i+=1
         #set buttons enabled    
         self.corrwidget.addrowbtn.setEnabled(True)
         self.corrwidget.rmrowbtn.setEnabled(True)

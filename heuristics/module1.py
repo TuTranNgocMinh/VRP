@@ -98,4 +98,6 @@ def testGA():
             print(LocGroup[i][j].getLocation())
     GA.initpopulation(7,LocGroup)
     GA.mainloop(10,0.8)
+    bestSolution=GA.getBestSolution()
+    print(bestSolution)
 testGA()
