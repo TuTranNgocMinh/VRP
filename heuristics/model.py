@@ -2,6 +2,22 @@ import copy
 import math
 import numpy as np
 import random
+class Solution(object):
+    """Solution container for model"""
+    def __init__(self,DCList):
+        self.DC=DCList
+        self.__TotalCost=0
+    #get, set total cost
+    def setTotalCost(self):
+        TotalCost=0
+        for DCIndex in range(len(self.DC)):
+            TotalCost+=self.DC[DCIndex].getTotalCost()
+        self.__TotalCost=TotalCost
+    def getTotalCost(self):
+        return self.__TotalCost
+    #get number of DC
+    def getDCNumber(self):
+        return len(self.DC)
 class model_GA(object):
     """description of class"""
     def __init__(self,CustomerList,VehicleList,DistanceObject,DCList,VehicleRank,DistanceRank):
@@ -26,17 +42,16 @@ class model_GA(object):
                 max=i
         #create population
         for num in range(population):
-            #print("population {0}".format(num))
-            temp=[]
+            vnumber=[]
             #create weight and volume variable
             weight=np.zeros(len(LocGroup))
             volume=np.zeros(len(LocGroup))
-            self.__population.append(copy.deepcopy(self.__DCList))
+            self.__population.append(Solution(copy.deepcopy(self.__DCList)))
             #add vehicle to all DCs
             for i in range(len(LocGroup)):
-                self.__population[num][i].addVehicle(
+                self.__population[num].DC[i].addVehicle(
                     self.__VehicleList[0][0],self.__VehicleList[0][1],self.__VehicleList[0][2],self.__VehicleList[0][3])
-                temp.append(0)
+                vnumber.append(0)
             LocCopy=copy.deepcopy(LocGroup)
             while(len(LocCopy[max])>0):
                 for i in range(len(LocCopy)):
@@ -47,36 +62,26 @@ class model_GA(object):
                         volume[i]=volume[i]+LocCopy[i][rand].getVolume()*LocCopy[i][rand].getQuantity()
                         #check condition. If true,add route. Else, reset weight and volume to last customer and add vehicle
                         if ((weight[i]<=self.__VehicleList[0][2])and(volume[i]<=90*self.__VehicleList[0][1]/100)):
-                            self.__population[num][i].appendRoute(temp[i],LocCopy[i][rand])
+                            self.__population[num].DC[i].appendRoute(vnumber[i],LocCopy[i][rand])
                         else:
-                            self.__population[num][i].addVehicle(
+                            self.__population[num].DC[i].addVehicle(
                     self.__VehicleList[0][0],self.__VehicleList[0][1],self.__VehicleList[0][2],self.__VehicleList[0][3])
-                            temp[i]=temp[i]+1 #increase temp variable by 1
-                            #print("DC {0}: {1}".format(i,temp[i]))
-                            self.__population[num][i].appendRoute(temp[i],LocCopy[i][rand])
+                            vnumber[i]=vnumber[i]+1 #increase vnumber variable by 1
+                            self.__population[num].DC[i].appendRoute(vnumber[i],LocCopy[i][rand])
                             #reset weight and volume
                             weight[i]=LocCopy[i][rand].getWeight()*LocCopy[i][rand].getQuantity()
                             volume[i]=LocCopy[i][rand].getVolume()*LocCopy[i][rand].getQuantity()
-                        #delete temp Customer
+                        #delete vnumber Customer
                         del LocCopy[i][rand]
             #test route
             for k in range(len(LocGroup)):
-                number=self.__population[num][k].GetNumberVehicles()
-                #print("number of vehicle in DC {0}: {1}".format(k,number))
-                TotalCost=self.__VRank*number #total cost of DC,number of vehicle cost
-                VCost=0 #total traveling distance cost of DC
+                number=self.__population[num].DC[k].GetNumberVehicles()
                 for vehicle in range(number):                    
-                    NumberofRoutes=self.__population[num][k].VehicleList[vehicle].getNumberofRoutes()
-                    #for route in range(NumberofRoutes):
-                        #print("route {0} vehicle {1} DC {2}: {3}".format(route,vehicle,k,self.__population[num][k].VehicleList[vehicle].routing[route].getID()))
-                    Vehicle=self.__population[num][k].VehicleList[vehicle]
+                    Vehicle=self.__population[num].DC[k].VehicleList[vehicle]
                     self.DistanceCalculation(k,Vehicle)
-                    #print("Distance: {0}".format(Vehicle.getTotalDistanceTravelled()))
                     #total cost calculation
-                    VCost+=self.__population[num][k].VehicleList[vehicle].getTotalDistanceTravelled()
-                TotalCost+=VCost*self.__DRank
-                self.__population[num][k].setTotalCost(TotalCost)
-                #print("Total Cost of DC {0}: {1}".format(k,self.__population[num][k].getTotalCost()))
+                self.__population[num].DC[k].setTotalCost(0.8,0.2)
+            self.__population[num].setTotalCost()
         return
     def initGroup(self):
         if (len(self.__DCList)>1):
@@ -99,40 +104,30 @@ class model_GA(object):
         #get random DC index
         rand=random.randrange(0,len(self.__DCList))
         #get random vehicle index
-        Vrd1=random.randrange(0,individuals[rand].GetNumberVehicles())
-        Vrd2=random.randrange(0,individuals[rand].GetNumberVehicles())
+        Vrd1=random.randrange(0,individuals.DC[rand].GetNumberVehicles())
+        Vrd2=random.randrange(0,individuals.DC[rand].GetNumberVehicles())
         #get random number of route index in each of that vehicle
-        rd1=random.randrange(0,len(individuals[rand].VehicleList[Vrd1].routing))
-        rd2=random.randrange(0,len(individuals[rand].VehicleList[Vrd2].routing))
+        rd1=random.randrange(0,len(individuals.DC[rand].VehicleList[Vrd1].routing))
+        rd2=random.randrange(0,len(individuals.DC[rand].VehicleList[Vrd2].routing))
         while(rd1==rd2)and(Vrd1==Vrd2):
-            Vrd2=random.randrange(0,individuals[rand].GetNumberVehicles())
-            rd2=random.randrange(0,len(individuals[rand].VehicleList[Vrd2].routing))
+            Vrd2=random.randrange(0,individuals.DC[rand].GetNumberVehicles())
+            rd2=random.randrange(0,len(individuals.DC[rand].VehicleList[Vrd2].routing))
         #define list1,list2
-        list1=individuals[rand].VehicleList[Vrd1].routing
-        list2=individuals[rand].VehicleList[Vrd2].routing     
+        list1=individuals.DC[rand].VehicleList[Vrd1].routing
+        list2=individuals.DC[rand].VehicleList[Vrd2].routing     
         self.__swap(rd1,rd2,list1,list2)
         #print changes
-        #print("_____________________________")
-        #print("DC chosen: {0}".format(rand))
-        number=individuals[rand].GetNumberVehicles()
-        TotalCost=self.__VRank*number #total cost of DC,number of vehicle cost
-        VCost=0 #total traveling distance cost of DC
+        number=individuals.DC[rand].GetNumberVehicles()
         for vehicle in range(number):
-            #NumberofRoutes=individuals[rand].VehicleList[vehicle].getNumberofRoutes()
-            #for route in range(NumberofRoutes):
-                #print("route {0} vehicle {1} DC {2}: {3}".format(
-                #route,vehicle,rand,individuals[rand].VehicleList[vehicle].routing[route].getID()))
-            Vehicle=individuals[rand].VehicleList[vehicle]
+            weight,vol=self.ConstraintCalculation(individuals.DC[rand].VehicleList[vehicle])
+            if(self.checkCondition(weight,vol,individuals.DC[rand].VehicleList[vehicle])==False):
+                return False
+            Vehicle=individuals.DC[rand].VehicleList[vehicle]
             self.DistanceCalculation(rand,Vehicle)
-            VCost+=individuals[rand].VehicleList[vehicle].getTotalDistanceTravelled()
-            #print("Distance: {0}".format(Vehicle.getTotalDistanceTravelled()))
-        TotalCost+=VCost*self.__DRank
-        individuals[rand].setTotalCost(TotalCost)
-        #print("total cost: {0}".format(individuals[rand].getTotalCost()))
-        return 
-    def crossover(self,parent1,parent2): #not tested yet
-        #print("__________________________________________")
-        #print("crossover: ")
+        individuals.DC[rand].setTotalCost(0.8,0.2)
+        individuals.setTotalCost()
+        return True
+    def crossover(self,parent1,parent2):
         self.__children=[]
         #choose random DC
         DC=random.randrange(0,len(self.__DCList))
@@ -144,31 +139,25 @@ class model_GA(object):
         flag1=True
         flag2=True
         #perform crossover func
-        #for DCIndex in range(len(self.__DCList)):
-        vrd1=random.randrange(0,len(child1[DC].VehicleList))
-        vrd2=random.randrange(0,len(child2[DC].VehicleList))
-        route1=child1[DC].VehicleList[vrd1]
-        route2=child2[DC].VehicleList[vrd2]
+        vrd1=random.randrange(0,len(child1.DC[DC].VehicleList))
+        vrd2=random.randrange(0,len(child2.DC[DC].VehicleList))
+        route1=child1.DC[DC].VehicleList[vrd1]
+        route2=child2.DC[DC].VehicleList[vrd2]
 
-        if(self.crossover_func(child1[DC],DC,route2,vrd2)==True):
-            number=child1[DC].GetNumberVehicles()
-            TotalCost=self.__VRank*number #total cost of DC,number of vehicle cost
-            VCost=0 #total traveling distance cost of DC
-            for vehicle in range(child1[DC].GetNumberVehicles()):
-                self.DistanceCalculation(DC,child1[DC].VehicleList[vehicle])
-                VCost+=child1[DC].VehicleList[vehicle].getTotalDistanceTravelled()
-            TotalCost+=self.__DRank*VCost
-            child1[DC].setTotalCost(TotalCost)
+        if(self.crossover_func(child1.DC[DC],DC,route2,vrd2)==True):
+            number=child1.DC[DC].GetNumberVehicles()
+            for vehicle in range(number):
+                self.DistanceCalculation(DC,child1.DC[DC].VehicleList[vehicle])
+            child1.DC[DC].setTotalCost(0.8,0.2)
+            child1.setTotalCost()
         else:
             flag1=False
-        if(self.crossover_func(child2[DC],DC,route1,vrd1)==True):
-            number=child2[DC].GetNumberVehicles()
-            TotalCost=self.__VRank*number #total cost of DC,number of vehicle cost
-            VCost=0 #total traveling distance cost of DC
-            for vehicle in range(child2[DC].GetNumberVehicles()):
-                VCost+=self.DistanceCalculation(DC,child2[DC].VehicleList[vehicle])
-            TotalCost+=self.__DRank*VCost
-            child2[DC].setTotalCost(TotalCost)
+        if(self.crossover_func(child2.DC[DC],DC,route1,vrd1)==True):
+            number=child2.DC[DC].GetNumberVehicles()
+            for vehicle in range(number):
+                self.DistanceCalculation(DC,child2.DC[DC].VehicleList[vehicle])
+            child2.DC[DC].setTotalCost(0.8,0.2)
+            child2.setTotalCost()
         else:
             flag2=False
         if(flag1==False):
@@ -199,23 +188,19 @@ class model_GA(object):
     def SurvivorSelection(self):
         for index in range(len(self.__children)):
             max=self.Max()
-            #print("population with largest cost: {0}".format(max))
             del self.__population[max]
         for index in range(len(self.__children)):
             self.__population.append(copy.deepcopy(self.__children[index]))
     #modifying function    
-    def crossover_func(self,DC,DCIndex,Vehicle,VIndex): #not tested yet
+    def crossover_func(self,DC,DCIndex,Vehicle,VIndex):
         #remove customers from parent 2's route
         CustomerCopy=[]
-        #print("DC Index: {0}".format(DCIndex))
         for customers in range(len(Vehicle.routing)):
             self.FindandRemove(CustomerCopy,DC,Vehicle,customers)
-            #print("Customer list copy: {0}".format(CustomerCopy[customers].getID()))
             #insert            
         for customer in range(len(CustomerCopy)):
             SortedFList=[]
             for vehicle in range(len(DC.VehicleList)):
-                #print("vehicle length of DC {0}: {1}".format(DCIndex,len(DC.VehicleList[vehicle].routing)))
                 if (len(DC.VehicleList[vehicle].routing)==0)and(len(DC.VehicleList)==1):
                     SortedFList.append({'Position':0,'vIndex': vehicle ,'Cost': 0,'feasible':True})
                     break
@@ -230,10 +215,7 @@ class model_GA(object):
                     del DC.VehicleList[vehicle].routing[Position]
 
             SortedFList.sort(key=lambda k: k['Cost'])
-            #print("")
-            #print("sorted feasible List: {0}".format(SortedFList))
             k=random.uniform(0,1)
-            #print("random number: {0}".format(k))
             if (k<=0.8):
                 for i in range(len(SortedFList)):
                     if(SortedFList[i]['feasible']==True):
@@ -260,9 +242,8 @@ class model_GA(object):
     #calculating function
     def DistanceCalculation(self,dcIndex,vehicle):     
         """calculate distance based on vehicle object""" 
-        totalDistanceTraveled=0
         DCID=self.__DCList[dcIndex].getID()            
-        totalDistanceTraveled+=self.__DistanceMatrix[DCID][vehicle.routing[0].getID()]
+        totalDistanceTraveled=self.__DistanceMatrix[DCID][vehicle.routing[0].getID()]
         for j in range(len(vehicle.routing)-1):
             totalDistanceTraveled+=self.__DistanceMatrix[vehicle.routing[j].getID()][vehicle.routing[j+1].getID()]
         totalDistanceTraveled+=self.__DistanceMatrix[vehicle.routing[len(vehicle.routing)-1].getID()][DCID]
@@ -287,11 +268,8 @@ class model_GA(object):
             del self.__children[0]
         return
     def MinIndex(self,candidate1,candidate2):
-        TotalCost1=0
-        TotalCost2=0
-        for DCIndex in range(len(self.__DCList)):
-            TotalCost1+=candidate1[DCIndex].getTotalCost()
-            TotalCost2+=candidate2[DCIndex].getTotalCost()
+        TotalCost1=candidate1.getTotalCost()
+        TotalCost2=candidate2.getTotalCost()
         if(TotalCost1<TotalCost2):
             return 0
         else: 
@@ -303,24 +281,24 @@ class model_GA(object):
         for popIndex in range(len(self.__population)):
             TotalCost=0
             for DCIndex in range(len(self.__DCList)):
-                TotalCost+=self.__population[popIndex][DCIndex].getTotalCost()
+                TotalCost+=self.__population[popIndex].DC[DCIndex].getTotalCost()
             if(TotalCost<min):
                 min=TotalCost
                 index=popIndex
-        return TotalCost,index
+        return min,index
     def Max(self):        
         MaxValue=0
         MaxIndex=0
         for i in range(len(self.__population)):
             TotalCost=0
             for DCIndex in range(len(self.__DCList)):
-                TotalCost+=self.__population[i][DCIndex].getTotalCost()
+                TotalCost+=self.__population[i].DC[DCIndex].getTotalCost()
             if(TotalCost>MaxValue):
                 MaxValue=TotalCost
                 MaxIndex=i
         return MaxIndex
     #check constraint functions
-    def checkCondition(self,Rweight,Rvolume,Vehicle): #not tested yet
+    def checkCondition(self,Rweight,Rvolume,Vehicle):
         volume=90*Vehicle.getVolume()/100
         if(Rweight<=Vehicle.getWeight())and(Rvolume<=volume):
             return True
@@ -332,45 +310,50 @@ class model_GA(object):
             print("population {0}".format(num))
             for DCIndex in range(len(self.__DCList)):
                 print("Distribution Center {0}".format(DCIndex))
-                for vehicle in range(self.__population[num][DCIndex].GetNumberVehicles()):
-                    for customer in range(self.__population[num][DCIndex].VehicleList[vehicle].getNumberofRoutes()):
+                for vehicle in range(self.__population[num].DC[DCIndex].GetNumberVehicles()):
+                    for customer in range(self.__population[num].DC[DCIndex].VehicleList[vehicle].getNumberofRoutes()):
                         print("vehicle {0}: {1}".format(
-                            vehicle,self.__population[num][DCIndex].VehicleList[vehicle].routing[customer].getID()))
+                            vehicle,self.__population[num].DC[DCIndex].VehicleList[vehicle].routing[customer].getID()))
                     print("total distance travelled: {0}".format(
-                        self.__population[num][DCIndex].VehicleList[vehicle].getTotalDistanceTravelled()))
-                print("Total cost: {0}".format(self.__population[num][DCIndex].getTotalCost()))
+                        self.__population[num].DC[DCIndex].VehicleList[vehicle].getTotalDistanceTravelled()))
+                print("Total cost: {0}".format(self.__population[num].DC[DCIndex].getTotalCost()))
+            print("total cost of population: {0}".format(self.__population[num].getTotalCost()))
         print("")
         for num in range(len(self.__children)):
             print("child {0}".format(num))
             for DCIndex in range(len(self.__DCList)):
                 print("Distribution Center {0}".format(DCIndex))
-                for vehicle in range(self.__children[num][DCIndex].GetNumberVehicles()):
-                    for customer in range(self.__children[num][DCIndex].VehicleList[vehicle].getNumberofRoutes()):
+                for vehicle in range(self.__children[num].DC[DCIndex].GetNumberVehicles()):
+                    for customer in range(self.__children[num].DC[DCIndex].VehicleList[vehicle].getNumberofRoutes()):
                         print("vehicle {0}: {1}".format(
-                            vehicle,self.__children[num][DCIndex].VehicleList[vehicle].routing[customer].getID()))
+                            vehicle,self.__children[num].DC[DCIndex].VehicleList[vehicle].routing[customer].getID()))
                     print("total distance travelled: {0}".format(
-                    self.__children[num][DCIndex].VehicleList[vehicle].getTotalDistanceTravelled()))
-                print("Total cost: {0}".format(self.__children[num][DCIndex].getTotalCost()))
+                    self.__children[num].DC[DCIndex].VehicleList[vehicle].getTotalDistanceTravelled()))
+                print("Total cost: {0}".format(self.__children[num].DC[DCIndex].getTotalCost()))
+            print("total cost of children: {0}".format(self.__children[num].getTotalCost()))
         return
     def BestSolutionDisplay(self):
         for DCIndex in range(len(self.__DCList)):
-                print("Distribution Center {0}".format(DCIndex))
-                for vehicle in range(self.__bestSolution['route'][DCIndex].GetNumberVehicles()):
-                    for customer in range(self.__bestSolution['route'][DCIndex].VehicleList[vehicle].getNumberofRoutes()):
-                        print("vehicle {0}: {1}".format(
-                            vehicle,self.__bestSolution['route'][DCIndex].VehicleList[vehicle].routing[customer].getID()))
-                    print("total distance travelled: {0}".format(
-                    self.__bestSolution['route'][DCIndex].VehicleList[vehicle].getTotalDistanceTravelled()))
-                print("Total cost: {0}".format(self.__bestSolution['route'][DCIndex].getTotalCost()))
+            print("Distribution Center {0}".format(DCIndex))
+            for vehicle in range(self.__bestSolution['route'].DC[DCIndex].GetNumberVehicles()):
+                for customer in range(self.__bestSolution['route'].DC[DCIndex].VehicleList[vehicle].getNumberofRoutes()):
+                    print("vehicle {0}: {1}".format(
+                        vehicle,self.__bestSolution['route'].DC[DCIndex].VehicleList[vehicle].routing[customer].getID()))
+                print("total distance travelled: {0}".format(
+                    self.__bestSolution['route'].DC[DCIndex].VehicleList[vehicle].getTotalDistanceTravelled()))
+            print("Total cost: {0}".format(self.__bestSolution['route'].DC[DCIndex].getTotalCost()))
+        print("total cost of best solution: {0}".format(self.__bestSolution['route'].getTotalCost()))
     #main loop function
-    def mainloop(self,maxIter,threshold):
+    def mainloop(self,maxIter,CThold):
+        count=0
         for i in range(maxIter):
             parent1=self.Selection(0.8)
             parent2=self.Selection(0.8)
             while(parent1==parent2):
                 parent2=self.Selection(0.8)
+            #crossover
             rand=random.uniform(0,1)
-            if(rand<=0.85):
+            if(rand<=CThold):
                 self.crossover(parent1,parent2)
             else:
                 self.__children=[]
@@ -380,20 +363,30 @@ class model_GA(object):
             rand=random.uniform(0,1)
             if(rand>0.85):
                 popIndex=random.randrange(0,len(self.__population))
-                self.Mutation(self.__population[popIndex])
+                if(self.Mutation(self.__population[popIndex])==False):
+                    del self.__population[popIndex]
+                    rParent=random.randrange(0,len(self.__population))
+                    self.__population.append(copy.deepcopy(self.__population[rParent]))
             rand=random.uniform(0,1)
             if(rand>0.85):
                 popIndex=random.randrange(0,len(self.__children))
-                self.Mutation(self.__children[popIndex])          
+                if(self.Mutation(self.__children[popIndex])==False):
+                     del self.__children[popIndex]
+            #Survivor selection       
             self.SurvivorSelection()
             self.deleteChildren()
-            #self.display()
             print("_________________________")
             CurrentBest,index=self.__CurrentBest()
             if(CurrentBest<self.__bestSolution['Value']):
                 self.__bestSolution['Value']=CurrentBest
                 self.__bestSolution['route']=copy.deepcopy(self.__population[index])
+                count=0
             print("current best solution: {0}, individual {1}".format(CurrentBest,index))
             print("best solution: {0}".format(self.__bestSolution['Value']))
-            self.BestSolutionDisplay()
+            #self.BestSolutionDisplay()
+            print(i)
+            count+=1
+            if(count==30):
+                print("best solution obtained!")
+                return 0
             

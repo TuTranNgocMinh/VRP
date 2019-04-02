@@ -61,9 +61,11 @@ class DCNoGmap:
     #get, set Total Cost
     def getTotalCost(self):
         return self.__TotalCost
-    def setTotalCost(self,TotalCost):
+    def setTotalCost(self,VRank,DRank):
+        TotalCost=VRank*self.GetNumberVehicles()
+        for vIndex in range(self.GetNumberVehicles()):
+            TotalCost+=self.VehicleList[vIndex].getTotalDistanceTravelled()*DRank
         self.__TotalCost=TotalCost
-        return
     def getCoord(self):
         return self.__location.copy()
            

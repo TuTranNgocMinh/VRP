@@ -250,25 +250,223 @@ class CommandEdit(QUndoCommand):
         self.tblwidget.blockSignals(False)
 class webview(QWebEngineView):
     """web display class"""
-    def __init__(self,url):
+    def __init__(self,DC,route):
         super(webview,self).__init__()
-        self.setUrl(QUrl(url))       
-    def changeurl(self,url):
-        self.setUrl(QUrl(url)) 
+        self.__DC="'"+DC+"'"
+        self.__route=route
+        self.__html='''
+        <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Waypoints in Directions</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+        height: 100%;
+      }
+      #directions-panel {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        //margin-top: 10px;
+        background-color: #FFEE77;
+        padding: 10px;
+        overflow: scroll;
+        height: 174px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="directions-panel"></div>
+	<div id="map"></div>
+    <script>
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: {lat: 10.8, lng: 106.7}
+        });
+        directionsDisplay.setMap(map);
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+      }
 
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var wayptslist = '''+str(self.__route)+''';
+        var waypts=[];
+        for (var i = 0; i < wayptslist.length; i++) {
+            waypts.push({
+              location: wayptslist[i],
+              stopover: true
+            });
+        }
+
+        directionsService.route({
+          origin: '''+self.__DC+''',
+          destination: '''+self.__DC+''',
+          waypoints: waypts,
+          optimizeWaypoints: false,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            var summaryPanel = document.getElementById('directions-panel');
+            summaryPanel.innerHTML = '';
+            // For each route, display summary information.
+            for (var i = 0; i < route.legs.length; i++) {
+              var routeSegment = i + 1;
+              summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
+                  '</b><br>';
+              summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
+              summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
+              summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+            }
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV8WkL5FcxNXI7AGp83YnI6rLuaKuO7r0&callback=initMap">
+    </script>
+  </body>
+</html>
+        '''
+        #self.setUrl(QUrl(url))
+        self.setHtml(self.__html)       
+    def changeurl(self,DC,route):
+        self.__DC="'"+DC+"'"
+        self.__route=route
+        self.__html='''
+        <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Waypoints in Directions</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+        height: 100%;
+      }
+      #directions-panel {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        //margin-top: 10px;
+        background-color: #FFEE77;
+        padding: 10px;
+        overflow: scroll;
+        height: 174px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="directions-panel"></div>
+	<div id="map"></div>
+    <script>
+      function initMap() {
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: {lat: 10.8, lng: 106.7}
+        });
+        directionsDisplay.setMap(map);
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var wayptslist = '''+str(self.__route)+''';
+        var waypts=[];
+        for (var i = 0; i < wayptslist.length; i++) {
+            waypts.push({
+              location: wayptslist[i],
+              stopover: true
+            });
+        }
+
+        directionsService.route({
+          origin: '''+self.__DC+''',
+          destination: '''+self.__DC+''',
+          waypoints: waypts,
+          optimizeWaypoints: false,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            var summaryPanel = document.getElementById('directions-panel');
+            summaryPanel.innerHTML = '';
+            // For each route, display summary information.
+            for (var i = 0; i < route.legs.length; i++) {
+              var routeSegment = i + 1;
+              summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
+                  '</b><br>';
+              summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
+              summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
+              summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+            }
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV8WkL5FcxNXI7AGp83YnI6rLuaKuO7r0&callback=initMap">
+    </script>
+  </body>
+</html>
+        '''
+        self.setHtml(self.__html)
 class webdispwidget(QWidget):
     """web display widget class"""
     def __init__(self):
         super(webdispwidget,self).__init__()
-        self.layout=QHBoxLayout()#create horizontal layout
-        self.setLayout(self.layout)
-    def addwebframe(self,url):
-        self.frame1=webview(url)
+        #add combobox
+        self.VehicleCbox=QComboBox()
+        self.DCCbox=QComboBox()
+        self.mainLayout=QVBoxLayout()
+        self.layout=QHBoxLayout()#create horizontal layout  
+        self.ComboLayout=QHBoxLayout()
+        self.ComboLayout.addWidget(self.DCCbox)  
+        self.ComboLayout.addWidget(self.VehicleCbox)               
+        self.setLayout(self.mainLayout)
+    def addwebframe(self,DC,route):
+        self.frame1=webview(DC,route)
         self.layout.addWidget(self.frame1)
         return
-    def addcorrectedframe(self,url):
-        self.frame2=webview(url)
+    def addcorrectedframe(self,DC,route):
+        self.frame2=webview(DC,route)
         self.layout.addWidget(self.frame2)
+        return
+    def addCombobox(self,DCNumber,vNumber):
+        for DCIndex in range(DCNumber):
+            self.DCCbox.addItem("DC {0} ".format(DCIndex))
+        for vIndex in range(vNumber):
+            self.VehicleCbox.addItem("Vehicle {0} ".format(vIndex))
+        self.mainLayout.addLayout(self.ComboLayout)
+        self.mainLayout.addLayout(self.layout)
+        return
     def getFrameNumber(self):
         return self.layout.count()
 class App(QMainWindow):
@@ -304,7 +502,18 @@ class App(QMainWindow):
         exitButton.setStatusTip('Exit application')
         exitButton.triggered.connect(self.close)
         fileMenu.addAction(exitButton)
-        
+        #create view menu
+        viewMenu = mainMenu.addMenu('View')
+
+        DatFormDockbutton = QAction( 'Data and Form', self)
+        DatFormDockbutton.setStatusTip('Show / hide data and form dock')
+        DatFormDockbutton.triggered.connect(self.ShowDataDock)
+        viewMenu.addAction(DatFormDockbutton)
+
+        CorrDockbutton = QAction( 'Correction dock', self)
+        CorrDockbutton.setStatusTip('Show / hide Correction dock')
+        CorrDockbutton.triggered.connect(self.ShowCorrDock)
+        viewMenu.addAction(CorrDockbutton)
         #create tools menu        
         toolsMenu = mainMenu.addMenu('Tools')
         
@@ -322,7 +531,7 @@ class App(QMainWindow):
         self.calcbutton.setEnabled(False)
         self.leftwidget.formwidget.layout.addWidget(self.calcbutton)
 
-        self.leftdock=QDockWidget("left dock", self)
+        self.leftdock=QDockWidget("Data", self)
         self.leftdock.setFloating(False)
         self.leftdock.setWidget(self.leftwidget)
         self.addDockWidget(Qt.LeftDockWidgetArea, self.leftdock)
@@ -337,6 +546,20 @@ class App(QMainWindow):
         self.addDockWidget(Qt.BottomDockWidgetArea, self.rightcorrdock)
         
         self.setLayout(layout)
+    @pyqtSlot()
+    def ShowDataDock(self):
+        if(self.leftdock.isVisible()==False):
+            self.leftdock.show()
+        else:
+            self.leftdock.hide()
+        return
+    @pyqtSlot()
+    def ShowCorrDock(self):
+        if(self.rightcorrdock.isVisible()==False):
+            self.rightcorrdock.show()
+        else:
+            self.rightcorrdock.hide()
+        return
   
     @pyqtSlot()
     def fnamedialog(self):
@@ -344,7 +567,6 @@ class App(QMainWindow):
         fileName, _ = QFileDialog.getOpenFileName(self,"open data file", 
                                                   "","All Files (*);;csv files (*.csv)", options=options)
         if fileName:
-            print(fileName)
             #using pandas to load data frame
             self.customerlist=[]
             self.origins=[]
@@ -383,7 +605,6 @@ class App(QMainWindow):
             if(address):                
                 self.DCList.append(DistributionCenter(address,i+len(self.customerlist)))
                 self.origins.append(self.DCList[i].getCoord()) #add DC to origin list
-                print(self.DCList[i].getID())
             else:
                 print("Error: DC is null")
                 return 1
@@ -419,40 +640,58 @@ class App(QMainWindow):
         GA=model_GA(self.customerlist,VehicleList,distance,self.DCList,0.8,0.2)
         print("")
         LocGroup=GA.initGroup()
-        GA.initpopulation(10,LocGroup)
-        GA.mainloop(10,0.8)
-        BestSolution=GA.getBestSolution()
-        self.result(BestSolution)
+        GA.initpopulation(100,LocGroup)
+        GA.mainloop(200,0.85)
+        self.BestSolution=GA.getBestSolution()
+        self.corrBestSolution=GA.getBestSolution()
+        #create list of DC-Vehicle dictionary
+        self.DC_Vlist=[]
+        for DCIndex in range(len(self.BestSolution.DC)):
+            for vIndex in range(self.BestSolution.DC[DCIndex].GetNumberVehicles()):
+                self.DC_Vlist.append({'DC':DCIndex,'Vehicle':vIndex})
+        self.result()
         return
-    def result(self,BestSolution):
+    def result(self):
         #get vehicle number
         number=0
-        for DCIndex in range(len(BestSolution)):
-            number+=BestSolution[DCIndex].GetNumberVehicles()
+        for DCIndex in range(len(self.BestSolution.DC)):
+            number+=self.BestSolution.DC[DCIndex].GetNumberVehicles()
         #get max route number
         maxroutenumber=len(self.customerlist)/(len(self.DCList)-1)
-        self.CreateRoutes(number,maxroutenumber,BestSolution)
+        self.CreateRoutes(number,maxroutenumber)
         #create google map display
+        DC,route,corrRoute=self.createRouteList(0,0)
         if (self.webdisp.getFrameNumber()<1):
-            self.webdisp.addwebframe("https://www.google.com/maps")
+            #Add Combobox 
+            self.webdisp.addCombobox(self.BestSolution.getDCNumber(),self.BestSolution.DC[0].GetNumberVehicles())               
+            self.webdisp.DCCbox.currentIndexChanged.connect(self.onDCIndexChanged)
+            self.webdisp.VehicleCbox.currentIndexChanged.connect(self.onVIndexChanged)
+            self.webdisp.addwebframe(DC,route)
+            self.webdisp.addcorrectedframe(DC,route)
         else:
-            self.webdisp.frame1.changeurl("https://www.google.com/")
+            self.webdisp.frame1.changeurl(DC,route)
         return
-    def CreateRoutes(self,number,maxroutenumber,BestSolution):
+    def CreateRoutes(self,number,maxroutenumber):
         """create routing table based on the calculation."""
         self.corrwidget.vehicletable.setRowCount(number)
         self.corrwidget.vehicletable.setColumnCount(maxroutenumber+2)
+        self.corrwidget.vehicletable.setHorizontalHeaderLabels(['Vehicle','DC'])
+        #fill table with ""
+        for row in range(self.corrwidget.vehicletable.rowCount()):
+            for col in range(self.corrwidget.vehicletable.columnCount()):
+                item=QTableWidgetItem("")
+                self.corrwidget.vehicletable.setItem(row,col, item)
         #set Solution to vehicle table
         i=0  
         for DCIndex in range(len(self.DCList)):
-            for vIndex in range(BestSolution[DCIndex].GetNumberVehicles()):
+            for vIndex in range(self.BestSolution.DC[DCIndex].GetNumberVehicles()):
                 j=2
                 vItem=QTableWidgetItem("vehicle "+str(i+1))
                 self.corrwidget.vehicletable.setItem(i,0, vItem) #set vehicle and vehicle number item
-                DCItem=QTableWidgetItem("DC "+str(DCIndex+1))
+                DCItem=QTableWidgetItem(str(DCIndex+1))
                 self.corrwidget.vehicletable.setItem(i,1, DCItem)
-                for cIndex in range(BestSolution[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
-                    routeitem=QTableWidgetItem(str(BestSolution[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
+                for cIndex in range(self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
+                    routeitem=QTableWidgetItem(str(self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
                     self.corrwidget.vehicletable.setItem(i,j, routeitem)
                     j+=1
                 i+=1
@@ -466,6 +705,32 @@ class App(QMainWindow):
     def apply(self):
         print("applied")
         return
+    #signal function
+    def onDCIndexChanged(self,index):
+        self.webdisp.VehicleCbox.blockSignals(True)
+        self.webdisp.VehicleCbox.clear()        
+        for vIndex in range(self.BestSolution.DC[index].GetNumberVehicles()):
+            self.webdisp.VehicleCbox.addItem("Vehicle {0}".format(vIndex))
+        DC,Route,CorrRoute=self.createRouteList(index,0)
+        self.webdisp.frame1.changeurl(DC,Route)
+        self.webdisp.frame2.changeurl(DC,CorrRoute)
+        self.webdisp.VehicleCbox.blockSignals(False)
+        return
+    def onVIndexChanged(self,index):
+        DCIndex=self.webdisp.DCCbox.currentIndex()
+        DC,Route,CorrRoute=self.createRouteList(DCIndex,index)
+        self.webdisp.frame1.changeurl(DC,Route)
+        self.webdisp.frame2.changeurl(DC,CorrRoute)
+        return
+    #create function
+    def createRouteList(self,DCIndex,vIndex):
+        RList=[]
+        CorrRList=[]
+        DC=self.BestSolution.DC[DCIndex].getAddress()
+        for cIndex in range(self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
+            RList.append(self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getAddress())
+            CorrRList.append(self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getAddress())      
+        return DC,RList,CorrRList
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = App()

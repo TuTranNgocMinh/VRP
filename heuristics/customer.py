@@ -2,7 +2,7 @@ from location import location
 from vehicle import vehicle
 class customer:
     """package properties of each customer"""
-    def __init__(self,id,name,quantity,volume,weight,address,deadline):
+    def __init__(self,id,name,quantity,volume,weight,address,deadline=0):
         self.__id=id
         self.__name=name
         self.__quantity=quantity
@@ -33,6 +33,8 @@ class customer:
     #get location
     def getLocation(self):
         return self.__location.coordinates
+    def getAddress(self):
+        return self.__location.Addr
     def display(self):
         """display info of customer"""
         print("name: {0},quantity: {1}, volume: {2}, weight:{3},location: {4} deadline: {5}".format(self.name,self.quantity,self.volume,self.weight,self.location.coordinates,self.deadline))
@@ -60,11 +62,16 @@ class DistributionCenter:
     #get, set Total Cost
     def getTotalCost(self):
         return self.__TotalCost
-    def setTotalCost(self,TotalCost):
+    def setTotalCost(self,VRank,DRank):
+        TotalCost=VRank*self.GetNumberVehicles()
+        for vIndex in range(self.GetNumberVehicles()):
+            TotalCost+=self.VehicleList[vIndex].getTotalDistanceTravelled()*DRank
         self.__TotalCost=TotalCost
-        return
+    #get Location
     def getCoord(self):
         return self.__location.coordinates
+    def getAddress(self):
+        return self.__location.Addr
     #add vehicle
     def addVehicle(self,Type,Volume,Weight,fuel_consumption=0):
         self.VehicleList.append(vehicle(Type,Volume,Weight,fuel_consumption))

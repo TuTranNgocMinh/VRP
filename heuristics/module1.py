@@ -9,13 +9,23 @@ from model import model_GA
 def test2():
     loc=[]
     origins=[]
-    list=pandas.read_csv("test.csv")
-    print(list['destination'])
-    for i in range(len(list['destination'])):
-        origins.append(list['destination'][i])
+    list=pandas.read_csv("data30.csv",encoding='utf-8-sig')
+    DC=[location.location("10 Ly Tu Trong,quan 1,Ho Chi Minh"),location.location("10 Le Van Viet, quan 9, ho chi minh"),location.location("30 Phu Tho Hoa, quan Tan Phu, Ho Chi Minh")]
+    for i in range(len(list.index)):
+        print(i)
+        loc.append(customer.customer(i,list['name'][i],list['quantity'][i],list['size'][i],list['weight'][i],list['address'][i]))
+        origins.append(loc[i].getLocation())
+    #add DC
+    origins.append(DC[0].coordinates)
+    origins.append(DC[1].coordinates)
+    origins.append(DC[2].coordinates)
     mat=location.dist_matrix(origins,origins)
-    mat.get_realdistance()
-    mat.display()
+    mat.get_approxdistance()
+    dist_matrix=mat.getDistance()
+    print(dist_matrix)
+    df=pandas.DataFrame(dist_matrix)
+    writer = pandas.ExcelWriter('C:/Users/Tu Tran Ngoc Minh/Desktop/heuristics/Distance_30.xlsx', engine='xlsxwriter')
+    df.to_excel(writer, sheet_name='Sheet1')
     return
 def VRP():
     DC=location.location("100 Truong chinh, Tan Binh, Ho Chi Minh")
@@ -100,4 +110,4 @@ def testGA():
     GA.mainloop(10,0.8)
     bestSolution=GA.getBestSolution()
     print(bestSolution)
-testGA()
+test2()
