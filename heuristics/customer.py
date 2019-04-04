@@ -63,7 +63,7 @@ class DistributionCenter:
     def getTotalCost(self):
         return self.__TotalCost
     def setTotalCost(self,VRank,DRank):
-        TotalCost=VRank*self.GetNumberVehicles()
+        TotalCost=VRank*self.GetNumberVehicles()*5000
         for vIndex in range(self.GetNumberVehicles()):
             TotalCost+=self.VehicleList[vIndex].getTotalDistanceTravelled()*DRank
         self.__TotalCost=TotalCost

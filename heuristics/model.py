@@ -386,7 +386,7 @@ class model_GA(object):
             #self.BestSolutionDisplay()
             print(i)
             count+=1
-            if(count==30):
+            if(count==50):
                 print("best solution obtained!")
                 return 0
             

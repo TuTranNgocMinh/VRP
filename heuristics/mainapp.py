@@ -8,7 +8,7 @@ import pandas as pd
 import location as loc
 import vehicle
 from customer import *
-from model import model_GA
+from model import *
 class VehicleDialog(QDialog): #may change layout to table if there are multiple weight and size vehicles
     """create declare vehicle dialog"""
     def __init__(self):
@@ -188,7 +188,7 @@ class rightconfigwidget(QWidget):
         self.rmrowbtn.triggered.connect(self.remove1row)
         self.undobtn.triggered.connect(self.undoStack.undo)
         self.redobtn.triggered.connect(self.undoStack.redo)
-        self.applybtn.triggered.connect(self.apply)
+        
         #set buttons disabled
         self.addrowbtn.setEnabled(False)
         self.rmrowbtn.setEnabled(False)
@@ -204,8 +204,8 @@ class rightconfigwidget(QWidget):
         return
     def itemChanged(self,item):
         """get item after edit"""
-        self.textAfterEdit=item.text()
         if self.flag==True:
+            self.textAfterEdit=item.text() 
             #save to item stack for later use
             row=self.vehicletable.currentRow()
             col=self.vehicletable.currentColumn()
@@ -226,10 +226,6 @@ class rightconfigwidget(QWidget):
         rowselected=self.vehicletable.currentRow()
         self.vehicletable.removeRow(rowselected)
         return    
-    def apply(self):
-        """apply changes"""
-
-        return   #return updated list
 class CommandEdit(QUndoCommand):
     """undo class for routing correction table"""
     def __init__(self, tblwidget, row, col, textBeforeEdit, textAfterEdit,description):
@@ -544,7 +540,7 @@ class App(QMainWindow):
         self.rightcorrdock.setFloating(False)
         self.rightcorrdock.setWidget(self.corrwidget)
         self.addDockWidget(Qt.BottomDockWidgetArea, self.rightcorrdock)
-        
+        self.corrwidget.applybtn.triggered.connect(self.apply)
         self.setLayout(layout)
     @pyqtSlot()
     def ShowDataDock(self):
@@ -598,7 +594,7 @@ class App(QMainWindow):
     @pyqtSlot()
     def calculate(self):
         self.DCList=[]
-        VehicleList=[]
+        self.VehicleList=[]
         #get DC list
         for i in range(len(self.leftwidget.DClist)):
             address=self.leftwidget.DClist[i].text()
@@ -613,11 +609,11 @@ class App(QMainWindow):
         distance.get_approxdistance()
         #check Vehicle list
         for i in range(self.leftwidget.VTable.rowCount()):
-            VehicleList.append([])
+            self.VehicleList.append([])
             #get vehicle name
             if(self.leftwidget.VTable.item(i,0).text()):
                 VehicleName=self.leftwidget.VTable.item(i,0).text()
-                VehicleList[i].append(VehicleName)
+                self.VehicleList[i].append(VehicleName)
             else:
                 print("Error: Vehicle Name is null")
                 return 1
@@ -627,9 +623,9 @@ class App(QMainWindow):
                 VehicleWeight=float(self.leftwidget.VTable.item(i,2).text())
                 VehicleQuantity=int(self.leftwidget.VTable.item(i,3).text())
                 if(VehicleSize>0)and(VehicleWeight>0)and(VehicleQuantity>0):
-                    VehicleList[i].append(VehicleSize)
-                    VehicleList[i].append(VehicleWeight)
-                    VehicleList[i].append(VehicleQuantity)
+                    self.VehicleList[i].append(VehicleSize)
+                    self.VehicleList[i].append(VehicleWeight)
+                    self.VehicleList[i].append(VehicleQuantity)
                 else:
                     print("Size, Weight and quantity must be positive integers!")
                     return 1
@@ -637,18 +633,14 @@ class App(QMainWindow):
                 print("error when converting. Size and Weight must be positive numbers, quantity must be positive integers!")
                 return 1
         #calculation module
-        GA=model_GA(self.customerlist,VehicleList,distance,self.DCList,0.8,0.2)
+        GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,0.8,0.2)
         print("")
         LocGroup=GA.initGroup()
-        GA.initpopulation(100,LocGroup)
-        GA.mainloop(200,0.85)
+        GA.initpopulation(50,LocGroup)
+        GA.mainloop(1000,0.85)
         self.BestSolution=GA.getBestSolution()
         self.corrBestSolution=GA.getBestSolution()
         #create list of DC-Vehicle dictionary
-        self.DC_Vlist=[]
-        for DCIndex in range(len(self.BestSolution.DC)):
-            for vIndex in range(self.BestSolution.DC[DCIndex].GetNumberVehicles()):
-                self.DC_Vlist.append({'DC':DCIndex,'Vehicle':vIndex})
         self.result()
         return
     def result(self):
@@ -667,7 +659,7 @@ class App(QMainWindow):
             self.webdisp.DCCbox.currentIndexChanged.connect(self.onDCIndexChanged)
             self.webdisp.VehicleCbox.currentIndexChanged.connect(self.onVIndexChanged)
             self.webdisp.addwebframe(DC,route)
-            self.webdisp.addcorrectedframe(DC,route)
+            self.webdisp.addcorrectedframe(DC,corrRoute)
         else:
             self.webdisp.frame1.changeurl(DC,route)
         return
@@ -704,12 +696,62 @@ class App(QMainWindow):
         return
     def apply(self):
         print("applied")
+        CountList=[[] for i in range(len(self.customerlist))]
+        ValidInput=True
+        Redundant=False
+        Constraint=True
+        self.corrwidget.vehicletable.blockSignals(True)
+        for row in range(self.corrwidget.vehicletable.rowCount()):
+            for col in range(2,self.corrwidget.vehicletable.columnCount()):
+                Text=self.corrwidget.vehicletable.item(row,col).text()
+                if(Text!=""):
+                    try:
+                        CountList[int(Text)].append({'row': row,'col':col,'value': Text})
+                        self.corrwidget.vehicletable.item(row,col).setBackground(Qt.white)
+                    except:
+                        self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
+                        print("INVALID INPUT!!!")
+                        ValidInput=False                        
+        #check for input
+        if(ValidInput==False):
+            self.corrwidget.vehicletable.blockSignals(False)
+            return
+        for i in range(len(CountList)):
+            if(len(CountList[i])>1):
+                for j in range(len(CountList[i])):
+                    self.corrwidget.vehicletable.item(CountList[i][j]['row'],CountList[i][j]['col']).setBackground(Qt.yellow)
+                Redundant=True
+        #check for redundant
+        if(Redundant==True):
+            self.corrwidget.vehicletable.blockSignals(False)
+            return
+        self.corrBestSolution=Solution(copy.deepcopy(self.DCList))
+        for row in range(self.corrwidget.vehicletable.rowCount()):
+            DCIndex=int(self.corrwidget.vehicletable.item(row,1).text())-1
+            self.corrBestSolution.DC[DCIndex].addVehicle(
+                self.VehicleList[0][0],self.VehicleList[0][1],self.VehicleList[0][2],self.VehicleList[0][3])
+            for col in range(2,self.corrwidget.vehicletable.columnCount()):
+                Text=self.corrwidget.vehicletable.item(row,col).text()                
+                if(Text!=""):
+                    vnumber=self.corrBestSolution.DC[DCIndex].GetNumberVehicles()-1
+                    self.corrBestSolution.DC[DCIndex].appendRoute(vnumber,copy.deepcopy(self.customerlist[int(Text)]))
+        #display
+        for DCIndex in range(self.corrBestSolution.getDCNumber()):
+            print("\nDistribution Center {0}".format(DCIndex))
+            for vIndex in range(self.corrBestSolution.DC[DCIndex].GetNumberVehicles()):
+                for cIndex in range(self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
+                    print("vehicle {0}: {1}".format(vIndex,self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
+        DC,Route,CorrRoute=self.createRouteList(0,0)
+        self.webdisp.frame1.changeurl(DC,Route)
+        self.webdisp.frame2.changeurl(DC,CorrRoute)
+        self.corrwidget.vehicletable.blockSignals(False)
+
         return
     #signal function
     def onDCIndexChanged(self,index):
         self.webdisp.VehicleCbox.blockSignals(True)
         self.webdisp.VehicleCbox.clear()        
-        for vIndex in range(self.BestSolution.DC[index].GetNumberVehicles()):
+        for vIndex in range(self.corrBestSolution.DC[index].GetNumberVehicles()):
             self.webdisp.VehicleCbox.addItem("Vehicle {0}".format(vIndex))
         DC,Route,CorrRoute=self.createRouteList(index,0)
         self.webdisp.frame1.changeurl(DC,Route)
@@ -727,8 +769,12 @@ class App(QMainWindow):
         RList=[]
         CorrRList=[]
         DC=self.BestSolution.DC[DCIndex].getAddress()
-        for cIndex in range(self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
-            RList.append(self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getAddress())
+        try:
+            for cIndex in range(self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
+                RList.append(self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getAddress())
+        except:
+            print("")
+        for cIndex in range(self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
             CorrRList.append(self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getAddress())      
         return DC,RList,CorrRList
 if __name__ == '__main__':
