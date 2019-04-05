@@ -118,11 +118,13 @@ class model_GA(object):
         self.__swap(rd1,rd2,list1,list2)
         #print changes
         number=individuals.DC[rand].GetNumberVehicles()
-        for vehicle in range(number):
-            weight,vol=self.ConstraintCalculation(individuals.DC[rand].VehicleList[vehicle])
-            if(self.checkCondition(weight,vol,individuals.DC[rand].VehicleList[vehicle])==False):
+        for vIndex in range(number):
+            weight,vol=self.ConstraintCalculation(individuals.DC[rand].VehicleList[vIndex])
+            print("Mutation: {0},{1}".format(weight,vol))
+            if(self.checkCondition(weight,vol,individuals.DC[rand].VehicleList[vIndex])==False):
+                print("False")
                 return False
-            Vehicle=individuals.DC[rand].VehicleList[vehicle]
+            Vehicle=individuals.DC[rand].VehicleList[vIndex]
             self.DistanceCalculation(rand,Vehicle)
         individuals.DC[rand].setTotalCost(0.8,0.2)
         individuals.setTotalCost()
@@ -160,12 +162,12 @@ class model_GA(object):
             child2.setTotalCost()
         else:
             flag2=False
-        if(flag1==False):
-            del self.__children[0]
+        if(flag1==False)and(flag2==False):
+            self.deleteChildren()
         elif(flag2==False):
             del self.__children[1]
-        elif(flag1==False)and(flag2==False):
-            self.deleteChildren()
+        elif(flag1==False):
+            del self.__children[0]
         return
     def Selection(self,threshold):
         randpop1=random.randrange(0,len(self.__population))
@@ -217,12 +219,20 @@ class model_GA(object):
             SortedFList.sort(key=lambda k: k['Cost'])
             k=random.uniform(0,1)
             if (k<=0.8):
+                feasible=False
                 for i in range(len(SortedFList)):
                     if(SortedFList[i]['feasible']==True):
                         vIndex=SortedFList[i]['vIndex']
                         rIndex=SortedFList[i]['Position']
                         DC.VehicleList[vIndex].routing.insert(rIndex,CustomerCopy[customer])
+                        feasible=True
                         break
+                if(feasible==False):
+                    print("current number of vehicles before: {0}".format(DC.GetNumberVehicles()))
+                    DC.addVehicle(self.__VehicleList[0][0],self.__VehicleList[0][1],self.__VehicleList[0][2],self.__VehicleList[0][3])
+                    DC.VehicleList[DC.GetNumberVehicles()-1].routing.append(CustomerCopy[customer])
+                    print("Customer added: {0}".format(DC.VehicleList[DC.GetNumberVehicles()-1].routing[0].getID()))
+                    print("current number of vehicles: {0}".format(DC.GetNumberVehicles()))
             else:
                 vIndex=SortedFList[0]['vIndex']
                 rIndex=SortedFList[0]['Position']
@@ -353,8 +363,14 @@ class model_GA(object):
                 parent2=self.Selection(0.8)
             #crossover
             rand=random.uniform(0,1)
-            if(rand<=CThold):
+            if(rand<=CThold):                
                 self.crossover(parent1,parent2)
+                for ChildIndex in range(len(self.__children)):
+                    TotalCustomer=0
+                    for DCIndex in range(len(self.__DCList)):
+                        for vIndex in range(self.__children[ChildIndex].DC[DCIndex].GetNumberVehicles()):
+                            TotalCustomer+=self.__children[ChildIndex].DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()
+                    print("Total Customer of child {0}: {1}".format(ChildIndex,TotalCustomer))
             else:
                 self.__children=[]
                 self.__children.append(copy.deepcopy(self.__population[parent1]))
@@ -365,13 +381,16 @@ class model_GA(object):
                 popIndex=random.randrange(0,len(self.__population))
                 if(self.Mutation(self.__population[popIndex])==False):
                     del self.__population[popIndex]
+                    print("Mutation deleted")
                     rParent=random.randrange(0,len(self.__population))
                     self.__population.append(copy.deepcopy(self.__population[rParent]))
             rand=random.uniform(0,1)
-            if(rand>0.85):
-                popIndex=random.randrange(0,len(self.__children))
-                if(self.Mutation(self.__children[popIndex])==False):
-                     del self.__children[popIndex]
+            if(len(self.__children)>0):
+                if(rand>0.85):
+                    popIndex=random.randrange(0,len(self.__children))
+                    if(self.Mutation(self.__children[popIndex])==False):
+                        del self.__children[popIndex]
+                        print("Mutation deleted")
             #Survivor selection       
             self.SurvivorSelection()
             self.deleteChildren()

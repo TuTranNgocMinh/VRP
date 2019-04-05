@@ -674,6 +674,7 @@ class App(QMainWindow):
                 item=QTableWidgetItem("")
                 self.corrwidget.vehicletable.setItem(row,col, item)
         #set Solution to vehicle table
+        totalCustomer=0
         i=0  
         for DCIndex in range(len(self.DCList)):
             for vIndex in range(self.BestSolution.DC[DCIndex].GetNumberVehicles()):
@@ -682,11 +683,18 @@ class App(QMainWindow):
                 self.corrwidget.vehicletable.setItem(i,0, vItem) #set vehicle and vehicle number item
                 DCItem=QTableWidgetItem(str(DCIndex+1))
                 self.corrwidget.vehicletable.setItem(i,1, DCItem)
+                volume=0                
                 for cIndex in range(self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
                     routeitem=QTableWidgetItem(str(self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
+                    #calc volume
+                    volume+=self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getVolume()*self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getQuantity()                    
                     self.corrwidget.vehicletable.setItem(i,j, routeitem)
                     j+=1
+                totalCustomer+=self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()
+                volItem=QTableWidgetItem(str(volume))
+                self.corrwidget.vehicletable.setItem(i,j+1, volItem)
                 i+=1
+        print("Total Customer: {0}".format(totalCustomer))
         #set buttons enabled    
         self.corrwidget.addrowbtn.setEnabled(True)
         self.corrwidget.rmrowbtn.setEnabled(True)
