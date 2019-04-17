@@ -13,7 +13,7 @@ def test2():
     DC=[location.location("10 Ly Tu Trong,quan 1,Ho Chi Minh"),location.location("10 Le Van Viet, quan 9, ho chi minh"),location.location("30 Phu Tho Hoa, quan Tan Phu, Ho Chi Minh")]
     for i in range(len(list.index)):
         print(i)
-        loc.append(customer.customer(i,list['name'][i],list['quantity'][i],list['size'][i],list['weight'][i],list['address'][i]))
+        loc.append(customer.customer(i,list['name'][i],list['size'][i],list['weight'][i],list['quantity'][i],list['address'][i]))
         origins.append(loc[i].getLocation())
     #add DC
     origins.append(DC[0].coordinates)
@@ -24,7 +24,7 @@ def test2():
     dist_matrix=mat.getDistance()
     print(dist_matrix)
     df=pandas.DataFrame(dist_matrix)
-    writer = pandas.ExcelWriter('C:/Users/Tu Tran Ngoc Minh/Desktop/heuristics/Distance_30.xlsx', engine='xlsxwriter')
+    writer = pandas.ExcelWriter('C:/Users/Tu Tran Ngoc Minh/Desktop/heuristics/Distance_30_2.xlsx', engine='xlsxwriter')
     df.to_excel(writer, sheet_name='Sheet1')
     return
 def VRP():

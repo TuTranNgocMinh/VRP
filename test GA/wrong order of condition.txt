@@ -1,0 +1,2218 @@
+﻿100
+
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 566.0,10.8833375
+Mutation: 618.5,12.9082625
+Mutation: 628.5,12.3550875
+Mutation: 715.0,11.710562499999998
+Mutation: 562.5,13.24575
+Mutation: 508.5,11.106637500000001
+Mutation: 209.0,3.4230875000000003
+_________________________
+current best solution: 80104.76337344684, individual 4
+best solution: 80104.76337344684
+0
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80104.76337344684, individual 4
+best solution: 80104.76337344684
+1
+Total Customer of child 0: 100
+_________________________
+current best solution: 80104.1814848209, individual 49
+best solution: 80104.1814848209
+2
+Total Customer of child 0: 100
+_________________________
+current best solution: 80104.1814848209, individual 48
+best solution: 80104.1814848209
+3
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80104.1814848209, individual 46
+best solution: 80104.1814848209
+4
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80104.1814848209, individual 44
+best solution: 80104.1814848209
+5
+Total Customer of child 0: 100
+_________________________
+current best solution: 80104.1814848209, individual 43
+best solution: 80104.1814848209
+6
+Total Customer of child 0: 100
+_________________________
+current best solution: 80104.1814848209, individual 42
+best solution: 80104.1814848209
+7
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 748.5,13.603537500000002
+Mutation: 530.0,10.114475
+Mutation: 648.5,13.220375
+Mutation: 586.5,11.129475
+Mutation: 697.0,14.2835875
+Mutation: 738.5,14.1567125
+Mutation: 603.0,12.3855375
+Mutation: 697.5,13.6644375
+Mutation: 527.5,11.2385875
+_________________________
+current best solution: 80104.1814848209, individual 40
+best solution: 80104.1814848209
+8
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80104.1814848209, individual 38
+best solution: 80104.1814848209
+9
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 799.0,14.161787499999999
+Mutation: 965.0,19.569200000000002
+False
+Mutation deleted
+_________________________
+current best solution: 80095.10776572148, individual 49
+best solution: 80095.10776572148
+10
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 48
+best solution: 80095.10776572148
+11
+Total Customer of child 0: 99
+_________________________
+current best solution: 80095.10776572148, individual 47
+best solution: 80095.10776572148
+12
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 45
+best solution: 80095.10776572148
+13
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 44
+best solution: 80095.10776572148
+14
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 43
+best solution: 80095.10776572148
+15
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 42
+best solution: 80095.10776572148
+16
+Total Customer of child 0: 100
+Mutation: 692.0,12.5885375
+Mutation: 598.0,12.662125
+Mutation: 569.0,11.111712500000001
+Mutation: 677.5,12.79915
+Mutation: 675.0,13.9232625
+Mutation: 596.5,12.5479375
+_________________________
+current best solution: 80095.10776572148, individual 41
+best solution: 80095.10776572148
+17
+current number of vehicles before: 6
+Customer added: 48
+current number of vehicles: 7
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 40
+best solution: 80095.10776572148
+18
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 546.0,10.01805
+Mutation: 571.0,12.5783875
+Mutation: 697.5,13.664437500000002
+Mutation: 745.5,15.346799999999998
+False
+Mutation deleted
+Mutation: 814.0,13.332025
+Mutation: 619.5,13.6416
+Mutation: 650.0,13.3345625
+Mutation: 645.0,11.6395125
+Mutation: 580.5,12.6443625
+Mutation: 772.5,13.458900000000002
+Mutation: 638.0,12.4210625
+Mutation: 595.0,12.43375
+Mutation: 462.5,10.89095
+_________________________
+current best solution: 80095.10776572148, individual 38
+best solution: 80095.10776572148
+19
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 36
+best solution: 80095.10776572148
+20
+current number of vehicles before: 5
+Customer added: 90
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 34
+best solution: 80095.10776572148
+21
+Total Customer of child 0: 100
+Mutation: 559.5,11.045737499999998
+Mutation: 695.0,12.816912500000003
+Mutation: 469.5,10.1094
+Mutation: 600.0,14.128799999999998
+Mutation: 728.0,13.3574
+Mutation: 704.0,11.5304
+Mutation: 752.0,13.2127625
+Mutation: 618.0,13.5274125
+Mutation: 651.0,14.0679
+_________________________
+current best solution: 80095.10776572148, individual 34
+best solution: 80095.10776572148
+22
+current number of vehicles before: 6
+Customer added: 1
+current number of vehicles: 7
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 32
+best solution: 80095.10776572148
+23
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 718.0,13.910575
+Mutation: 713.5,13.568012499999998
+Mutation: 597.0,13.900425
+Mutation: 585.0,11.0152875
+Mutation: 742.0,13.7659375
+Mutation: 452.5,9.4724875
+_________________________
+current best solution: 80095.10776572148, individual 32
+best solution: 80095.10776572148
+24
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 31
+best solution: 80095.10776572148
+25
+current number of vehicles before: 5
+Customer added: 47
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 30
+best solution: 80095.10776572148
+26
+current number of vehicles before: 6
+Customer added: 48
+current number of vehicles: 7
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 773.5,14.192237500000001
+Mutation: 774.0,15.544725000000001
+False
+Mutation deleted
+_________________________
+current best solution: 80095.10776572148, individual 29
+best solution: 80095.10776572148
+27
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 28
+best solution: 80095.10776572148
+28
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.10776572148, individual 27
+best solution: 80095.10776572148
+29
+Total Customer of child 0: 100
+Mutation: 620.0,13.02245
+Mutation: 637.5,13.040212499999999
+Mutation: 638.0,14.392700000000001
+Mutation: 685.5,12.7509375
+Mutation: 791.0,14.209999999999999
+_________________________
+current best solution: 80095.10776572148, individual 26
+best solution: 80095.10776572148
+30
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 26
+best solution: 80095.10776572148
+31
+_________________________
+current best solution: 80095.10776572148, individual 25
+best solution: 80095.10776572148
+32
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.10776572148, individual 24
+best solution: 80095.10776572148
+33
+current number of vehicles before: 6
+Customer added: 48
+current number of vehicles: 7
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 773.5,14.192237500000001
+Mutation: 639.0,13.1544
+Mutation: 512.5,12.06835
+Mutation: 727.5,13.97655
+Mutation: 719.5,14.0247625
+_________________________
+current best solution: 80095.10776572148, individual 22
+best solution: 80095.10776572148
+34
+Total Customer of child 0: 100
+_________________________
+current best solution: 80095.1032281854, individual 49
+best solution: 80095.1032281854
+35
+current number of vehicles before: 5
+Customer added: 84
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.1032281854, individual 47
+best solution: 80095.1032281854
+36
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80095.1032281854, individual 46
+best solution: 80095.1032281854
+37
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 632.0,13.935950000000002
+Mutation: 520.5,12.020137499999999
+Mutation: 665.5,13.857287499999998
+Mutation: 649.0,10.6295875
+Mutation: 741.5,14.385087500000001
+Mutation: 727.5,13.97655
+Mutation: 427.5,8.8837875
+Mutation: 758.5,13.050362499999999
+Mutation: 655.0,13.057975000000003
+_________________________
+current best solution: 80091.41364244351, individual 49
+best solution: 80091.41364244351
+38
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80091.41364244351, individual 47
+best solution: 80091.41364244351
+39
+Mutation: 718.5,13.291425
+Mutation: 525.5,11.743549999999999
+Mutation: 772.0,16.0496875
+False
+Mutation deleted
+_________________________
+current best solution: 80091.41364244351, individual 44
+best solution: 80091.41364244351
+40
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80091.41364244351, individual 42
+best solution: 80091.41364244351
+41
+current number of vehicles before: 6
+Customer added: 41
+current number of vehicles: 7
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 612.0,13.0706625
+Mutation: 621.0,11.784149999999999
+Mutation: 699.5,13.159475
+Mutation: 761.0,13.8978875
+Mutation: 619.5,11.6699625
+Mutation: 727.5,13.97655
+Mutation: 490.0,10.3555375
+Mutation: 632.5,13.3168
+Mutation: 614.0,12.5657
+_________________________
+current best solution: 80091.41364244351, individual 40
+best solution: 80091.41364244351
+42
+current number of vehicles before: 5
+Customer added: 67
+current number of vehicles: 6
+Total Customer of child 0: 100
+Mutation: 692.5,13.941025
+Mutation: 644.5,12.2586625
+Mutation: 642.5,12.763625000000001
+Mutation: 699.0,13.778625
+Mutation: 646.0,14.3444875
+Mutation: 629.0,11.735937499999999
+Mutation: 701.0,13.2736625
+Mutation: 391.5,8.114925
+Mutation: 731.0,13.585775
+_________________________
+current best solution: 80091.41364244351, individual 40
+best solution: 80091.41364244351
+43
+Total Customer of child 0: 100
+Mutation: 730.5,16.1765625
+False
+Mutation deleted
+_________________________
+current best solution: 80091.41364244351, individual 39
+best solution: 80091.41364244351
+44
+current number of vehicles before: 5
+Customer added: 47
+current number of vehicles: 6
+Total Customer of child 0: 100
+Mutation: 585.5,12.367775
+Mutation: 647.5,14.458675
+False
+Mutation deleted
+_________________________
+current best solution: 80091.41364244351, individual 39
+best solution: 80091.41364244351
+45
+_________________________
+current best solution: 80091.41364244351, individual 37
+best solution: 80091.41364244351
+46
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80091.41364244351, individual 35
+best solution: 80091.41364244351
+47
+current number of vehicles before: 5
+Customer added: 47
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 632.5,13.3168
+Mutation: 729.5,15.443224999999998
+False
+Mutation deleted
+_________________________
+current best solution: 80091.41364244351, individual 34
+best solution: 80091.41364244351
+48
+Total Customer of child 0: 100
+_________________________
+current best solution: 80091.41364244351, individual 34
+best solution: 80091.41364244351
+49
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 49
+best solution: 80090.49501015015
+50
+_________________________
+current best solution: 80090.49501015015, individual 47
+best solution: 80090.49501015015
+51
+_________________________
+current best solution: 80090.49501015015, individual 45
+best solution: 80090.49501015015
+52
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 44
+best solution: 80090.49501015015
+53
+Total Customer of child 0: 100
+Mutation: 692.5,13.941025
+Mutation: 644.5,12.2586625
+Mutation: 580.0,11.291875000000001
+Mutation: 699.0,13.778625
+Mutation: 591.5,12.824525
+Mutation: 683.5,13.2559
+Mutation: 701.0,13.2736625
+Mutation: 454.0,9.586675
+Mutation: 731.0,13.585775
+_________________________
+current best solution: 80090.49501015015, individual 43
+best solution: 80090.49501015015
+54
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 42
+best solution: 80090.49501015015
+55
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 41
+best solution: 80090.49501015015
+56
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 40
+best solution: 80090.49501015015
+57
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 39
+best solution: 80090.49501015015
+58
+Total Customer of child 0: 100
+Mutation: 585.5,12.367775
+Mutation: 422.5,9.160375
+Mutation: 658.5,12.6672
+Mutation: 738.5,14.156712500000001
+Mutation: 609.5,12.2231375
+Mutation: 615.5,12.6798875
+Mutation: 722.0,12.900650000000002
+Mutation: 732.0,14.319112500000001
+Mutation: 693.0,13.321874999999999
+_________________________
+current best solution: 80090.49501015015, individual 38
+best solution: 80090.49501015015
+59
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 37
+best solution: 80090.49501015015
+60
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 36
+best solution: 80090.49501015015
+61
+current number of vehicles before: 5
+Customer added: 33
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 34
+best solution: 80090.49501015015
+62
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 34
+best solution: 80090.49501015015
+63
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 32
+best solution: 80090.49501015015
+64
+_________________________
+current best solution: 80090.49501015015, individual 30
+best solution: 80090.49501015015
+65
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 29
+best solution: 80090.49501015015
+66
+current number of vehicles before: 5
+Customer added: 84
+current number of vehicles: 6
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 29
+best solution: 80090.49501015015
+67
+Total Customer of child 0: 100
+Mutation: 800.5,14.275974999999999
+Mutation: 578.0,11.7968375
+Mutation: 458.5,9.9292375
+Mutation: 643.0,14.116112499999998
+Mutation: 892.0,17.2981375
+False
+Mutation deleted
+_________________________
+current best solution: 80090.49501015015, individual 29
+best solution: 80090.49501015015
+68
+Total Customer of child 0: 98
+_________________________
+current best solution: 80090.49501015015, individual 29
+best solution: 80090.49501015015
+69
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 27
+best solution: 80090.49501015015
+70
+Total Customer of child 0: 100
+Mutation: 476.5,9.32785
+Mutation: 663.5,12.3906125
+Mutation: 670.0,14.199850000000001
+Mutation: 634.0,13.4309875
+Mutation: 665.0,12.5048
+Mutation: 699.0,13.778624999999998
+_________________________
+current best solution: 80090.49501015015, individual 26
+best solution: 80090.49501015015
+71
+Total Customer of child 0: 98
+_________________________
+current best solution: 80090.49501015015, individual 26
+best solution: 80090.49501015015
+72
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 25
+best solution: 80090.49501015015
+73
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 23
+best solution: 80090.49501015015
+74
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 632.5,13.3168
+Mutation: 739.0,13.5375625
+Mutation: 734.0,13.81415
+Mutation: 568.5,11.7308625
+Mutation: 514.0,10.2109
+Mutation: 620.0,13.02245
+Mutation: 598.5,14.0146125
+Mutation: 734.0,13.814150000000001
+Mutation: 788.0,13.981625000000001
+Mutation: 587.5,11.8628125
+Mutation: 686.0,12.1317875
+Mutation: 562.0,11.893262499999999
+Mutation: 771.5,14.697199999999999
+False
+Mutation deleted
+_________________________
+current best solution: 80090.49501015015, individual 23
+best solution: 80090.49501015015
+75
+Mutation: 632.5,13.3168
+Mutation: 761.0,13.8978875
+Mutation: 712.0,13.453824999999998
+Mutation: 568.5,11.7308625
+Mutation: 514.0,10.2109
+Mutation: 620.0,13.02245
+_________________________
+current best solution: 80090.49501015015, individual 21
+best solution: 80090.49501015015
+76
+Mutation: 699.0,13.778624999999998
+Mutation: 852.5,16.92005
+False
+Mutation deleted
+_________________________
+current best solution: 80090.49501015015, individual 21
+best solution: 80090.49501015015
+77
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 19
+best solution: 80090.49501015015
+78
+Total Customer of child 0: 98
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 17
+best solution: 80090.49501015015
+79
+Total Customer of child 0: 100
+Mutation: 585.5,12.367775
+Mutation: 560.0,12.398225
+Mutation: 708.5,13.8446
+Mutation: 738.5,14.156712500000001
+Mutation: 609.5,12.2231375
+Mutation: 747.5,14.8418375
+False
+Mutation deleted
+_________________________
+current best solution: 80090.49501015015, individual 17
+best solution: 80090.49501015015
+80
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 16
+best solution: 80090.49501015015
+81
+Total Customer of child 0: 95
+_________________________
+current best solution: 80090.49501015015, individual 15
+best solution: 80090.49501015015
+82
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 14
+best solution: 80090.49501015015
+83
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 14
+best solution: 80090.49501015015
+84
+Total Customer of child 0: 100
+_________________________
+current best solution: 80090.49501015015, individual 13
+best solution: 80090.49501015015
+85
+current number of vehicles before: 5
+Customer added: 52
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80090.49501015015, individual 12
+best solution: 80090.49501015015
+86
+Total Customer of child 0: 100
+_________________________
+current best solution: 80085.58158976221, individual 49
+best solution: 80085.58158976221
+87
+_________________________
+current best solution: 80085.58158976221, individual 47
+best solution: 80085.58158976221
+88
+_________________________
+current best solution: 80085.58158976221, individual 45
+best solution: 80085.58158976221
+89
+current number of vehicles before: 5
+Customer added: 47
+current number of vehicles: 6
+Total Customer of child 0: 100
+_________________________
+current best solution: 80085.58158976221, individual 44
+best solution: 80085.58158976221
+90
+Total Customer of child 0: 100
+_________________________
+current best solution: 80085.58158976221, individual 44
+best solution: 80085.58158976221
+91
+current number of vehicles before: 5
+Customer added: 33
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80085.58158976221, individual 42
+best solution: 80085.58158976221
+92
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 49
+best solution: 80084.80316971145
+93
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 47
+best solution: 80084.80316971145
+94
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 45
+best solution: 80084.80316971145
+95
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 44
+best solution: 80084.80316971145
+96
+Total Customer of child 0: 100
+Total Customer of child 1: 98
+_________________________
+current best solution: 80084.80316971145, individual 42
+best solution: 80084.80316971145
+97
+current number of vehicles before: 6
+Customer added: 30
+current number of vehicles: 7
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 40
+best solution: 80084.80316971145
+98
+current number of vehicles before: 5
+Customer added: 47
+current number of vehicles: 6
+current number of vehicles before: 5
+Customer added: 32
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 39
+best solution: 80084.80316971145
+99
+Total Customer of child 0: 100
+Mutation: 585.5,12.367775
+Mutation: 447.5,9.749075
+Mutation: 633.5,12.0785
+Mutation: 738.5,14.156712500000001
+Mutation: 609.5,12.2231375
+Mutation: 615.5,12.6798875
+Mutation: 722.0,12.900650000000002
+Mutation: 732.0,14.319112500000001
+Mutation: 693.0,13.321874999999999
+_________________________
+current best solution: 80084.80316971145, individual 39
+best solution: 80084.80316971145
+100
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 598.5,14.0146125
+Mutation: 664.0,13.743099999999998
+Mutation: 797.5,14.0476
+Mutation: 587.5,11.8628125
+Mutation: 631.0,11.230974999999999
+Mutation: 629.5,13.088425
+Mutation: 546.0,10.018049999999999
+Mutation: 657.5,11.9338625
+Mutation: 665.5,13.857287499999998
+_________________________
+current best solution: 80084.80316971145, individual 38
+best solution: 80084.80316971145
+101
+current number of vehicles before: 5
+Customer added: 34
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 37
+best solution: 80084.80316971145
+102
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 37
+best solution: 80084.80316971145
+103
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 36
+best solution: 80084.80316971145
+104
+Total Customer of child 0: 99
+_________________________
+current best solution: 80084.80316971145, individual 35
+best solution: 80084.80316971145
+105
+Total Customer of child 0: 98
+Mutation: 377.0,8.3255375
+Mutation: 585.5,12.367775000000002
+Mutation: 699.5,13.159475
+Mutation: 761.0,13.8978875
+Mutation: 659.0,14.0196875
+Mutation: 727.5,13.97655
+Mutation: 427.5,8.8837875
+Mutation: 626.0,11.507562499999999
+Mutation: 649.5,11.982075
+_________________________
+current best solution: 80084.80316971145, individual 34
+best solution: 80084.80316971145
+106
+Total Customer of child 0: 99
+_________________________
+current best solution: 80084.80316971145, individual 33
+best solution: 80084.80316971145
+107
+Total Customer of child 0: 96
+_________________________
+current best solution: 80084.80316971145, individual 32
+best solution: 80084.80316971145
+108
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 31
+best solution: 80084.80316971145
+109
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 30
+best solution: 80084.80316971145
+110
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 28
+best solution: 80084.80316971145
+111
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 27
+best solution: 80084.80316971145
+112
+Total Customer of child 0: 98
+Total Customer of child 1: 100
+_________________________
+current best solution: 80084.80316971145, individual 25
+best solution: 80084.80316971145
+113
+Total Customer of child 0: 100
+_________________________
+current best solution: 80084.80316971145, individual 24
+best solution: 80084.80316971145
+114
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80082.20044082313, individual 49
+best solution: 80082.20044082313
+115
+_________________________
+current best solution: 80082.20044082313, individual 47
+best solution: 80082.20044082313
+116
+Total Customer of child 0: 99
+Mutation: 559.5,13.017375
+Mutation: 577.0,11.0635
+Mutation: 597.0,13.900425
+Mutation: 792.5,14.324187499999999
+Mutation: 659.0,12.04805
+Mutation: 623.0,11.2791875
+_________________________
+current best solution: 80082.20044082313, individual 46
+best solution: 80082.20044082313
+117
+Total Customer of child 0: 100
+_________________________
+current best solution: 80082.20044082313, individual 46
+best solution: 80082.20044082313
+118
+current number of vehicles before: 5
+Customer added: 76
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 632.0,13.935950000000002
+Mutation: 520.5,12.020137499999999
+Mutation: 665.5,13.857287499999998
+Mutation: 649.0,10.6295875
+Mutation: 741.5,14.385087500000001
+Mutation: 600.0,12.157162499999998
+Mutation: 427.5,8.8837875
+Mutation: 758.5,13.050362499999999
+Mutation: 782.5,14.8773625
+False
+Mutation deleted
+_________________________
+current best solution: 80082.20044082313, individual 43
+best solution: 80082.20044082313
+119
+Total Customer of child 0: 100
+Total Customer of child 1: 99
+_________________________
+current best solution: 80082.20044082313, individual 42
+best solution: 80082.20044082313
+120
+Total Customer of child 0: 99
+Mutation: 632.5,13.3168
+Mutation: 495.0,10.078949999999999
+Mutation: 802.0,14.390162499999999
+Mutation: 546.5,11.370537500000001
+Mutation: 514.0,10.2109
+Mutation: 818.0,16.265375
+False
+Mutation deleted
+_________________________
+current best solution: 80082.20044082313, individual 42
+best solution: 80082.20044082313
+121
+Total Customer of child 0: 100
+Mutation: 638.0,10.449425000000002
+Mutation: 587.0,12.4819625
+Mutation: 600.5,13.50965
+Mutation: 827.0,16.9505
+False
+Mutation deleted
+_________________________
+current best solution: 80082.20044082313, individual 42
+best solution: 80082.20044082313
+122
+Total Customer of child 0: 100
+_________________________
+current best solution: 80082.20044082313, individual 41
+best solution: 80082.20044082313
+123
+Total Customer of child 0: 100
+_________________________
+current best solution: 80082.20044082313, individual 41
+best solution: 80082.20044082313
+124
+Total Customer of child 0: 96
+Mutation: 641.0,12.6494375
+Mutation: 713.5,13.568012499999998
+Mutation: 597.0,13.900425
+Mutation: 662.0,12.276425
+Mutation: 742.0,13.7659375
+Mutation: 452.5,9.4724875
+Mutation: 209.0,3.4230875000000003
+Mutation: 802.0,16.3618
+False
+Mutation deleted
+_________________________
+current best solution: 80082.20044082313, individual 41
+best solution: 80082.20044082313
+125
+Total Customer of child 0: 100
+Mutation: 673.5,13.809075
+Mutation: 635.5,11.5735375
+Mutation: 597.0,11.9287875
+Mutation: 903.5,16.85915
+False
+Mutation deleted
+_________________________
+current best solution: 80082.20044082313, individual 41
+best solution: 80082.20044082313
+126
+_________________________
+current best solution: 80082.20044082313, individual 39
+best solution: 80082.20044082313
+127
+Total Customer of child 0: 96
+Total Customer of child 1: 99
+_________________________
+current best solution: 80082.20044082313, individual 37
+best solution: 80082.20044082313
+128
+Total Customer of child 0: 98
+_________________________
+current best solution: 80082.20044082313, individual 36
+best solution: 80082.20044082313
+129
+_________________________
+current best solution: 80082.20044082313, individual 34
+best solution: 80082.20044082313
+130
+_________________________
+current best solution: 80082.20044082313, individual 32
+best solution: 80082.20044082313
+131
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80082.20044082313, individual 30
+best solution: 80082.20044082313
+132
+current number of vehicles before: 5
+Customer added: 44
+current number of vehicles: 6
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80082.20044082313, individual 28
+best solution: 80082.20044082313
+133
+current number of vehicles before: 5
+Customer added: 47
+current number of vehicles: 6
+Total Customer of child 0: 98
+Total Customer of child 1: 100
+_________________________
+current best solution: 80076.44267792552, individual 48
+best solution: 80076.44267792552
+134
+Total Customer of child 0: 96
+_________________________
+current best solution: 80076.44267792552, individual 48
+best solution: 80076.44267792552
+135
+Total Customer of child 0: 96
+Total Customer of child 1: 100
+_________________________
+current best solution: 80076.44267792552, individual 46
+best solution: 80076.44267792552
+136
+Mutation: 476.5,9.32785
+Mutation: 399.5,8.066712500000001
+Mutation: 670.0,14.199850000000001
+Mutation: 810.0,16.3135875
+False
+Mutation deleted
+_________________________
+current best solution: 80076.44267792552, individual 45
+best solution: 80076.44267792552
+137
+Total Customer of child 0: 100
+_________________________
+current best solution: 80076.44267792552, individual 44
+best solution: 80076.44267792552
+138
+Total Customer of child 0: 94
+Mutation: 714.5,14.30135
+Mutation: 420.0,8.31285
+Mutation: 602.5,13.004687500000001
+Mutation: 662.5,13.628912499999998
+Mutation: 757.0,12.936175
+Mutation: 651.5,13.448749999999999
+_________________________
+current best solution: 80076.2009620837, individual 49
+best solution: 80076.2009620837
+139
+Total Customer of child 0: 100
+Total Customer of child 1: 96
+_________________________
+current best solution: 80076.2009620837, individual 47
+best solution: 80076.2009620837
+140
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+_________________________
+current best solution: 80072.89504575887, individual 49
+best solution: 80072.89504575887
+141
+Total Customer of child 0: 94
+Total Customer of child 1: 100
+Mutation: 689.0,14.3318
+Mutation: 807.0,14.113575
+Mutation: 597.0,11.928787499999999
+Mutation: 716.5,13.796387499999998
+Mutation: 562.5,13.245750000000001
+_________________________
+current best solution: 80072.89504575887, individual 47
+best solution: 80072.89504575887
+142
+Total Customer of child 0: 96
+_________________________
+current best solution: 80072.89504575887, individual 46
+best solution: 80072.89504575887
+143
+Total Customer of child 0: 100
+_________________________
+current best solution: 80072.89504575887, individual 45
+best solution: 80072.89504575887
+144
+Total Customer of child 0: 96
+Total Customer of child 1: 100
+_________________________
+current best solution: 80072.89504575887, individual 43
+best solution: 80072.89504575887
+145
+_________________________
+current best solution: 80072.89504575887, individual 41
+best solution: 80072.89504575887
+146
+_________________________
+current best solution: 80072.89504575887, individual 39
+best solution: 80072.89504575887
+147
+Total Customer of child 0: 94
+Total Customer of child 1: 100
+_________________________
+current best solution: 80071.7326714569, individual 48
+best solution: 80071.7326714569
+148
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 632.0,13.935950000000002
+Mutation: 630.5,13.821762499999998
+Mutation: 622.5,11.8983375
+Mutation: 539.0,8.8279625
+Mutation: 598.5,12.042975
+Mutation: 727.5,13.97655
+Mutation: 713.5,13.568012500000002
+Mutation: 615.5,10.70825
+Mutation: 698.0,15.016925
+False
+Mutation deleted
+_________________________
+current best solution: 80071.7326714569, individual 47
+best solution: 80071.7326714569
+149
+current number of vehicles before: 5
+Customer added: 76
+current number of vehicles: 6
+Total Customer of child 0: 100
+_________________________
+current best solution: 80071.7326714569, individual 46
+best solution: 80071.7326714569
+150
+_________________________
+current best solution: 80071.7326714569, individual 45
+best solution: 80071.7326714569
+151
+Total Customer of child 0: 96
+Total Customer of child 1: 100
+_________________________
+current best solution: 80071.7326714569, individual 43
+best solution: 80071.7326714569
+152
+Total Customer of child 0: 100
+Total Customer of child 1: 96
+_________________________
+current best solution: 80071.7326714569, individual 42
+best solution: 80071.7326714569
+153
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 773.5,14.192237500000001
+Mutation: 498.5,11.659812500000001
+Mutation: 689.0,14.331800000000001
+Mutation: 691.5,13.207687499999999
+Mutation: 719.5,14.0247625
+_________________________
+current best solution: 80071.7326714569, individual 40
+best solution: 80071.7326714569
+154
+Total Customer of child 0: 94
+Mutation: 714.5,14.30135
+Mutation: 552.0,10.4748
+Mutation: 470.5,10.8427375
+Mutation: 662.5,13.628912499999998
+Mutation: 757.0,12.936175
+Mutation: 651.5,13.448749999999999
+_________________________
+current best solution: 80071.7326714569, individual 39
+best solution: 80071.7326714569
+155
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+Mutation: 714.5,14.30135
+Mutation: 447.0,10.368224999999999
+Mutation: 575.5,10.9493125
+Mutation: 662.5,13.628912499999998
+Mutation: 757.0,12.936175
+Mutation: 651.5,13.448749999999999
+_________________________
+current best solution: 80071.7326714569, individual 37
+best solution: 80071.7326714569
+156
+_________________________
+current best solution: 80071.7326714569, individual 35
+best solution: 80071.7326714569
+157
+Total Customer of child 0: 96
+Total Customer of child 1: 98
+_________________________
+current best solution: 80071.7326714569, individual 33
+best solution: 80071.7326714569
+158
+Total Customer of child 0: 96
+Total Customer of child 1: 100
+_________________________
+current best solution: 80071.7326714569, individual 32
+best solution: 80071.7326714569
+159
+Total Customer of child 0: 100
+_________________________
+current best solution: 80071.7326714569, individual 31
+best solution: 80071.7326714569
+160
+Total Customer of child 0: 96
+_________________________
+current best solution: 80071.7326714569, individual 31
+best solution: 80071.7326714569
+161
+Total Customer of child 0: 100
+_________________________
+current best solution: 80071.7326714569, individual 30
+best solution: 80071.7326714569
+162
+Total Customer of child 0: 96
+Total Customer of child 1: 100
+Mutation: 632.0,13.935950000000002
+Mutation: 630.5,13.821762499999998
+Mutation: 665.5,13.857287499999998
+Mutation: 539.0,8.8279625
+Mutation: 598.5,12.042975
+Mutation: 727.5,13.97655
+Mutation: 713.5,13.568012500000002
+Mutation: 615.5,10.70825
+Mutation: 655.0,13.057975000000003
+_________________________
+current best solution: 80071.7326714569, individual 28
+best solution: 80071.7326714569
+163
+_________________________
+current best solution: 80071.7326714569, individual 26
+best solution: 80071.7326714569
+164
+Total Customer of child 0: 95
+_________________________
+current best solution: 80071.7326714569, individual 25
+best solution: 80071.7326714569
+165
+Total Customer of child 0: 96
+_________________________
+current best solution: 80071.7326714569, individual 25
+best solution: 80071.7326714569
+166
+_________________________
+current best solution: 80071.7326714569, individual 23
+best solution: 80071.7326714569
+167
+Mutation: 341.0,5.5850375
+Mutation: 802.0,16.3618
+False
+Mutation deleted
+_________________________
+current best solution: 80071.7326714569, individual 22
+best solution: 80071.7326714569
+168
+Total Customer of child 0: 96
+_________________________
+current best solution: 80071.7326714569, individual 22
+best solution: 80071.7326714569
+169
+Total Customer of child 0: 100
+Total Customer of child 1: 96
+_________________________
+current best solution: 80071.7326714569, individual 21
+best solution: 80071.7326714569
+170
+Total Customer of child 0: 100
+Total Customer of child 1: 96
+Mutation: 632.0,13.935950000000002
+Mutation: 630.5,13.8217625
+Mutation: 580.0,13.2635125
+Mutation: 539.0,8.8279625
+Mutation: 598.5,12.042975
+Mutation: 727.5,13.97655
+Mutation: 799.0,14.161787499999999
+Mutation: 615.5,10.70825
+Mutation: 655.0,13.057975000000003
+_________________________
+current best solution: 80071.7326714569, individual 20
+best solution: 80071.7326714569
+171
+_________________________
+current best solution: 80071.7326714569, individual 19
+best solution: 80071.7326714569
+172
+Total Customer of child 0: 100
+Mutation: 773.5,14.192237500000001
+Mutation: 533.0,10.34285
+Mutation: 600.5,13.50965
+Mutation: 745.5,15.346800000000002
+False
+Mutation deleted
+_________________________
+current best solution: 80071.7326714569, individual 18
+best solution: 80071.7326714569
+173
+Total Customer of child 0: 94
+_________________________
+current best solution: 80071.7326714569, individual 18
+best solution: 80071.7326714569
+174
+Total Customer of child 0: 94
+Total Customer of child 1: 96
+Mutation: 773.5,14.1922375
+Mutation: 587.0,12.4819625
+Mutation: 600.5,13.50965
+Mutation: 691.5,13.207687500000002
+Mutation: 719.5,14.0247625
+Mutation: 632.0,13.935950000000002
+Mutation: 630.5,13.821762499999998
+Mutation: 665.5,13.857287499999998
+Mutation: 737.0,12.0708875
+Mutation: 598.5,12.042975
+Mutation: 727.5,13.97655
+Mutation: 713.5,13.568012500000002
+Mutation: 417.5,7.465325
+Mutation: 655.0,13.057975000000003
+_________________________
+current best solution: 80068.42502111662, individual 48
+best solution: 80068.42502111662
+175
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80068.42502111662, individual 46
+best solution: 80068.42502111662
+176
+current number of vehicles before: 6
+Customer added: 48
+current number of vehicles: 7
+current number of vehicles before: 6
+Customer added: 1
+current number of vehicles: 7
+Total Customer of child 0: 100
+Total Customer of child 1: 94
+Mutation: 585.5,12.367775
+Mutation: 360.0,7.688625
+Mutation: 721.0,14.13895
+Mutation: 738.5,14.156712500000001
+Mutation: 609.5,12.2231375
+Mutation: 615.5,12.6798875
+Mutation: 722.0,12.900650000000002
+Mutation: 831.0,15.940575
+False
+Mutation deleted
+_________________________
+current best solution: 80068.42502111662, individual 43
+best solution: 80068.42502111662
+177
+Total Customer of child 0: 100
+Total Customer of child 1: 98
+_________________________
+current best solution: 80068.42502111662, individual 43
+best solution: 80068.42502111662
+178
+_________________________
+current best solution: 80068.42502111662, individual 41
+best solution: 80068.42502111662
+179
+_________________________
+current best solution: 80068.42502111662, individual 39
+best solution: 80068.42502111662
+180
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 37
+best solution: 80068.42502111662
+181
+Total Customer of child 0: 96
+Total Customer of child 1: 100
+_________________________
+current best solution: 80068.42502111662, individual 35
+best solution: 80068.42502111662
+182
+Total Customer of child 0: 100
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 34
+best solution: 80068.42502111662
+183
+Total Customer of child 0: 96
+Mutation: 757.5,16.2603
+False
+Mutation deleted
+_________________________
+current best solution: 80068.42502111662, individual 32
+best solution: 80068.42502111662
+184
+Total Customer of child 0: 96
+_________________________
+current best solution: 80068.42502111662, individual 31
+best solution: 80068.42502111662
+185
+Total Customer of child 0: 100
+Total Customer of child 1: 96
+Mutation: 632.0,13.935950000000002
+Mutation: 630.5,13.8217625
+Mutation: 665.5,13.857287499999998
+Mutation: 539.0,8.8279625
+Mutation: 598.5,12.042975
+Mutation: 727.5,13.97655
+Mutation: 669.5,12.8473625
+Mutation: 615.5,10.70825
+Mutation: 699.0,13.778625000000002
+_________________________
+current best solution: 80068.42502111662, individual 29
+best solution: 80068.42502111662
+186
+Total Customer of child 0: 98
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 28
+best solution: 80068.42502111662
+187
+Mutation: 632.0,13.935950000000002
+Mutation: 555.5,12.055662499999999
+Mutation: 665.5,13.857287499999998
+Mutation: 792.0,12.9717
+Mutation: 561.5,10.540775
+Mutation: 727.5,13.97655
+Mutation: 713.5,13.568012500000002
+Mutation: 474.5,9.8328125
+Mutation: 655.0,13.057975000000003
+_________________________
+current best solution: 80068.42502111662, individual 26
+best solution: 80068.42502111662
+188
+_________________________
+current best solution: 80068.42502111662, individual 24
+best solution: 80068.42502111662
+189
+Total Customer of child 0: 100
+_________________________
+current best solution: 80068.42502111662, individual 24
+best solution: 80068.42502111662
+190
+Total Customer of child 0: 100
+_________________________
+current best solution: 80068.42502111662, individual 23
+best solution: 80068.42502111662
+191
+Total Customer of child 0: 100
+Total Customer of child 1: 100
+_________________________
+current best solution: 80068.42502111662, individual 21
+best solution: 80068.42502111662
+192
+Mutation: 538.5,11.41875
+Mutation: 682.0,11.170075
+Mutation: 702.0,14.007
+Mutation: 598.0,12.662125
+Mutation: 578.5,13.149325
+_________________________
+current best solution: 80068.42502111662, individual 19
+best solution: 80068.42502111662
+193
+Total Customer of child 0: 100
+_________________________
+current best solution: 80068.42502111662, individual 18
+best solution: 80068.42502111662
+194
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 17
+best solution: 80068.42502111662
+195
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+_________________________
+current best solution: 80068.42502111662, individual 15
+best solution: 80068.42502111662
+196
+Total Customer of child 0: 99
+Mutation: 475.5,8.594512499999999
+Mutation: 713.5,13.568012499999998
+Mutation: 597.0,13.900424999999998
+Mutation: 464.0,9.0335
+Mutation: 753.0,13.946100000000001
+Mutation: 805.0,16.590175
+False
+Mutation deleted
+_________________________
+current best solution: 80068.42502111662, individual 15
+best solution: 80068.42502111662
+197
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 13
+best solution: 80068.42502111662
+198
+Total Customer of child 0: 96
+_________________________
+current best solution: 80068.42502111662, individual 13
+best solution: 80068.42502111662
+199
+Total Customer of child 0: 100
+_________________________
+current best solution: 80068.42502111662, individual 13
+best solution: 80068.42502111662
+200
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80068.42502111662, individual 13
+best solution: 80068.42502111662
+201
+Total Customer of child 0: 94
+_________________________
+current best solution: 80068.42502111662, individual 12
+best solution: 80068.42502111662
+202
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80068.42502111662, individual 10
+best solution: 80068.42502111662
+203
+Total Customer of child 0: 94
+_________________________
+current best solution: 80068.42502111662, individual 10
+best solution: 80068.42502111662
+204
+Total Customer of child 0: 96
+_________________________
+current best solution: 80068.42502111662, individual 10
+best solution: 80068.42502111662
+205
+Total Customer of child 0: 94
+Mutation: 738.0,14.775862499999999
+False
+Mutation deleted
+_________________________
+current best solution: 80068.42502111662, individual 10
+best solution: 80068.42502111662
+206
+Total Customer of child 0: 98
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 10
+best solution: 80068.42502111662
+207
+Mutation: 552.5,9.855649999999999
+Mutation: 802.0,16.3618
+False
+Mutation deleted
+_________________________
+current best solution: 80068.42502111662, individual 10
+best solution: 80068.42502111662
+208
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+Mutation: 870.5,18.2903
+False
+Mutation deleted
+_________________________
+current best solution: 80068.42502111662, individual 9
+best solution: 80068.42502111662
+209
+Total Customer of child 0: 94
+_________________________
+current best solution: 80068.42502111662, individual 9
+best solution: 80068.42502111662
+210
+Total Customer of child 0: 94
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 8
+best solution: 80068.42502111662
+211
+Total Customer of child 0: 96
+_________________________
+current best solution: 80068.42502111662, individual 8
+best solution: 80068.42502111662
+212
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 8
+best solution: 80068.42502111662
+213
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 8
+best solution: 80068.42502111662
+214
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 8
+best solution: 80068.42502111662
+215
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+_________________________
+current best solution: 80068.42502111662, individual 7
+best solution: 80068.42502111662
+216
+Total Customer of child 0: 94
+Total Customer of child 1: 96
+_________________________
+current best solution: 80068.42502111662, individual 7
+best solution: 80068.42502111662
+217
+Total Customer of child 0: 94
+Mutation: 618.0,13.527412499999999
+Mutation: 420.0,8.31285
+Mutation: 602.5,13.004687500000001
+Mutation: 662.5,13.628912499999998
+Mutation: 757.0,12.936175
+Mutation: 748.0,14.2226875
+_________________________
+current best solution: 80068.42502111662, individual 7
+best solution: 80068.42502111662
+218
+Total Customer of child 0: 98
+_________________________
+current best solution: 80068.42502111662, individual 7
+best solution: 80068.42502111662
+219
+Mutation: 773.5,14.192237500000001
+Mutation: 599.5,12.7763125
+Mutation: 584.0,12.2535875
+Mutation: 695.5,14.1694
+Mutation: 719.5,14.0247625
+_________________________
+current best solution: 80068.42502111662, individual 7
+best solution: 80068.42502111662
+220
+_________________________
+current best solution: 80068.42502111662, individual 6
+best solution: 80068.42502111662
+221
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+_________________________
+current best solution: 80067.24443786248, individual 49
+best solution: 80067.24443786248
+222
+Total Customer of child 0: 96
+_________________________
+current best solution: 80067.24443786248, individual 48
+best solution: 80067.24443786248
+223
+Total Customer of child 0: 94
+_________________________
+current best solution: 80067.24443786248, individual 47
+best solution: 80067.24443786248
+224
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 689.5,13.71265
+Mutation: 648.0,13.839525
+Mutation: 789.5,16.06745
+False
+Mutation deleted
+Mutation: 538.5,11.41875
+Mutation: 706.5,12.377925000000001
+Mutation: 702.0,14.006999999999998
+Mutation: 598.0,12.662125
+Mutation: 554.0,11.941474999999999
+_________________________
+current best solution: 80067.24443786248, individual 44
+best solution: 80067.24443786248
+225
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+Mutation: 773.5,14.192237500000001
+Mutation: 599.5,12.7763125
+Mutation: 573.0,12.073425
+Mutation: 706.5,14.349562500000001
+Mutation: 719.5,14.0247625
+_________________________
+current best solution: 80067.24443786248, individual 43
+best solution: 80067.24443786248
+226
+Total Customer of child 0: 94
+Mutation: 538.5,11.41875
+Mutation: 849.5,14.7200375
+False
+Mutation deleted
+_________________________
+current best solution: 80067.24443786248, individual 42
+best solution: 80067.24443786248
+227
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80067.24443786248, individual 40
+best solution: 80067.24443786248
+228
+Total Customer of child 0: 96
+_________________________
+current best solution: 80067.24443786248, individual 39
+best solution: 80067.24443786248
+229
+Total Customer of child 0: 95
+Mutation: 538.5,11.41875
+Mutation: 682.0,11.170075
+Mutation: 702.0,14.006999999999998
+Mutation: 598.0,12.662125
+Mutation: 578.5,13.149325
+_________________________
+current best solution: 80067.24443786248, individual 38
+best solution: 80067.24443786248
+230
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80067.24443786248, individual 36
+best solution: 80067.24443786248
+231
+Total Customer of child 0: 94
+Mutation: 663.5,14.36225
+Mutation: 682.0,11.170075
+Mutation: 702.0,14.006999999999998
+Mutation: 473.0,9.718625
+Mutation: 578.5,13.149325
+_________________________
+current best solution: 80067.24443786248, individual 35
+best solution: 80067.24443786248
+232
+Total Customer of child 0: 94
+_________________________
+current best solution: 80067.24443786248, individual 34
+best solution: 80067.24443786248
+233
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80067.24443786248, individual 32
+best solution: 80067.24443786248
+234
+Total Customer of child 0: 96
+_________________________
+current best solution: 80067.24443786248, individual 31
+best solution: 80067.24443786248
+235
+Total Customer of child 0: 94
+_________________________
+current best solution: 80064.15892018256, individual 49
+best solution: 80064.15892018256
+236
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 585.5,12.367775
+Mutation: 360.0,7.688625
+Mutation: 576.0,10.3301625
+Mutation: 876.0,17.394562500000003
+False
+Mutation deleted
+_________________________
+current best solution: 80064.15892018256, individual 48
+best solution: 80064.15892018256
+237
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80064.15892018256, individual 46
+best solution: 80064.15892018256
+238
+_________________________
+current best solution: 80064.15892018256, individual 44
+best solution: 80064.15892018256
+239
+Total Customer of child 0: 94
+Mutation: 538.5,11.41875
+Mutation: 783.5,13.6390625
+Mutation: 710.5,13.339637499999998
+Mutation: 488.0,10.8605
+Mutation: 578.5,13.149325
+_________________________
+current best solution: 80064.15892018256, individual 43
+best solution: 80064.15892018256
+240
+Total Customer of child 0: 96
+Mutation: 879.0,17.622937500000003
+False
+Mutation deleted
+_________________________
+current best solution: 80064.15892018256, individual 43
+best solution: 80064.15892018256
+241
+Total Customer of child 0: 96
+Total Customer of child 1: 96
+_________________________
+current best solution: 80064.15892018256, individual 42
+best solution: 80064.15892018256
+242
+Total Customer of child 0: 94
+_________________________
+current best solution: 80064.15892018256, individual 41
+best solution: 80064.15892018256
+243
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 651.0,14.0679
+Mutation: 704.0,11.5304
+Mutation: 479.5,9.556225
+Mutation: 686.0,14.103425
+Mutation: 578.5,13.149325
+_________________________
+current best solution: 80064.15892018256, individual 39
+best solution: 80064.15892018256
+244
+_________________________
+current best solution: 80064.15892018256, individual 38
+best solution: 80064.15892018256
+245
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80063.7709060387, individual 48
+best solution: 80063.7709060387
+246
+Mutation: 538.5,11.41875
+Mutation: 682.0,11.170075
+Mutation: 626.5,12.860049999999998
+Mutation: 598.0,12.662125
+Mutation: 654.0,14.296275
+_________________________
+current best solution: 80063.7709060387, individual 46
+best solution: 80063.7709060387
+247
+Total Customer of child 0: 94
+Mutation: 501.0,10.5357
+Mutation: 606.5,10.023125
+Mutation: 702.0,14.006999999999998
+Mutation: 598.0,12.662125
+Mutation: 691.5,15.179325
+False
+Mutation deleted
+_________________________
+current best solution: 80063.7709060387, individual 44
+best solution: 80063.7709060387
+248
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 512.5,12.068349999999999
+Mutation: 360.0,7.688625
+Mutation: 649.0,10.6295875
+Mutation: 738.5,14.156712500000001
+Mutation: 499.5,10.421512499999999
+Mutation: 395.5,9.076637499999999
+Mutation: 766.0,13.621300000000002
+Mutation: 688.0,13.5984625
+Mutation: 550.0,10.9797625
+_________________________
+current best solution: 80063.7709060387, individual 42
+best solution: 80063.7709060387
+249
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+_________________________
+current best solution: 80063.7709060387, individual 40
+best solution: 80063.7709060387
+250
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 341.0,5.5850375
+Mutation: 852.0,17.5392
+False
+Mutation deleted
+_________________________
+current best solution: 80063.7709060387, individual 38
+best solution: 80063.7709060387
+251
+Total Customer of child 0: 95
+_________________________
+current best solution: 80063.7709060387, individual 38
+best solution: 80063.7709060387
+252
+Total Customer of child 0: 96
+Total Customer of child 1: 94
+_________________________
+current best solution: 80063.7709060387, individual 36
+best solution: 80063.7709060387
+253
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80062.13712608971, individual 49
+best solution: 80062.13712608971
+254
+Total Customer of child 0: 94
+_________________________
+current best solution: 80062.13712608971, individual 48
+best solution: 80062.13712608971
+255
+Total Customer of child 0: 94
+Total Customer of child 1: 95
+_________________________
+current best solution: 80060.65639480771, individual 48
+best solution: 80060.65639480771
+256
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 47
+best solution: 80060.65639480771
+257
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 46
+best solution: 80060.65639480771
+258
+Total Customer of child 0: 95
+Total Customer of child 1: 94
+Mutation: 435.5,8.835575
+Mutation: 515.5,10.325087499999999
+Mutation: 576.0,10.3301625
+Mutation: 738.5,14.156712500000001
+Mutation: 499.5,10.421512499999999
+Mutation: 395.5,9.0766375
+Mutation: 760.5,14.517037500000002
+False
+Mutation deleted
+_________________________
+current best solution: 80060.65639480771, individual 45
+best solution: 80060.65639480771
+259
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 585.5,12.367775
+Mutation: 360.0,7.688625
+Mutation: 609.0,10.870649999999998
+Mutation: 738.5,14.156712500000001
+Mutation: 499.5,10.421512499999999
+Mutation: 395.5,9.0766375
+Mutation: 766.0,13.621300000000002
+Mutation: 655.0,13.057975
+Mutation: 550.0,10.9797625
+_________________________
+current best solution: 80060.65639480771, individual 43
+best solution: 80060.65639480771
+260
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 43
+best solution: 80060.65639480771
+261
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 714.5,14.30135
+Mutation: 590.0,12.7103375
+Mutation: 520.5,10.048499999999999
+Mutation: 662.5,13.628912499999998
+Mutation: 669.0,11.494875
+Mutation: 651.5,13.448749999999999
+Mutation: 538.5,11.41875
+Mutation: 702.0,14.007
+Mutation: 710.5,13.339637499999998
+Mutation: 569.5,10.492562500000002
+Mutation: 578.5,13.149325
+_________________________
+current best solution: 80060.65639480771, individual 41
+best solution: 80060.65639480771
+262
+Mutation: 473.0,9.718625
+Mutation: 360.0,7.688625
+Mutation: 688.5,12.979312499999999
+Mutation: 738.5,14.156712500000001
+Mutation: 499.5,10.421512499999999
+Mutation: 395.5,9.0766375
+Mutation: 766.0,13.621300000000002
+Mutation: 688.0,13.5984625
+Mutation: 550.0,10.9797625
+_________________________
+current best solution: 80060.65639480771, individual 40
+best solution: 80060.65639480771
+263
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 39
+best solution: 80060.65639480771
+264
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 38
+best solution: 80060.65639480771
+265
+Total Customer of child 0: 94
+Total Customer of child 1: 96
+Mutation: 538.5,11.41875
+Mutation: 673.5,11.8374375
+Mutation: 764.5,15.478749999999998
+False
+Mutation deleted
+_________________________
+current best solution: 80060.65639480771, individual 35
+best solution: 80060.65639480771
+266
+Total Customer of child 0: 96
+_________________________
+current best solution: 80060.65639480771, individual 34
+best solution: 80060.65639480771
+267
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 33
+best solution: 80060.65639480771
+268
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 33
+best solution: 80060.65639480771
+269
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 435.5,8.835575
+Mutation: 510.0,11.220825
+Mutation: 510.0,9.249187500000001
+Mutation: 738.5,14.156712500000001
+Mutation: 587.0,12.4819625
+Mutation: 538.5,11.41875
+Mutation: 579.0,10.5585375
+Mutation: 875.0,16.661225
+False
+Mutation deleted
+_________________________
+current best solution: 80060.65639480771, individual 32
+best solution: 80060.65639480771
+270
+_________________________
+current best solution: 80060.65639480771, individual 30
+best solution: 80060.65639480771
+271
+_________________________
+current best solution: 80060.65639480771, individual 28
+best solution: 80060.65639480771
+272
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 714.5,14.30135
+Mutation: 717.0,13.1772375
+Mutation: 646.5,13.7253375
+Mutation: 475.5,10.56615
+Mutation: 592.0,10.2337375
+Mutation: 662.5,13.6289125
+_________________________
+current best solution: 80060.65639480771, individual 27
+best solution: 80060.65639480771
+273
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 26
+best solution: 80060.65639480771
+274
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80060.65639480771, individual 24
+best solution: 80060.65639480771
+275
+Mutation: 714.5,14.30135
+Mutation: 717.0,13.1772375
+Mutation: 459.0,9.310087500000002
+Mutation: 475.5,10.56615
+Mutation: 592.0,10.2337375
+Mutation: 850.0,18.0441625
+False
+Mutation deleted
+_________________________
+current best solution: 80060.65639480771, individual 21
+best solution: 80060.65639480771
+276
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 21
+best solution: 80060.65639480771
+277
+Total Customer of child 0: 94
+Mutation: 714.5,14.30135
+Mutation: 623.0,13.250824999999999
+Mutation: 520.5,10.048499999999999
+Mutation: 662.5,13.628912499999998
+Mutation: 721.0,14.13895
+Mutation: 566.5,10.2641875
+_________________________
+current best solution: 80060.65639480771, individual 20
+best solution: 80060.65639480771
+278
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 19
+best solution: 80060.65639480771
+279
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80060.65639480771, individual 18
+best solution: 80060.65639480771
+280
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80060.65639480771, individual 16
+best solution: 80060.65639480771
+281
+Mutation: 585.5,12.367775
+Mutation: 558.0,10.93155
+Mutation: 741.0,13.032599999999999
+Mutation: 300.5,6.44525
+Mutation: 574.5,12.1876125
+Mutation: 527.5,11.238587500000001
+Mutation: 799.0,14.161787499999999
+Mutation: 688.0,13.5984625
+Mutation: 385.0,8.277325
+_________________________
+current best solution: 80060.65639480771, individual 14
+best solution: 80060.65639480771
+282
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 538.5,11.41875
+Mutation: 673.5,11.8374375
+Mutation: 622.5,11.8983375
+Mutation: 686.0,14.103425
+Mutation: 578.5,13.149325000000001
+_________________________
+current best solution: 80060.65639480771, individual 13
+best solution: 80060.65639480771
+283
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80060.65639480771, individual 13
+best solution: 80060.65639480771
+284
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 714.5,14.30135
+Mutation: 717.0,13.1772375
+Mutation: 496.5,10.193137499999999
+Mutation: 475.5,10.56615
+Mutation: 742.0,13.7659375
+Mutation: 662.5,13.6289125
+Mutation: 714.5,14.30135
+Mutation: 623.0,13.250824999999999
+Mutation: 520.5,10.048499999999999
+Mutation: 662.5,13.628912499999998
+Mutation: 721.0,14.13895
+Mutation: 566.5,10.2641875
+_________________________
+current best solution: 80060.65639480771, individual 13
+best solution: 80060.65639480771
+285
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80060.65639480771, individual 13
+best solution: 80060.65639480771
+286
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 501.0,10.5357
+Mutation: 711.0,12.7204875
+Mutation: 710.5,13.339637499999998
+Mutation: 575.0,13.540099999999999
+Mutation: 601.5,12.27135
+_________________________
+current best solution: 80060.65639480771, individual 11
+best solution: 80060.65639480771
+287
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+_________________________
+current best solution: 80060.65639480771, individual 11
+best solution: 80060.65639480771
+288
+Total Customer of child 0: 94
+Total Customer of child 1: 94
+Mutation: 714.5,14.30135
+Mutation: 623.0,13.250824999999999
+Mutation: 520.5,10.048499999999999
+Mutation: 662.5,13.6289125
+Mutation: 636.0,10.954387500000001
+Mutation: 651.5,13.448749999999999
+_________________________
+current best solution: 80060.65639480771, individual 11
+best solution: 80060.65639480771
+289
+Total Customer of child 0: 94
+_________________________
+current best solution: 80060.65639480771, individual 11
+best solution: 80060.65639480771
+290
+Mutation: 585.5,12.367775
+Mutation: 360.0,7.688625
+Mutation: 411.0,7.627725000000001
+Mutation: 738.5,14.156712500000001
+Mutation: 499.5,10.4215125
+Mutation: 395.5,9.0766375
+Mutation: 766.0,13.621300000000002
+Mutation: 688.0,13.5984625
+Mutation: 715.0,13.6822
+The program '[3608] python.exe' has exited with code -1073741510 (0xc000013a).

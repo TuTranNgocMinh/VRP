@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>eecadc58-47a7-4764-8dbc-62954c755d16</TargetProject>
+    <FriendlyName>heuristics</FriendlyName>
+  </ProjectTarget>
+  <Reports>
+    <Report>
+      <Filename>C:\Users\Tu Tran Ngoc Minh\AppData\Local\Temp\heuristics_20190413.vsp</Filename>
+    </Report>
+  </Reports>
+</ProfilingTarget>

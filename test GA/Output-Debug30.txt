@@ -1,0 +1,1361 @@
+﻿30
+
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.63066477812, individual 8
+best solution: 28031.63066477812
+0
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28031.63066477812, individual 8
+best solution: 28031.63066477812
+1
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.63066477812, individual 8
+best solution: 28031.63066477812
+2
+_________________________
+current best solution: 28031.63066477812, individual 8
+best solution: 28031.63066477812
+3
+_________________________
+current best solution: 28031.63066477812, individual 8
+best solution: 28031.63066477812
+4
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 49
+best solution: 28031.417126601795
+5
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 47
+best solution: 28031.417126601795
+6
+_________________________
+current best solution: 28031.417126601795, individual 45
+best solution: 28031.417126601795
+7
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 43
+best solution: 28031.417126601795
+8
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 41
+best solution: 28031.417126601795
+9
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 39
+best solution: 28031.417126601795
+10
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 37
+best solution: 28031.417126601795
+11
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 35
+best solution: 28031.417126601795
+12
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28031.417126601795, individual 33
+best solution: 28031.417126601795
+13
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 48
+best solution: 28028.516574104673
+14
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28028.516574104673, individual 47
+best solution: 28028.516574104673
+15
+_________________________
+current best solution: 28028.516574104673, individual 45
+best solution: 28028.516574104673
+16
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 43
+best solution: 28028.516574104673
+17
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 41
+best solution: 28028.516574104673
+18
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 39
+best solution: 28028.516574104673
+19
+current number of vehicles before: 2
+Customer added: 15
+current number of vehicles: 3
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 37
+best solution: 28028.516574104673
+20
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 35
+best solution: 28028.516574104673
+21
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 33
+best solution: 28028.516574104673
+22
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 31
+best solution: 28028.516574104673
+23
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 29
+best solution: 28028.516574104673
+24
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 29
+best solution: 28028.516574104673
+25
+_________________________
+current best solution: 28028.516574104673, individual 29
+best solution: 28028.516574104673
+26
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 28
+best solution: 28028.516574104673
+27
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 27
+best solution: 28028.516574104673
+28
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 26
+best solution: 28028.516574104673
+29
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 24
+best solution: 28028.516574104673
+30
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28028.516574104673, individual 23
+best solution: 28028.516574104673
+31
+current number of vehicles before: 2
+Customer added: 21
+current number of vehicles: 3
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28027.03247721377, individual 48
+best solution: 28027.03247721377
+32
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28027.03247721377, individual 47
+best solution: 28027.03247721377
+33
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.87867092631, individual 49
+best solution: 28026.87867092631
+34
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.87867092631, individual 47
+best solution: 28026.87867092631
+35
+_________________________
+current best solution: 28026.87867092631, individual 45
+best solution: 28026.87867092631
+36
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28026.87867092631, individual 44
+best solution: 28026.87867092631
+37
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.87867092631, individual 42
+best solution: 28026.87867092631
+38
+Total Customer of child 0: 30
+_________________________
+current best solution: 28026.87867092631, individual 41
+best solution: 28026.87867092631
+39
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 48
+best solution: 28026.10022596965
+40
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 46
+best solution: 28026.10022596965
+41
+_________________________
+current best solution: 28026.10022596965, individual 46
+best solution: 28026.10022596965
+42
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 44
+best solution: 28026.10022596965
+43
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 43
+best solution: 28026.10022596965
+44
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 41
+best solution: 28026.10022596965
+45
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 39
+best solution: 28026.10022596965
+46
+_________________________
+current best solution: 28026.10022596965, individual 37
+best solution: 28026.10022596965
+47
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28026.10022596965, individual 35
+best solution: 28026.10022596965
+48
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28025.620281117706, individual 49
+best solution: 28025.620281117706
+49
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 47
+best solution: 28025.620281117706
+50
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 45
+best solution: 28025.620281117706
+51
+current number of vehicles before: 2
+Customer added: 21
+current number of vehicles: 3
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 43
+best solution: 28025.620281117706
+52
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 42
+best solution: 28025.620281117706
+53
+Total Customer of child 0: 30
+_________________________
+current best solution: 28025.620281117706, individual 41
+best solution: 28025.620281117706
+54
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 39
+best solution: 28025.620281117706
+55
+current number of vehicles before: 2
+Customer added: 21
+current number of vehicles: 3
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 37
+best solution: 28025.620281117706
+56
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 36
+best solution: 28025.620281117706
+57
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28025.620281117706, individual 34
+best solution: 28025.620281117706
+58
+Total Customer of child 0: 30
+_________________________
+current best solution: 28025.620281117706, individual 34
+best solution: 28025.620281117706
+59
+Total Customer of child 0: 30
+_________________________
+current best solution: 28025.620281117706, individual 34
+best solution: 28025.620281117706
+60
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.64959626265, individual 49
+best solution: 28024.64959626265
+61
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.64959626265, individual 47
+best solution: 28024.64959626265
+62
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.64959626265, individual 45
+best solution: 28024.64959626265
+63
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.64959626265, individual 43
+best solution: 28024.64959626265
+64
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.060260897102, individual 49
+best solution: 28024.060260897102
+65
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.060260897102, individual 47
+best solution: 28024.060260897102
+66
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.060260897102, individual 45
+best solution: 28024.060260897102
+67
+_________________________
+current best solution: 28024.060260897102, individual 43
+best solution: 28024.060260897102
+68
+Total Customer of child 0: 30
+_________________________
+current best solution: 28024.060260897102, individual 42
+best solution: 28024.060260897102
+69
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.060260897102, individual 40
+best solution: 28024.060260897102
+70
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.060260897102, individual 39
+best solution: 28024.060260897102
+71
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28024.060260897102, individual 37
+best solution: 28024.060260897102
+72
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 48
+best solution: 28023.410486085108
+73
+False
+_________________________
+current best solution: 28023.410486085108, individual 47
+best solution: 28023.410486085108
+74
+current number of vehicles before: 2
+Customer added: 21
+current number of vehicles: 3
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 45
+best solution: 28023.410486085108
+75
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 44
+best solution: 28023.410486085108
+76
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 42
+best solution: 28023.410486085108
+77
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 40
+best solution: 28023.410486085108
+78
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 38
+best solution: 28023.410486085108
+79
+Total Customer of child 0: 30
+_________________________
+current best solution: 28023.410486085108, individual 38
+best solution: 28023.410486085108
+80
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28023.410486085108, individual 37
+best solution: 28023.410486085108
+81
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28023.410486085108, individual 35
+best solution: 28023.410486085108
+82
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 49
+best solution: 28020.73830913086
+83
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 47
+best solution: 28020.73830913086
+84
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.73830913086, individual 44
+best solution: 28020.73830913086
+85
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.73830913086, individual 43
+best solution: 28020.73830913086
+86
+_________________________
+current best solution: 28020.73830913086, individual 41
+best solution: 28020.73830913086
+87
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.73830913086, individual 40
+best solution: 28020.73830913086
+88
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 38
+best solution: 28020.73830913086
+89
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 36
+best solution: 28020.73830913086
+90
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 34
+best solution: 28020.73830913086
+91
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.73830913086, individual 34
+best solution: 28020.73830913086
+92
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 32
+best solution: 28020.73830913086
+93
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 31
+best solution: 28020.73830913086
+94
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.73830913086, individual 30
+best solution: 28020.73830913086
+95
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 49
+best solution: 28020.637846639023
+96
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.637846639023, individual 48
+best solution: 28020.637846639023
+97
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 46
+best solution: 28020.637846639023
+98
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 44
+best solution: 28020.637846639023
+99
+_________________________
+current best solution: 28020.637846639023, individual 44
+best solution: 28020.637846639023
+100
+_________________________
+current best solution: 28020.637846639023, individual 42
+best solution: 28020.637846639023
+101
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 40
+best solution: 28020.637846639023
+102
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.637846639023, individual 39
+best solution: 28020.637846639023
+103
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 37
+best solution: 28020.637846639023
+104
+_________________________
+current best solution: 28020.637846639023, individual 35
+best solution: 28020.637846639023
+105
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.637846639023, individual 34
+best solution: 28020.637846639023
+106
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.637846639023, individual 33
+best solution: 28020.637846639023
+107
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 31
+best solution: 28020.637846639023
+108
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 30
+best solution: 28020.637846639023
+109
+_________________________
+current best solution: 28020.637846639023, individual 28
+best solution: 28020.637846639023
+110
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 26
+best solution: 28020.637846639023
+111
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 24
+best solution: 28020.637846639023
+112
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 22
+best solution: 28020.637846639023
+113
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 21
+best solution: 28020.637846639023
+114
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.637846639023, individual 19
+best solution: 28020.637846639023
+115
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.637846639023, individual 18
+best solution: 28020.637846639023
+116
+_________________________
+current best solution: 28020.637846639023, individual 16
+best solution: 28020.637846639023
+117
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.550705170903, individual 49
+best solution: 28020.550705170903
+118
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 47
+best solution: 28020.550705170903
+119
+_________________________
+current best solution: 28020.550705170903, individual 47
+best solution: 28020.550705170903
+120
+False
+_________________________
+current best solution: 28020.550705170903, individual 46
+best solution: 28020.550705170903
+121
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 44
+best solution: 28020.550705170903
+122
+_________________________
+current best solution: 28020.550705170903, individual 43
+best solution: 28020.550705170903
+123
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 41
+best solution: 28020.550705170903
+124
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 39
+best solution: 28020.550705170903
+125
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 37
+best solution: 28020.550705170903
+126
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 35
+best solution: 28020.550705170903
+127
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 34
+best solution: 28020.550705170903
+128
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 33
+best solution: 28020.550705170903
+129
+_________________________
+current best solution: 28020.550705170903, individual 31
+best solution: 28020.550705170903
+130
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 30
+best solution: 28020.550705170903
+131
+_________________________
+current best solution: 28020.550705170903, individual 29
+best solution: 28020.550705170903
+132
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 28
+best solution: 28020.550705170903
+133
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 26
+best solution: 28020.550705170903
+134
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 25
+best solution: 28020.550705170903
+135
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 24
+best solution: 28020.550705170903
+136
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 22
+best solution: 28020.550705170903
+137
+_________________________
+current best solution: 28020.550705170903, individual 20
+best solution: 28020.550705170903
+138
+_________________________
+current best solution: 28020.550705170903, individual 18
+best solution: 28020.550705170903
+139
+_________________________
+current best solution: 28020.550705170903, individual 17
+best solution: 28020.550705170903
+140
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 16
+best solution: 28020.550705170903
+141
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.550705170903, individual 16
+best solution: 28020.550705170903
+142
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 15
+best solution: 28020.550705170903
+143
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.550705170903, individual 15
+best solution: 28020.550705170903
+144
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 48
+best solution: 28020.499721414126
+145
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 46
+best solution: 28020.499721414126
+146
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.499721414126, individual 45
+best solution: 28020.499721414126
+147
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.499721414126, individual 44
+best solution: 28020.499721414126
+148
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 42
+best solution: 28020.499721414126
+149
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 40
+best solution: 28020.499721414126
+150
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 38
+best solution: 28020.499721414126
+151
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 36
+best solution: 28020.499721414126
+152
+_________________________
+current best solution: 28020.499721414126, individual 34
+best solution: 28020.499721414126
+153
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.499721414126, individual 34
+best solution: 28020.499721414126
+154
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 32
+best solution: 28020.499721414126
+155
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 30
+best solution: 28020.499721414126
+156
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 28
+best solution: 28020.499721414126
+157
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 26
+best solution: 28020.499721414126
+158
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 24
+best solution: 28020.499721414126
+159
+_________________________
+current best solution: 28020.499721414126, individual 22
+best solution: 28020.499721414126
+160
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 21
+best solution: 28020.499721414126
+161
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 21
+best solution: 28020.499721414126
+162
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 21
+best solution: 28020.499721414126
+163
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 20
+best solution: 28020.499721414126
+164
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 18
+best solution: 28020.499721414126
+165
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.499721414126, individual 16
+best solution: 28020.499721414126
+166
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 15
+best solution: 28020.499721414126
+167
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 13
+best solution: 28020.499721414126
+168
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 12
+best solution: 28020.499721414126
+169
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 12
+best solution: 28020.499721414126
+170
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 10
+best solution: 28020.499721414126
+171
+_________________________
+current best solution: 28020.499721414126, individual 15
+best solution: 28020.499721414126
+172
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 15
+best solution: 28020.499721414126
+173
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 13
+best solution: 28020.499721414126
+174
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 11
+best solution: 28020.499721414126
+175
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.499721414126, individual 9
+best solution: 28020.499721414126
+176
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 49
+best solution: 28020.49890659285
+177
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 47
+best solution: 28020.49890659285
+178
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 45
+best solution: 28020.49890659285
+179
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 43
+best solution: 28020.49890659285
+180
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 42
+best solution: 28020.49890659285
+181
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 41
+best solution: 28020.49890659285
+182
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 40
+best solution: 28020.49890659285
+183
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 38
+best solution: 28020.49890659285
+184
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 37
+best solution: 28020.49890659285
+185
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 35
+best solution: 28020.49890659285
+186
+_________________________
+current best solution: 28020.49890659285, individual 33
+best solution: 28020.49890659285
+187
+_________________________
+current best solution: 28020.49890659285, individual 33
+best solution: 28020.49890659285
+188
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 31
+best solution: 28020.49890659285
+189
+_________________________
+current best solution: 28020.49890659285, individual 29
+best solution: 28020.49890659285
+190
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.49890659285, individual 28
+best solution: 28020.49890659285
+191
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 26
+best solution: 28020.49890659285
+192
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 25
+best solution: 28020.49890659285
+193
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 25
+best solution: 28020.49890659285
+194
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 25
+best solution: 28020.49890659285
+195
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 23
+best solution: 28020.49890659285
+196
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 21
+best solution: 28020.49890659285
+197
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 20
+best solution: 28020.49890659285
+198
+_________________________
+current best solution: 28020.49890659285, individual 18
+best solution: 28020.49890659285
+199
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 16
+best solution: 28020.49890659285
+200
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.49890659285, individual 16
+best solution: 28020.49890659285
+201
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 16
+best solution: 28020.49890659285
+202
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 15
+best solution: 28020.49890659285
+203
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 15
+best solution: 28020.49890659285
+204
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 15
+best solution: 28020.49890659285
+205
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 14
+best solution: 28020.49890659285
+206
+_________________________
+current best solution: 28020.49890659285, individual 13
+best solution: 28020.49890659285
+207
+_________________________
+current best solution: 28020.49890659285, individual 12
+best solution: 28020.49890659285
+208
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+False
+_________________________
+current best solution: 28020.49890659285, individual 11
+best solution: 28020.49890659285
+209
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 11
+best solution: 28020.49890659285
+210
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 11
+best solution: 28020.49890659285
+211
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 10
+best solution: 28020.49890659285
+212
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 9
+best solution: 28020.49890659285
+213
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 9
+best solution: 28020.49890659285
+214
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 7
+best solution: 28020.49890659285
+215
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 5
+best solution: 28020.49890659285
+216
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 4
+best solution: 28020.49890659285
+217
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.49890659285, individual 4
+best solution: 28020.49890659285
+218
+_________________________
+current best solution: 28020.49890659285, individual 3
+best solution: 28020.49890659285
+219
+_________________________
+current best solution: 28020.49890659285, individual 1
+best solution: 28020.49890659285
+220
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 0
+best solution: 28020.49890659285
+221
+_________________________
+current best solution: 28020.49890659285, individual 0
+best solution: 28020.49890659285
+222
+Total Customer of child 0: 30
+_________________________
+current best solution: 28020.49890659285, individual 0
+best solution: 28020.49890659285
+223
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 0
+best solution: 28020.49890659285
+224
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 0
+best solution: 28020.49890659285
+225
+Total Customer of child 0: 30
+Total Customer of child 1: 30
+_________________________
+current best solution: 28020.49890659285, individual 0
+best solution: 28020.49890659285
+226
+best solution obtained!
+Distribution Center 0
+vehicle 0: 0
+vehicle 0: 6
+vehicle 0: 29
+total distance travelled: 5.777091122510619
+vehicle 1: 2
+vehicle 1: 20
+vehicle 1: 22
+vehicle 1: 8
+total distance travelled: 13.37430102139927
+vehicle 2: 13
+vehicle 2: 28
+vehicle 2: 26
+vehicle 2: 9
+total distance travelled: 5.993147083423405
+Total cost: 12005.028907845468
+Distribution Center 1
+vehicle 0: 15
+vehicle 0: 19
+vehicle 0: 23
+vehicle 0: 18
+vehicle 0: 3
+total distance travelled: 8.31383236416059
+vehicle 1: 14
+vehicle 1: 16
+vehicle 1: 11
+vehicle 1: 5
+vehicle 1: 21
+total distance travelled: 45.906061860565686
+Total cost: 8010.843978844945
+Distribution Center 2
+vehicle 0: 12
+vehicle 0: 24
+vehicle 0: 17
+total distance travelled: 15.089995069608598
+vehicle 1: 25
+vehicle 1: 27
+vehicle 1: 7
+vehicle 1: 10
+vehicle 1: 1
+vehicle 1: 4
+total distance travelled: 8.040104442575101
+Total cost: 8004.626019902436
+total cost of best solution: 28020.49890659285
+5.77709112251
+13.3743010214
+5.99314708342
+8.31383236416
+45.9060618606
+15.0899950696
+8.04010444258
+Total Customer: 30
+The thread 'MainThread' (0x4068) has exited with code 0 (0x0).
+The program '[3168] python.exe' has exited with code 0 (0x0).

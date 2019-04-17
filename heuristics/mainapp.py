@@ -632,14 +632,23 @@ class App(QMainWindow):
             except:
                 print("error when converting. Size and Weight must be positive numbers, quantity must be positive integers!")
                 return 1
-        #calculation module
-        GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,0.8,0.2)
-        print("")
-        LocGroup=GA.initGroup()
-        GA.initpopulation(50,LocGroup)
-        GA.mainloop(1000,0.85)
-        self.BestSolution=GA.getBestSolution()
-        self.corrBestSolution=GA.getBestSolution()
+        #parameters for algorithm
+        AlgoIndex=self.leftwidget.algorithm.currentIndex()
+        if(AlgoIndex==0):
+            maxIter=1000
+            VRank=0.8
+            DRank=0.2
+            #calculation module
+            GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank)
+            print("")
+            LocGroup=GA.initGroup()
+            GA.initpopulation(50,LocGroup)
+            GA.mainloop(1000,0.85)
+            self.BestSolution=GA.getBestSolution()
+            self.corrBestSolution=GA.getBestSolution()
+        else:
+            print("no Algorithm found, exiting...")
+            return 1
         #create list of DC-Vehicle dictionary
         self.result()
         return
@@ -662,12 +671,13 @@ class App(QMainWindow):
             self.webdisp.addcorrectedframe(DC,corrRoute)
         else:
             self.webdisp.frame1.changeurl(DC,route)
+            self.webdisp.frame2.changeurl(DC,corrRoute)
         return
     def CreateRoutes(self,number,maxroutenumber):
         """create routing table based on the calculation."""
         self.corrwidget.vehicletable.setRowCount(number)
         self.corrwidget.vehicletable.setColumnCount(maxroutenumber+2)
-        self.corrwidget.vehicletable.setHorizontalHeaderLabels(['Vehicle','DC'])
+        self.corrwidget.vehicletable.setHorizontalHeaderLabels(['Vehicle','DC','Volume','Weight'])
         #fill table with ""
         for row in range(self.corrwidget.vehicletable.rowCount()):
             for col in range(self.corrwidget.vehicletable.columnCount()):
@@ -678,21 +688,25 @@ class App(QMainWindow):
         i=0  
         for DCIndex in range(len(self.DCList)):
             for vIndex in range(self.BestSolution.DC[DCIndex].GetNumberVehicles()):
-                j=2
+                j=4
                 vItem=QTableWidgetItem("vehicle "+str(i+1))
                 self.corrwidget.vehicletable.setItem(i,0, vItem) #set vehicle and vehicle number item
                 DCItem=QTableWidgetItem(str(DCIndex+1))
                 self.corrwidget.vehicletable.setItem(i,1, DCItem)
-                volume=0                
+                volume=0
+                weight=0                
                 for cIndex in range(self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
                     routeitem=QTableWidgetItem(str(self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
                     #calc volume
-                    volume+=self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getVolume()*self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getQuantity()                    
+                    volume+=self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getVolume()*self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getQuantity()
+                    weight+=self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getWeight()*self.BestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getQuantity()                    
                     self.corrwidget.vehicletable.setItem(i,j, routeitem)
                     j+=1
                 totalCustomer+=self.BestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()
                 volItem=QTableWidgetItem(str(volume))
-                self.corrwidget.vehicletable.setItem(i,j+1, volItem)
+                weightItem=QTableWidgetItem(str(weight))
+                self.corrwidget.vehicletable.setItem(i,2, volItem)
+                self.corrwidget.vehicletable.setItem(i,3, weightItem)
                 i+=1
         print("Total Customer: {0}".format(totalCustomer))
         #set buttons enabled    
@@ -710,7 +724,7 @@ class App(QMainWindow):
         Constraint=True
         self.corrwidget.vehicletable.blockSignals(True)
         for row in range(self.corrwidget.vehicletable.rowCount()):
-            for col in range(2,self.corrwidget.vehicletable.columnCount()):
+            for col in range(4,self.corrwidget.vehicletable.columnCount()):
                 Text=self.corrwidget.vehicletable.item(row,col).text()
                 if(Text!=""):
                     try:
@@ -738,7 +752,7 @@ class App(QMainWindow):
             DCIndex=int(self.corrwidget.vehicletable.item(row,1).text())-1
             self.corrBestSolution.DC[DCIndex].addVehicle(
                 self.VehicleList[0][0],self.VehicleList[0][1],self.VehicleList[0][2],self.VehicleList[0][3])
-            for col in range(2,self.corrwidget.vehicletable.columnCount()):
+            for col in range(4,self.corrwidget.vehicletable.columnCount()):
                 Text=self.corrwidget.vehicletable.item(row,col).text()                
                 if(Text!=""):
                     vnumber=self.corrBestSolution.DC[DCIndex].GetNumberVehicles()-1

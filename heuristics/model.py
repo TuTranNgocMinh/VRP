@@ -76,11 +76,13 @@ class model_GA(object):
             #test route
             for k in range(len(LocGroup)):
                 number=self.__population[num].DC[k].GetNumberVehicles()
+                TotalCost=self.__VRank*number*5000
                 for vehicle in range(number):                    
                     Vehicle=self.__population[num].DC[k].VehicleList[vehicle]
                     self.DistanceCalculation(k,Vehicle)
                     #total cost calculation
-                self.__population[num].DC[k].setTotalCost(0.8,0.2)
+                    TotalCost+=self.__population[num].DC[k].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank
+                self.__population[num].DC[k].setTotalCost(TotalCost)
             self.__population[num].setTotalCost()
         return
     def initGroup(self):
@@ -118,15 +120,16 @@ class model_GA(object):
         self.__swap(rd1,rd2,list1,list2)
         #print changes
         number=individuals.DC[rand].GetNumberVehicles()
+        TotalCost=self.__VRank*number*5000
         for vIndex in range(number):
             weight,vol=self.ConstraintCalculation(individuals.DC[rand].VehicleList[vIndex])
-            print("Mutation: {0},{1}".format(weight,vol))
             if(self.checkCondition(weight,vol,individuals.DC[rand].VehicleList[vIndex])==False):
                 print("False")
                 return False
             Vehicle=individuals.DC[rand].VehicleList[vIndex]
             self.DistanceCalculation(rand,Vehicle)
-        individuals.DC[rand].setTotalCost(0.8,0.2)
+            TotalCost+=individuals.DC[rand].VehicleList[vIndex].getTotalDistanceTravelled()*self.__DRank
+        individuals.DC[rand].setTotalCost(TotalCost)
         individuals.setTotalCost()
         return True
     def crossover(self,parent1,parent2):
@@ -148,17 +151,21 @@ class model_GA(object):
 
         if(self.crossover_func(child1.DC[DC],DC,route2,vrd2)==True):
             number=child1.DC[DC].GetNumberVehicles()
+            TotalCost=self.__VRank*number*5000
             for vehicle in range(number):
                 self.DistanceCalculation(DC,child1.DC[DC].VehicleList[vehicle])
-            child1.DC[DC].setTotalCost(0.8,0.2)
+                TotalCost+=child1.DC[DC].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank
+            child1.DC[DC].setTotalCost(TotalCost)
             child1.setTotalCost()
         else:
             flag1=False
         if(self.crossover_func(child2.DC[DC],DC,route1,vrd1)==True):
             number=child2.DC[DC].GetNumberVehicles()
+            TotalCost=self.__VRank*number*5000
             for vehicle in range(number):
                 self.DistanceCalculation(DC,child2.DC[DC].VehicleList[vehicle])
-            child2.DC[DC].setTotalCost(0.8,0.2)
+                TotalCost+=child2.DC[DC].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank
+            child2.DC[DC].setTotalCost(TotalCost)
             child2.setTotalCost()
         else:
             flag2=False
@@ -377,20 +384,18 @@ class model_GA(object):
                 self.__children.append(copy.deepcopy(self.__population[parent2]))
             #mutation
             rand=random.uniform(0,1)
-            if(rand>0.85):
+            if(rand>CThold):
                 popIndex=random.randrange(0,len(self.__population))
                 if(self.Mutation(self.__population[popIndex])==False):
                     del self.__population[popIndex]
-                    print("Mutation deleted")
                     rParent=random.randrange(0,len(self.__population))
                     self.__population.append(copy.deepcopy(self.__population[rParent]))
             rand=random.uniform(0,1)
             if(len(self.__children)>0):
-                if(rand>0.85):
+                if(rand>CThold):
                     popIndex=random.randrange(0,len(self.__children))
                     if(self.Mutation(self.__children[popIndex])==False):
                         del self.__children[popIndex]
-                        print("Mutation deleted")
             #Survivor selection       
             self.SurvivorSelection()
             self.deleteChildren()
@@ -407,5 +412,6 @@ class model_GA(object):
             count+=1
             if(count==50):
                 print("best solution obtained!")
+                self.BestSolutionDisplay()
                 return 0
             
