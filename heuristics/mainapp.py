@@ -572,7 +572,7 @@ class App(QMainWindow):
         self.calcbutton.clicked.connect(self.calculate)
         self.calcbutton.setEnabled(False)
         self.leftwidget.formwidget.layout.addWidget(self.calcbutton)
-
+        #create data dock
         self.leftdock=QDockWidget("Data", self)
         self.leftdock.setFloating(False)
         self.leftdock.setWidget(self.leftwidget)
