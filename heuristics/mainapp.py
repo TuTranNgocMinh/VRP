@@ -47,15 +47,15 @@ class VehicleDialog(QDialog): #may change layout to table if there are multiple 
 
 class leftwidget(QWidget):
     def __init__(self):
-         super(leftwidget,self).__init__()         
+         super(leftwidget,self).__init__()      
          layout=QVBoxLayout()
          #create tab widget
          self.tabs=QTabWidget()         
          #create first tab
          self.tablewidget=QWidget()
          self.createdatatable()
-         #create second tab
-         self.formwidget=QWidget()
+         #create second tab        
+         self.formwidget=QWidget()         
          self.createDCform()
          #add tabs
          self.tabs.addTab(self.tablewidget,"Customer orders")
@@ -98,6 +98,7 @@ class leftwidget(QWidget):
         """create DC form"""
         #create form box
         self.DCform = QGroupBox("distribution centers")
+        self.DCform.setMaximumHeight(150)
         #create form layout
         self.DCLayout=QFormLayout()
         self.DClist=[QLineEdit()]
@@ -105,18 +106,36 @@ class leftwidget(QWidget):
         self.DCform.setLayout(self.DCLayout)
         #create Vehicle layout
         self.Vform=QGroupBox("Vehicle")
+        self.Vform.setMaximumHeight(150)
         self.DeclareVehicle()
         VehicleLayout=QVBoxLayout()
         VehicleLayout.addWidget(self.VTable)
         self.Vform.setLayout(VehicleLayout)
         #create algorithm form layout
         self.algoform = QGroupBox("algorithm")
-        algolayout=QFormLayout()
+        algolayout=QVBoxLayout()
         self.algorithm=QComboBox()
+        #create algorithm parameters
+        self.AlgorithmParamTbl=QTableWidget()
+        self.AlgorithmParamTbl.setColumnCount(2)
             #add item to combobox
         self.algorithm.addItem("Genetic Algorithm")
-        self.algorithm.addItem("Other")
-        algolayout.addRow(QLabel("algorithm"),self.algorithm)
+        self.algorithm.addItem("GA, time handling")
+        algolayout.addWidget(self.algorithm)
+        algolayout.addWidget(self.AlgorithmParamTbl)
+        self.algorithm.currentIndexChanged.connect(self.OnAlgorithmChanged)
+        #init
+        self.AlgorithmParamTbl.setRowCount(5)
+        self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
+        self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
+        self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
+        self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
+        self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Crossover Threshold")) 
+        self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
+        self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
+        self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
+        self.AlgorithmParamTbl.setItem(3,1,QTableWidgetItem("0.2"))
+        self.AlgorithmParamTbl.setItem(4,1,QTableWidgetItem("0.8"))
         self.algoform.setLayout(algolayout)
         self.createformtools()
         #create form tab layout
@@ -126,6 +145,33 @@ class leftwidget(QWidget):
         self.formwidget.layout.addWidget(self.Vform)
         self.formwidget.layout.addWidget(self.algoform)        
         self.formwidget.setLayout(self.formwidget.layout)
+    def OnAlgorithmChanged(self,index):
+        if(index==0):
+            self.AlgorithmParamTbl.setRowCount(5)
+            self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
+            self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
+            self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
+            self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
+            self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Crossover Threshold"))
+            self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
+            self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
+            self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
+            self.AlgorithmParamTbl.setItem(3,1,QTableWidgetItem("0.2"))
+            self.AlgorithmParamTbl.setItem(4,1,QTableWidgetItem("0.8"))
+        elif(index==1):
+            self.AlgorithmParamTbl.setRowCount(6)
+            self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
+            self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
+            self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
+            self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
+            self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Time Handling Weight"))
+            self.AlgorithmParamTbl.setItem(5,0,QTableWidgetItem("Crossover Threshold"))
+            self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
+            self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
+            self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.6"))
+            self.AlgorithmParamTbl.setItem(3,1,QTableWidgetItem("0.2"))
+            self.AlgorithmParamTbl.setItem(4,1,QTableWidgetItem("0.2"))
+            self.AlgorithmParamTbl.setItem(5,1,QTableWidgetItem("0.8"))
     def createformtools(self):
         """create DC form toolbar"""
         self.FormToolbar=QToolBar()
@@ -530,6 +576,7 @@ class App(QMainWindow):
         self.leftdock=QDockWidget("Data", self)
         self.leftdock.setFloating(False)
         self.leftdock.setWidget(self.leftwidget)
+        self.setCorner(Qt.BottomLeftCorner,Qt.LeftDockWidgetArea)
         self.addDockWidget(Qt.LeftDockWidgetArea, self.leftdock)
         #create web view
         self.webdisp=webdispwidget()
@@ -539,7 +586,7 @@ class App(QMainWindow):
         self.rightcorrdock=QDockWidget("correction", self)
         self.rightcorrdock.setFloating(False)
         self.rightcorrdock.setWidget(self.corrwidget)
-        self.addDockWidget(Qt.BottomDockWidgetArea, self.rightcorrdock)
+        self.addDockWidget(Qt.BottomDockWidgetArea, self.rightcorrdock)        
         self.corrwidget.applybtn.triggered.connect(self.apply)
         self.setLayout(layout)
     @pyqtSlot()
@@ -635,15 +682,17 @@ class App(QMainWindow):
         #parameters for algorithm
         AlgoIndex=self.leftwidget.algorithm.currentIndex()
         if(AlgoIndex==0):
-            maxIter=1000
-            VRank=0.8
-            DRank=0.2
+            maxIter=int(self.leftwidget.AlgorithmParamTbl.item(0,1).text())
+            VRank=float(self.leftwidget.AlgorithmParamTbl.item(2,1).text())
+            DRank=float(self.leftwidget.AlgorithmParamTbl.item(3,1).text())
+            Psize=int(self.leftwidget.AlgorithmParamTbl.item(1,1).text())
+            CThold=float(self.leftwidget.AlgorithmParamTbl.item(4,1).text())
             #calculation module
             GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank)
             print("")
             LocGroup=GA.initGroup()
-            GA.initpopulation(50,LocGroup)
-            GA.mainloop(1000,0.85)
+            GA.initpopulation(Psize,LocGroup)
+            GA.mainloop(maxIter,CThold)
             self.BestSolution=GA.getBestSolution()
             self.corrBestSolution=GA.getBestSolution()
         else:
