@@ -86,9 +86,9 @@ class model_GA(object):
             self.__population[num].setTotalCost()
         return
     def initGroup(self):
+        LocGroup=[]
         if (len(self.__DCList)>1):
-            #create Loc Group list
-            LocGroup=[]
+            #create Loc Group list            
             for i in self.__DCList:
                 LocGroup.append([])
             #create DC to location distance matrix
@@ -101,6 +101,10 @@ class model_GA(object):
                     array[i]=DC_Distance[i][j]
                 min=np.argmin(array)
                 LocGroup[min].append(self.__CustomerList[j])
+        else:
+            LocGroup.append([])
+            for j in range(len(self.__CustomerList)):
+                LocGroup[0].append(self.__CustomerList[j])
         return copy.deepcopy(LocGroup)
     def Mutation(self,individuals):
         #get random DC index

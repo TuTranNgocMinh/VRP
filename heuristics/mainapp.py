@@ -522,7 +522,7 @@ class App(QMainWindow):
  
     def initUI(self):
         """ init main window"""
-        title = 'GUI'
+        title = 'Help me find a good title'
         left = 25 #left margin
         top = 50 #top margin
         width = 1280
@@ -583,7 +583,7 @@ class App(QMainWindow):
         self.setCentralWidget(self.webdisp)
         #create correction dock
         self.corrwidget=rightconfigwidget()
-        self.rightcorrdock=QDockWidget("correction", self)
+        self.rightcorrdock=QDockWidget("Route", self)
         self.rightcorrdock.setFloating(False)
         self.rightcorrdock.setWidget(self.corrwidget)
         self.addDockWidget(Qt.BottomDockWidgetArea, self.rightcorrdock)        
