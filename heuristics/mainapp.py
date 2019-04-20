@@ -101,6 +101,8 @@ class leftwidget(QWidget):
         self.DCform.setMaximumHeight(150)
         #create form layout
         self.DCLayout=QFormLayout()
+        self.createformtools()
+        self.DCLayout.addWidget(self.FormToolbar)
         self.DClist=[QLineEdit()]
         self.DCLayout.addRow(QLabel("DC 1"), self.DClist[0])
         self.DCform.setLayout(self.DCLayout)
@@ -136,11 +138,9 @@ class leftwidget(QWidget):
         self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
         self.AlgorithmParamTbl.setItem(3,1,QTableWidgetItem("0.2"))
         self.AlgorithmParamTbl.setItem(4,1,QTableWidgetItem("0.8"))
-        self.algoform.setLayout(algolayout)
-        self.createformtools()
+        self.algoform.setLayout(algolayout)        
         #create form tab layout
-        self.formwidget.layout=QVBoxLayout()
-        self.formwidget.layout.addWidget(self.FormToolbar)
+        self.formwidget.layout=QVBoxLayout()        
         self.formwidget.layout.addWidget(self.DCform)
         self.formwidget.layout.addWidget(self.Vform)
         self.formwidget.layout.addWidget(self.algoform)        
@@ -707,7 +707,7 @@ class App(QMainWindow):
         for DCIndex in range(len(self.BestSolution.DC)):
             number+=self.BestSolution.DC[DCIndex].GetNumberVehicles()
         #get max route number
-        maxroutenumber=len(self.customerlist)/(len(self.DCList)-1)
+        maxroutenumber=20
         self.CreateRoutes(number,maxroutenumber)
         #create google map display
         DC,route,corrRoute=self.createRouteList(0,0)
@@ -763,22 +763,29 @@ class App(QMainWindow):
         self.corrwidget.rmrowbtn.setEnabled(True)
         self.corrwidget.undobtn.setEnabled(True)
         self.corrwidget.redobtn.setEnabled(True)
-        self.corrwidget.applybtn.setEnabled(True) 
+        self.corrwidget.applybtn.setEnabled(True)
+        #set column uneditable 
         return
     def apply(self):
-        print("applied")
         CountList=[[] for i in range(len(self.customerlist))]
         ValidInput=True
         Redundant=False
         Constraint=True
         self.corrwidget.vehicletable.blockSignals(True)
+
         for row in range(self.corrwidget.vehicletable.rowCount()):
+            self.corrwidget.vehicletable.item(row,2).setBackground(Qt.white)
+            self.corrwidget.vehicletable.item(row,3).setBackground(Qt.white)
             for col in range(4,self.corrwidget.vehicletable.columnCount()):
+                self.corrwidget.vehicletable.item(row,col).setBackground(Qt.white)
                 Text=self.corrwidget.vehicletable.item(row,col).text()
                 if(Text!=""):
                     try:
-                        CountList[int(Text)].append({'row': row,'col':col,'value': Text})
-                        self.corrwidget.vehicletable.item(row,col).setBackground(Qt.white)
+                        if(int(Text)<0)or(int(Text)>=len(self.customerlist)):
+                            self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
+                            ValidInput=False
+                        else:
+                            CountList[int(Text)].append({'row': row,'col':col,'value': Text})                            
                     except:
                         self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
                         print("INVALID INPUT!!!")
@@ -797,15 +804,32 @@ class App(QMainWindow):
             self.corrwidget.vehicletable.blockSignals(False)
             return
         self.corrBestSolution=Solution(copy.deepcopy(self.DCList))
+
         for row in range(self.corrwidget.vehicletable.rowCount()):
             DCIndex=int(self.corrwidget.vehicletable.item(row,1).text())-1
             self.corrBestSolution.DC[DCIndex].addVehicle(
                 self.VehicleList[0][0],self.VehicleList[0][1],self.VehicleList[0][2],self.VehicleList[0][3])
+            weight=0
+            volume=0
             for col in range(4,self.corrwidget.vehicletable.columnCount()):
                 Text=self.corrwidget.vehicletable.item(row,col).text()                
                 if(Text!=""):
                     vnumber=self.corrBestSolution.DC[DCIndex].GetNumberVehicles()-1
                     self.corrBestSolution.DC[DCIndex].appendRoute(vnumber,copy.deepcopy(self.customerlist[int(Text)]))
+                    weight+=self.corrBestSolution.DC[DCIndex].VehicleList[vnumber].routing[col-4].getWeight()*self.corrBestSolution.DC[DCIndex].VehicleList[vnumber].routing[col-4].getQuantity()
+                    volume+=self.corrBestSolution.DC[DCIndex].VehicleList[vnumber].routing[col-4].getVolume()*self.corrBestSolution.DC[DCIndex].VehicleList[vnumber].routing[col-4].getQuantity()
+            self.corrwidget.vehicletable.item(row,2).setText(str(volume))
+            self.corrwidget.vehicletable.item(row,3).setText(str(weight))
+            if(weight>self.VehicleList[0][2]):
+                Constraint=False
+                self.corrwidget.vehicletable.item(row,3).setBackground(Qt.darkYellow)
+            if(volume>0.9*self.VehicleList[0][1]):
+                Constraint=False
+                self.corrwidget.vehicletable.item(row,2).setBackground(Qt.darkYellow)
+        #check for constraints
+        if(Constraint==False):
+            self.corrwidget.vehicletable.blockSignals(False)
+            return
         #display
         for DCIndex in range(self.corrBestSolution.getDCNumber()):
             print("\nDistribution Center {0}".format(DCIndex))
