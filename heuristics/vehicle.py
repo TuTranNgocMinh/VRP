@@ -9,6 +9,7 @@ class vehicle:
         self.routing=[]
         self.__TotalTimeTravelled=0
         self.__TotalDistanceTravelled=0
+        self.__TotalHandling=0
         return
     def add_cost(self,cost):
         """specify cost if rent vehicle, none if own vehicle"""
@@ -28,6 +29,12 @@ class vehicle:
         return self.__TotalTimeTravelled
     def setTotalTimeTravelled(self,number):
         self.__TotalTimeTravelled=number
+        return
+    #get, set total handling time
+    def getTotalHandling(self):
+        return self.__TotalHandling
+    def setTotalHandling(self,TotalHandling):
+        self.__TotalHandling=TotalHandling
         return
     #get weight
     def getWeight(self):

@@ -20,7 +20,7 @@ class Solution(object):
         return len(self.DC)
 class model_GA(object):
     """description of class"""
-    def __init__(self,CustomerList,VehicleList,DistanceObject,DCList,VehicleRank,DistanceRank):
+    def __init__(self,CustomerList,VehicleList,DistanceObject,DCList,VehicleRank,DistanceRank,HandlRank=0):
         self.__CustomerList=CustomerList
         self.__VehicleList=VehicleList
         self.__DistanceMatrix=DistanceObject.getDistance()
@@ -28,6 +28,7 @@ class model_GA(object):
         self.__DCList=DCList
         self.__VRank=VehicleRank
         self.__DRank=DistanceRank
+        self.__HRank=HandlRank
         self.__bestSolution={'Value':1000000,'route':0}
         return
     #get best solution
@@ -80,8 +81,10 @@ class model_GA(object):
                 for vehicle in range(number):                    
                     Vehicle=self.__population[num].DC[k].VehicleList[vehicle]
                     self.DistanceCalculation(k,Vehicle)
+                    if(self.__HRank>0):
+                        self.HandlingCalculation(Vehicle)
                     #total cost calculation
-                    TotalCost+=self.__population[num].DC[k].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank
+                    TotalCost+=self.__population[num].DC[k].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank+self.__population[num].DC[k].VehicleList[vehicle].getTotalHandling()*self.__HRank
                 self.__population[num].DC[k].setTotalCost(TotalCost)
             self.__population[num].setTotalCost()
         return
@@ -131,8 +134,10 @@ class model_GA(object):
                 print("False")
                 return False
             Vehicle=individuals.DC[rand].VehicleList[vIndex]
+            if(self.__HRank>0):
+                self.HandlingCalculation(Vehicle)
             self.DistanceCalculation(rand,Vehicle)
-            TotalCost+=individuals.DC[rand].VehicleList[vIndex].getTotalDistanceTravelled()*self.__DRank
+            TotalCost+=individuals.DC[rand].VehicleList[vIndex].getTotalDistanceTravelled()*self.__DRank+individuals.DC[rand].VehicleList[vIndex].getTotalHandling()*self.__HRank
         individuals.DC[rand].setTotalCost(TotalCost)
         individuals.setTotalCost()
         return True
@@ -157,8 +162,10 @@ class model_GA(object):
             number=child1.DC[DC].GetNumberVehicles()
             TotalCost=self.__VRank*number*5000
             for vehicle in range(number):
+                if(self.__HRank>0):
+                    self.HandlingCalculation(child1.DC[DC].VehicleList[vehicle])
                 self.DistanceCalculation(DC,child1.DC[DC].VehicleList[vehicle])
-                TotalCost+=child1.DC[DC].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank
+                TotalCost+=child1.DC[DC].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank+child1.DC[DC].VehicleList[vehicle].getTotalHandling()*self.__HRank
             child1.DC[DC].setTotalCost(TotalCost)
             child1.setTotalCost()
         else:
@@ -167,8 +174,10 @@ class model_GA(object):
             number=child2.DC[DC].GetNumberVehicles()
             TotalCost=self.__VRank*number*5000
             for vehicle in range(number):
+                if(self.__HRank>0):
+                    self.HandlingCalculation(child2.DC[DC].VehicleList[vehicle])
                 self.DistanceCalculation(DC,child2.DC[DC].VehicleList[vehicle])
-                TotalCost+=child2.DC[DC].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank
+                TotalCost+=child2.DC[DC].VehicleList[vehicle].getTotalDistanceTravelled()*self.__DRank+child2.DC[DC].VehicleList[vehicle].getTotalHandling()*self.__HRank
             child2.DC[DC].setTotalCost(TotalCost)
             child2.setTotalCost()
         else:
@@ -270,6 +279,13 @@ class model_GA(object):
         totalDistanceTraveled+=self.__DistanceMatrix[vehicle.routing[len(vehicle.routing)-1].getID()][DCID]
         vehicle.setTotalDistanceTravelled(totalDistanceTraveled)
         return totalDistanceTraveled
+    def HandlingCalculation(self,vehicle):
+        """calculate handling time """
+        TotalHandling=0
+        for j in range(len(vehicle.routing)):
+            TotalHandling+=vehicle.routing[j].getHandlingTime()
+        vehicle.setTotalHandling(TotalHandling)
+        return TotalHandling
     def ConstraintCalculation(self,vehicle): 
         """Recalculate weight and volume of route in a vehicle"""
         weight=0

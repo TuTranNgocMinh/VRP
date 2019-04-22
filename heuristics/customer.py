@@ -2,14 +2,14 @@ from location import location
 from vehicle import vehicle
 class customer:
     """package properties of each customer"""
-    def __init__(self,id,name,volume,weight,quantity,address,deadline=0):
+    def __init__(self,id,name,volume,weight,quantity,address,handlingTime=0):
         self.__id=id
         self.__name=name
         self.__quantity=quantity
         self.__volume=volume
         self.__weight=weight
         self.__location=location(address)
-        #self.__deadline=self.__convert(deadline)
+        self.__handlingTime=handlingTime
         return
     def __convert(self,time):
         try:
@@ -35,9 +35,12 @@ class customer:
         return self.__location.coordinates
     def getAddress(self):
         return self.__location.Addr
+    #get handling time
+    def getHandlingTime(self):
+        return self.__handlingTime
     def display(self):
         """display info of customer"""
-        print("name: {0},quantity: {1}, volume: {2}, weight:{3},location: {4} deadline: {5}".format(self.name,self.quantity,self.volume,self.weight,self.location.coordinates,self.deadline))
+        print("name: {0},quantity: {1}, volume: {2}, weight:{3},location: {4} handlingTime: {5}".format(self.name,self.quantity,self.volume,self.weight,self.location.coordinates,self.handlingTime))
         return
 class DistributionCenter:
     """Distribution Center class for GA"""

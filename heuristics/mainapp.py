@@ -129,10 +129,15 @@ class leftwidget(QWidget):
         #init
         self.AlgorithmParamTbl.setRowCount(5)
         self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
+        self.AlgorithmParamTbl.item(0,0).setFlags(Qt.ItemIsEnabled)
         self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
+        self.AlgorithmParamTbl.item(1,0).setFlags(Qt.ItemIsEnabled)
         self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
+        self.AlgorithmParamTbl.item(2,0).setFlags(Qt.ItemIsEnabled)
         self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
-        self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Crossover Threshold")) 
+        self.AlgorithmParamTbl.item(3,0).setFlags(Qt.ItemIsEnabled)
+        self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Crossover Threshold"))
+        self.AlgorithmParamTbl.item(4,0).setFlags(Qt.ItemIsEnabled) 
         self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
         self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
         self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
@@ -149,10 +154,15 @@ class leftwidget(QWidget):
         if(index==0):
             self.AlgorithmParamTbl.setRowCount(5)
             self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
+            self.AlgorithmParamTbl.item(0,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
+            self.AlgorithmParamTbl.item(1,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
+            self.AlgorithmParamTbl.item(2,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
+            self.AlgorithmParamTbl.item(3,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Crossover Threshold"))
+            self.AlgorithmParamTbl.item(4,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
             self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
             self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
@@ -161,11 +171,17 @@ class leftwidget(QWidget):
         elif(index==1):
             self.AlgorithmParamTbl.setRowCount(6)
             self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
+            self.AlgorithmParamTbl.item(0,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
+            self.AlgorithmParamTbl.item(1,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
+            self.AlgorithmParamTbl.item(2,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
+            self.AlgorithmParamTbl.item(3,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Time Handling Weight"))
+            self.AlgorithmParamTbl.item(4,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(5,0,QTableWidgetItem("Crossover Threshold"))
+            self.AlgorithmParamTbl.item(5,0).setFlags(Qt.ItemIsEnabled)
             self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
             self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
             self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.6"))
@@ -266,6 +282,10 @@ class rightconfigwidget(QWidget):
         self.vehicletable.blockSignals(True)
         for i in range(self.vehicletable.columnCount()):
             self.vehicletable.setItem(rowselected,i,QTableWidgetItem(""))
+        self.vehicletable.item(rowselected,0).setText("vehicle"+str(rowselected))
+        self.vehicletable.item(rowselected,0).setFlags(Qt.ItemIsEnabled)
+        self.vehicletable.item(rowselected,2).setFlags(Qt.ItemIsEnabled)
+        self.vehicletable.item(rowselected,3).setFlags(Qt.ItemIsEnabled)
         self.vehicletable.blockSignals(False)
     def remove1row(self):
         """remove 1 selected row"""
@@ -618,9 +638,13 @@ class App(QMainWindow):
             row=list.shape[0]
             col=list.shape[1]
             self.setdatatable(row=row,column=col,data=list,header=header)
-            for i in range(len(list.index)):                
-                self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
+            for i in range(len(list.index)):
+                if(len(header)==5):                
+                    self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
                                                   list[header[3]][i],list[header[4]][i],0))
+                else:
+                    self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
+                                                  list[header[3]][i],list[header[4]][i],list[header[5]][i]))
                 self.origins.append(self.customerlist[i].getLocation()) #add customer locations to origin list
         self.calcbutton.setEnabled(True)
         return
@@ -681,23 +705,23 @@ class App(QMainWindow):
                 return 1
         #parameters for algorithm
         AlgoIndex=self.leftwidget.algorithm.currentIndex()
+        maxIter=int(self.leftwidget.AlgorithmParamTbl.item(0,1).text())
+        VRank=float(self.leftwidget.AlgorithmParamTbl.item(2,1).text())
+        DRank=float(self.leftwidget.AlgorithmParamTbl.item(3,1).text())
+        Psize=int(self.leftwidget.AlgorithmParamTbl.item(1,1).text())
+        CThold=float(self.leftwidget.AlgorithmParamTbl.item(4,1).text())
         if(AlgoIndex==0):
-            maxIter=int(self.leftwidget.AlgorithmParamTbl.item(0,1).text())
-            VRank=float(self.leftwidget.AlgorithmParamTbl.item(2,1).text())
-            DRank=float(self.leftwidget.AlgorithmParamTbl.item(3,1).text())
-            Psize=int(self.leftwidget.AlgorithmParamTbl.item(1,1).text())
-            CThold=float(self.leftwidget.AlgorithmParamTbl.item(4,1).text())
-            #calculation module
-            GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank)
-            print("")
-            LocGroup=GA.initGroup()
-            GA.initpopulation(Psize,LocGroup)
-            GA.mainloop(maxIter,CThold)
-            self.BestSolution=GA.getBestSolution()
-            self.corrBestSolution=GA.getBestSolution()
+            HRank=0
         else:
-            print("no Algorithm found, exiting...")
-            return 1
+            HRank=float(self.leftwidget.AlgorithmParamTbl.item(5,1).text())
+        #calculation module
+        GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,HRank)
+        print("")
+        LocGroup=GA.initGroup()
+        GA.initpopulation(Psize,LocGroup)
+        GA.mainloop(maxIter,CThold)
+        self.BestSolution=GA.getBestSolution()
+        self.corrBestSolution=GA.getBestSolution()
         #create list of DC-Vehicle dictionary
         self.result()
         return
@@ -740,6 +764,7 @@ class App(QMainWindow):
                 j=4
                 vItem=QTableWidgetItem("vehicle "+str(i+1))
                 self.corrwidget.vehicletable.setItem(i,0, vItem) #set vehicle and vehicle number item
+                self.corrwidget.vehicletable.item(i,0).setFlags(Qt.ItemIsEnabled)
                 DCItem=QTableWidgetItem(str(DCIndex+1))
                 self.corrwidget.vehicletable.setItem(i,1, DCItem)
                 volume=0
@@ -755,7 +780,9 @@ class App(QMainWindow):
                 volItem=QTableWidgetItem(str(volume))
                 weightItem=QTableWidgetItem(str(weight))
                 self.corrwidget.vehicletable.setItem(i,2, volItem)
+                self.corrwidget.vehicletable.item(i,2).setFlags(Qt.ItemIsEnabled)
                 self.corrwidget.vehicletable.setItem(i,3, weightItem)
+                self.corrwidget.vehicletable.item(i,3).setFlags(Qt.ItemIsEnabled)
                 i+=1
         print("Total Customer: {0}".format(totalCustomer))
         #set buttons enabled    
