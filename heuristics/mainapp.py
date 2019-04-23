@@ -794,54 +794,19 @@ class App(QMainWindow):
         #set column uneditable 
         return
     def apply(self):
-        CountList=[[] for i in range(len(self.customerlist))]
-        ValidInput=True
-        Redundant=False
+        CountList=[[] for i in range(len(self.customerlist))]        
         Constraint=True
-        self.corrwidget.vehicletable.blockSignals(True)
-
-        for row in range(self.corrwidget.vehicletable.rowCount()):
-            self.corrwidget.vehicletable.item(row,1).setBackground(Qt.white)
-            self.corrwidget.vehicletable.item(row,2).setBackground(Qt.white)
-            self.corrwidget.vehicletable.item(row,3).setBackground(Qt.white)
-            #check DC column
-            DC=self.corrwidget.vehicletable.item(row,1).text()
-            try:
-                if(int(DC)-1<0)or(int(DC)-1>=len(self.DCList)):
-                    self.corrwidget.vehicletable.item(row,1).setBackground(Qt.red)
-                    ValidInput=False
-            except: #catch invalid inputs
-                self.corrwidget.vehicletable.item(row,1).setBackground(Qt.red)
-                ValidInput=False
-            for col in range(4,self.corrwidget.vehicletable.columnCount()):
-                self.corrwidget.vehicletable.item(row,col).setBackground(Qt.white)
-                Text=self.corrwidget.vehicletable.item(row,col).text()
-                if(Text!=""):
-                    try:
-                        if(int(Text)<0)or(int(Text)>=len(self.customerlist)):
-                            self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
-                            ValidInput=False
-                        else:
-                            CountList[int(Text)].append({'row': row,'col':col,'value': Text})                            
-                    except:
-                        self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
-                        print("INVALID INPUT!!!")
-                        ValidInput=False                        
+        self.corrwidget.vehicletable.blockSignals(True)                                
         #check for input
-        if(ValidInput==False):
+        if(self.InputValidation(CountList)==False):
             self.corrwidget.vehicletable.blockSignals(False)
-            return
-        for i in range(len(CountList)):
-            if(len(CountList[i])>1):
-                for j in range(len(CountList[i])):
-                    self.corrwidget.vehicletable.item(CountList[i][j]['row'],CountList[i][j]['col']).setBackground(Qt.yellow)
-                Redundant=True
+            return        
         #check for redundant
-        if(Redundant==True):
+        if(self.RedundantValidation(CountList)==True):
             self.corrwidget.vehicletable.blockSignals(False)
             return
         self.corrBestSolution=Solution(copy.deepcopy(self.DCList))
-
+        #constraint validation
         for row in range(self.corrwidget.vehicletable.rowCount()):
             DCIndex=int(self.corrwidget.vehicletable.item(row,1).text())-1
             self.corrBestSolution.DC[DCIndex].addVehicle(
@@ -879,6 +844,45 @@ class App(QMainWindow):
         self.corrwidget.vehicletable.blockSignals(False)
 
         return
+    #validating function
+    def InputValidation(self,CountList):
+        ValidInput=True
+        for row in range(self.corrwidget.vehicletable.rowCount()):
+            self.corrwidget.vehicletable.item(row,1).setBackground(Qt.white)
+            self.corrwidget.vehicletable.item(row,2).setBackground(Qt.white)
+            self.corrwidget.vehicletable.item(row,3).setBackground(Qt.white)
+            #check DC column
+            DC=self.corrwidget.vehicletable.item(row,1).text()
+            try:
+                if(int(DC)-1<0)or(int(DC)-1>=len(self.DCList)):
+                    self.corrwidget.vehicletable.item(row,1).setBackground(Qt.red)
+                    ValidInput=False
+            except: #catch invalid inputs
+                self.corrwidget.vehicletable.item(row,1).setBackground(Qt.red)
+                ValidInput=False
+            for col in range(4,self.corrwidget.vehicletable.columnCount()):
+                self.corrwidget.vehicletable.item(row,col).setBackground(Qt.white)
+                Text=self.corrwidget.vehicletable.item(row,col).text()
+                if(Text!=""):
+                    try:
+                        if(int(Text)<0)or(int(Text)>=len(self.customerlist)):
+                            self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
+                            ValidInput=False
+                        else:
+                            CountList[int(Text)].append({'row': row,'col':col,'value': Text})                            
+                    except:
+                        self.corrwidget.vehicletable.item(row,col).setBackground(Qt.red)
+                        print("INVALID INPUT!!!")
+                        ValidInput=False
+        return ValidInput
+    def RedundantValidation(self,CountList):
+        Redundant=False
+        for i in range(len(CountList)):
+            if(len(CountList[i])>1):
+                for j in range(len(CountList[i])):
+                    self.corrwidget.vehicletable.item(CountList[i][j]['row'],CountList[i][j]['col']).setBackground(Qt.yellow)
+                Redundant=True
+        return Redundant
     #signal function
     def onDCIndexChanged(self,index):
         self.webdisp.VehicleCbox.blockSignals(True)
