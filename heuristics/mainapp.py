@@ -3,25 +3,27 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import *
+from PyQt5 import QtSql
 
 import pandas as pd
 import location as loc
 import vehicle
 from customer import *
 from model import *
-class VehicleDialog(QDialog): #may change layout to table if there are multiple weight and size vehicles
-    """create declare vehicle dialog"""
+class DTBDialog(QDialog): #may change layout to table if there are multiple weight and size vehicles
+    """create database dialog"""
     def __init__(self):
-        super(VehicleDialog,self).__init__()
+        super(DTBDialog,self).__init__()
         self.createformbox()
         self.setWindowTitle('Specify Vehicle')
         # set flags
         self.setWindowModality(Qt.ApplicationModal)
-        self.setWindowFlag(Qt.WindowCloseButtonHint, False)
+        #self.setWindowFlag(Qt.WindowCloseButtonHint, False)
 
         #create button
-        buttonBox = QDialogButtonBox(QDialogButtonBox.Ok)
+        buttonBox = QDialogButtonBox(QDialogButtonBox.Ok|QDialogButtonBox.Cancel)
         buttonBox.accepted.connect(self.accept)
+        buttonBox.rejected.connect(self.reject)
         #create main layout
         mainLayout = QVBoxLayout()
         mainLayout.addWidget(self.formGroupBox)
@@ -32,16 +34,16 @@ class VehicleDialog(QDialog): #may change layout to table if there are multiple 
         """create form"""
         self.formGroupBox = QGroupBox("Vehicle")
         #define data headers
+        self.IP=QLineEdit()
         self.Name=QLineEdit()
-        self.Size=QLineEdit()
-        self.Weight=QLineEdit()
-        self.Quantity=QLineEdit()
+        self.Password=QLineEdit()
+        self.Database=QLineEdit()
         #create form layout
         layout = QFormLayout()
-        layout.addRow(QLabel("Vehicle Name:"), self.Name)
-        layout.addRow(QLabel("Size:"), self.Size)
-        layout.addRow(QLabel("Weight:"), self.Weight)
-        layout.addRow(QLabel("Number of Vehicle:"), self.Quantity)
+        layout.addRow(QLabel("Server IP:"), self.IP)
+        layout.addRow(QLabel("User name:"), self.Name)
+        layout.addRow(QLabel("Password:"), self.Password)
+        layout.addRow(QLabel("Database:"), self.Database)
         self.formGroupBox.setLayout(layout)
         return
 
@@ -559,6 +561,12 @@ class App(QMainWindow):
         opendatbutton.triggered.connect(self.fnamedialog)
         fileMenu.addAction(opendatbutton)
 
+        opendatabasebtn=QAction('Import from database',self)
+        opendatabasebtn.setShortcut('Ctrl+D')
+        opendatabasebtn.setStatusTip('Import data from database')
+        opendatabasebtn.triggered.connect(self.Opendtbdialog)
+        fileMenu.addAction(opendatabasebtn)
+
         exitButton = QAction( 'Exit', self)#add exit button
         exitButton.setShortcut('Alt+F4')
         exitButton.setStatusTip('Exit application')
@@ -623,7 +631,24 @@ class App(QMainWindow):
         else:
             self.rightcorrdock.hide()
         return
-  
+    @pyqtSlot()
+    def Opendtbdialog(self):
+        dtbdialog=DTBDialog()
+        if(dtbdialog.exec_()):
+            print("accept")
+            print(dtbdialog.IP.text())
+            print(dtbdialog.Name.text())
+            print(dtbdialog.Password.text())
+            print(dtbdialog.Database.text())
+            #connect to database
+            conn=QtSql.QSqlDatabase.addDatabase("QMYSQL")
+            conn.setHostName(dtbdialog.IP.text())
+            conn.setUserName(dtbdialog.Name.text())
+            conn.setPassword(dtbdialog.Password.text())
+            conn.setDatabaseName(dtbdialog.Database.text())
+            print(conn.isOpen())
+        else:
+            print("reject")  
     @pyqtSlot()
     def fnamedialog(self):
         options = QFileDialog.Options()
