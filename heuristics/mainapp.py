@@ -801,8 +801,18 @@ class App(QMainWindow):
         self.corrwidget.vehicletable.blockSignals(True)
 
         for row in range(self.corrwidget.vehicletable.rowCount()):
+            self.corrwidget.vehicletable.item(row,1).setBackground(Qt.white)
             self.corrwidget.vehicletable.item(row,2).setBackground(Qt.white)
             self.corrwidget.vehicletable.item(row,3).setBackground(Qt.white)
+            #check DC column
+            DC=self.corrwidget.vehicletable.item(row,1).text()
+            try:
+                if(int(DC)-1<0)or(int(DC)-1>=len(self.DCList)):
+                    self.corrwidget.vehicletable.item(row,1).setBackground(Qt.red)
+                    ValidInput=False
+            except: #catch invalid inputs
+                self.corrwidget.vehicletable.item(row,1).setBackground(Qt.red)
+                ValidInput=False
             for col in range(4,self.corrwidget.vehicletable.columnCount()):
                 self.corrwidget.vehicletable.item(row,col).setBackground(Qt.white)
                 Text=self.corrwidget.vehicletable.item(row,col).text()
