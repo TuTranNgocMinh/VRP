@@ -774,13 +774,18 @@ class App(QMainWindow):
         else:
             HRank=float(self.leftwidget.AlgorithmParamTbl.item(5,1).text())
         #calculation module
-        GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,HRank)
-        LocGroup=GA.initGroup()
-        GA.initpopulation(Psize,LocGroup)
-        GA.mainloop(maxIter,CThold)
-        self.BestSolution=GA.getBestSolution()
-        self.corrBestSolution=GA.getBestSolution()
-             #create list of DC-Vehicle dictionary
+        BestSolutionValue=100000000
+        for run in range(5):
+            GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,HRank)
+            LocGroup=GA.initGroup()
+            GA.initpopulation(Psize,LocGroup)
+            GA.mainloop(maxIter,CThold)
+            #print(BestSolutionValue)
+            if(GA.getBestValue()<BestSolutionValue):
+                BestSolutionValue=GA.getBestValue()
+                self.BestSolution=GA.getBestSolution()
+                self.corrBestSolution=GA.getBestSolution()
+        #create list of DC-Vehicle dictionary
         self.result()
         return
     def result(self):

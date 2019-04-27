@@ -34,6 +34,8 @@ class model_GA(object):
     #get best solution
     def getBestSolution(self):
         return copy.deepcopy(self.__bestSolution['route'])
+    def getBestValue(self):
+        return copy.deepcopy(self.__bestSolution['Value'])
     def initpopulation(self,population,LocGroup):
         self.__population=[]
         #find array with max elements
