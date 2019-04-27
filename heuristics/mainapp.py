@@ -4,6 +4,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5 import QtSql
+import MySQLdb
 
 import pandas as pd
 import location as loc
@@ -194,15 +195,32 @@ class leftwidget(QWidget):
         """create DC form toolbar"""
         self.FormToolbar=QToolBar()
         #create buttons
-        self.addDCbtn=QAction(QIcon("image/add.bmp"),"Add distribution center")                
+        self.addDCbtn=QAction(QIcon("image/add.bmp"),"Add distribution center")
+        self.rmEmptyDCbtn=QAction(QIcon("image/minus.bmp"),"Remove empty distribution center")             
         #add action
         self.FormToolbar.addAction(self.addDCbtn)
+        self.FormToolbar.addAction(self.rmEmptyDCbtn)
         #set action
         self.addDCbtn.triggered.connect(self.addDistributionCenter)
+        self.rmEmptyDCbtn.triggered.connect(self.removeEmptyDC)
+        #set flags
+        self.addDCbtn.setEnabled(False)
+        self.rmEmptyDCbtn.setEnabled(False)
     def addDistributionCenter(self):
         """add 1 distribution center"""
         self.DClist.append(QLineEdit())
         self.DCLayout.addRow(QLabel("DC "+str(len(self.DClist))), self.DClist[len(self.DClist)-1])
+    def removeEmptyDC(self):
+        """remove empty DC text boxes"""
+        index=0
+        for i in range(len(self.DClist)):
+            if(self.DClist[i].text()==""):   
+                index=i
+                break
+        if(index>0):          
+            del self.DClist[index]
+            self.DCLayout.removeRow(index+1)
+            
     def DeclareVehicle(self):
         """declare vehicle. This function must be activated before pressing calculate button"""
         #create table of vehicles
@@ -284,7 +302,7 @@ class rightconfigwidget(QWidget):
         self.vehicletable.blockSignals(True)
         for i in range(self.vehicletable.columnCount()):
             self.vehicletable.setItem(rowselected,i,QTableWidgetItem(""))
-        self.vehicletable.item(rowselected,0).setText("vehicle"+str(rowselected))
+        self.vehicletable.item(rowselected,0).setText("vehicle "+str(rowselected+1))
         self.vehicletable.item(rowselected,0).setFlags(Qt.ItemIsEnabled)
         self.vehicletable.item(rowselected,2).setFlags(Qt.ItemIsEnabled)
         self.vehicletable.item(rowselected,3).setFlags(Qt.ItemIsEnabled)
@@ -641,12 +659,15 @@ class App(QMainWindow):
             print(dtbdialog.Password.text())
             print(dtbdialog.Database.text())
             #connect to database
-            conn=QtSql.QSqlDatabase.addDatabase("QMYSQL")
-            conn.setHostName(dtbdialog.IP.text())
-            conn.setUserName(dtbdialog.Name.text())
-            conn.setPassword(dtbdialog.Password.text())
-            conn.setDatabaseName(dtbdialog.Database.text())
-            print(conn.isOpen())
+            conn=MySQLdb.connection(host=dtbdialog.IP.text(),user=dtbdialog.Name.text(),passwd=dtbdialog.Password.text(),db=dtbdialog.Database.text())
+            #unsafe query execution
+            conn.query("""SELECT Product.ProductName,Product.ProductVolume,Product.ProductWeight,Customer_List.Quantity,Customer_List.Address FROM `Customer_List` INNER JOIN Product ON Customer_List.ProductID=Product.ProductID""")
+            self.Data=conn.store_result()
+            a=self.Data.fetch_row(maxrows=0,how=1)
+            for i in range(len(a)):
+                print(a[i]['Address'])
+            conn.close()
+     
         else:
             print("reject")  
     @pyqtSlot()
@@ -664,13 +685,21 @@ class App(QMainWindow):
             col=list.shape[1]
             self.setdatatable(row=row,column=col,data=list,header=header)
             for i in range(len(list.index)):
-                if(len(header)==5):                
-                    self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
-                                                  list[header[3]][i],list[header[4]][i],0))
+                #if no quantity and handling time columns
+                if(len(header)==4):
+                    self.customerlist.append(customer(id=i,name=list[header[0]][i],volume=list[header[1]][i],weight=list[header[2]][i],
+                                                  quantity=1,address=list[header[3]][i],handlingTime=0))
+                #if no handling time column
+                elif(len(header)==5):                
+                    self.customerlist.append(customer(id=i,name=list[header[0]][i],volume=list[header[1]][i],weight=list[header[2]][i],
+                                                  quantity=list[header[3]][i],address=list[header[4]][i],handlingTime=0))
                 else:
-                    self.customerlist.append(customer(i,list[header[0]][i],list[header[1]][i],list[header[2]][i],
-                                                  list[header[3]][i],list[header[4]][i],list[header[5]][i]))
+                    self.customerlist.append(customer(id=i,name=list[header[0]][i],volume=list[header[1]][i],weight=list[header[2]][i],
+                                                  quantity=list[header[3]][i],address=list[header[4]][i],handlingTime=list[header[5]][i]))
                 self.origins.append(self.customerlist[i].getLocation()) #add customer locations to origin list
+        #set buttons enabled
+        self.leftwidget.addDCbtn.setEnabled(True)
+        self.leftwidget.rmEmptyDCbtn.setEnabled(True)
         self.calcbutton.setEnabled(True)
         return
     def setdatatable(self,row,column,data,header):
@@ -683,7 +712,12 @@ class App(QMainWindow):
                 item=QTableWidgetItem(str(data.iat[i,j]))
                 item.setFlags(Qt.ItemIsEnabled)
                 self.leftwidget.datatable.setItem(i,j, item)
-        self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3],header[4]])
+        if(len(header)==4):
+            self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3]])
+        elif(len(header)==5):
+            self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3],header[4]])
+        else:
+            self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3],header[4],header[5]])
         #set hide button enabled
         self.leftwidget.hidebtn.setEnabled(True)
         return
@@ -741,13 +775,12 @@ class App(QMainWindow):
             HRank=float(self.leftwidget.AlgorithmParamTbl.item(5,1).text())
         #calculation module
         GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,HRank)
-        print("")
         LocGroup=GA.initGroup()
         GA.initpopulation(Psize,LocGroup)
         GA.mainloop(maxIter,CThold)
         self.BestSolution=GA.getBestSolution()
         self.corrBestSolution=GA.getBestSolution()
-        #create list of DC-Vehicle dictionary
+             #create list of DC-Vehicle dictionary
         self.result()
         return
     def result(self):
@@ -777,6 +810,7 @@ class App(QMainWindow):
         self.corrwidget.vehicletable.setColumnCount(maxroutenumber+2)
         self.corrwidget.vehicletable.setHorizontalHeaderLabels(['Vehicle','DC','Volume','Weight'])
         #fill table with ""
+        self.corrwidget.vehicletable.blockSignals(True)
         for row in range(self.corrwidget.vehicletable.rowCount()):
             for col in range(self.corrwidget.vehicletable.columnCount()):
                 item=QTableWidgetItem("")
@@ -810,6 +844,7 @@ class App(QMainWindow):
                 self.corrwidget.vehicletable.item(i,3).setFlags(Qt.ItemIsEnabled)
                 i+=1
         print("Total Customer: {0}".format(totalCustomer))
+        self.corrwidget.vehicletable.blockSignals(False)
         #set buttons enabled    
         self.corrwidget.addrowbtn.setEnabled(True)
         self.corrwidget.rmrowbtn.setEnabled(True)
@@ -863,6 +898,7 @@ class App(QMainWindow):
             for vIndex in range(self.corrBestSolution.DC[DCIndex].GetNumberVehicles()):
                 for cIndex in range(self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()):
                     print("vehicle {0}: {1}".format(vIndex,self.corrBestSolution.DC[DCIndex].VehicleList[vIndex].routing[cIndex].getID()))
+        #set web frame
         DC,Route,CorrRoute=self.createRouteList(0,0)
         self.webdisp.frame1.changeurl(DC,Route)
         self.webdisp.frame2.changeurl(DC,CorrRoute)

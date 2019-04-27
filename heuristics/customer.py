@@ -2,7 +2,7 @@ from location import location
 from vehicle import vehicle
 class customer:
     """package properties of each customer"""
-    def __init__(self,id,name,volume,weight,quantity,address,handlingTime=0):
+    def __init__(self,id,name,volume,weight,address,quantity=1,handlingTime=0):
         self.__id=id
         self.__name=name
         self.__quantity=quantity

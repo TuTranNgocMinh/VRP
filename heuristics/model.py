@@ -112,6 +112,9 @@ class model_GA(object):
     def Mutation(self,individuals):
         #get random DC index
         rand=random.randrange(0,len(self.__DCList))
+        #while the chosen DC has only 1 vehicle with 1 route or no vehicle
+        while(((individuals.DC[rand].GetNumberVehicles()==1)and(individuals.DC[rand].VehicleList[0].getNumberofRoutes()==1))or(individuals.DC[rand].GetNumberVehicles()==0)):
+            rand=random.randrange(0,len(self.__DCList))
         #get random vehicle index
         Vrd1=random.randrange(0,individuals.DC[rand].GetNumberVehicles())
         Vrd2=random.randrange(0,individuals.DC[rand].GetNumberVehicles())
@@ -131,7 +134,6 @@ class model_GA(object):
         for vIndex in range(number):
             weight,vol=self.ConstraintCalculation(individuals.DC[rand].VehicleList[vIndex])
             if(self.checkCondition(weight,vol,individuals.DC[rand].VehicleList[vIndex])==False):
-                print("False")
                 return False
             Vehicle=individuals.DC[rand].VehicleList[vIndex]
             if(self.__HRank>0):
@@ -248,11 +250,8 @@ class model_GA(object):
                         feasible=True
                         break
                 if(feasible==False):
-                    print("current number of vehicles before: {0}".format(DC.GetNumberVehicles()))
                     DC.addVehicle(self.__VehicleList[0][0],self.__VehicleList[0][1],self.__VehicleList[0][2],self.__VehicleList[0][3])
                     DC.VehicleList[DC.GetNumberVehicles()-1].routing.append(CustomerCopy[customer])
-                    print("Customer added: {0}".format(DC.VehicleList[DC.GetNumberVehicles()-1].routing[0].getID()))
-                    print("current number of vehicles: {0}".format(DC.GetNumberVehicles()))
             else:
                 vIndex=SortedFList[0]['vIndex']
                 rIndex=SortedFList[0]['Position']
