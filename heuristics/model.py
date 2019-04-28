@@ -328,12 +328,12 @@ class model_GA(object):
         MaxValue=0
         MaxIndex=0
         for i in range(len(self.__population)):
-            TotalCost=0
-            for DCIndex in range(len(self.__DCList)):
-                TotalCost+=self.__population[i].DC[DCIndex].getTotalCost()
+            TotalCost=self.__population[i].getTotalCost()
+            #print("Total cost of population {0}: {1}".format(i,TotalCost))
             if(TotalCost>MaxValue):
                 MaxValue=TotalCost
                 MaxIndex=i
+                #print("Max cost: {0}".format(MaxValue))
         return MaxIndex
     #check constraint functions
     def checkCondition(self,Rweight,Rvolume,Vehicle):
