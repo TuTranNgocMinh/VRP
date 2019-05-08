@@ -30,12 +30,6 @@ class vehicle:
     def setTotalTimeTravelled(self,number):
         self.__TotalTimeTravelled=number
         return
-    #get, set total handling time
-    def getTotalHandling(self):
-        return self.__TotalHandling
-    def setTotalHandling(self,TotalHandling):
-        self.__TotalHandling=TotalHandling
-        return
     #get weight
     def getWeight(self):
         return self.__weight

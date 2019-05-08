@@ -125,7 +125,6 @@ class leftwidget(QWidget):
         self.AlgorithmParamTbl.setColumnCount(2)
             #add item to combobox
         self.algorithm.addItem("Genetic Algorithm")
-        self.algorithm.addItem("GA, time handling")
         algolayout.addWidget(self.algorithm)
         algolayout.addWidget(self.AlgorithmParamTbl)
         self.algorithm.currentIndexChanged.connect(self.OnAlgorithmChanged)
@@ -140,7 +139,7 @@ class leftwidget(QWidget):
         self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
         self.AlgorithmParamTbl.item(3,0).setFlags(Qt.ItemIsEnabled)
         self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Crossover Threshold"))
-        self.AlgorithmParamTbl.item(4,0).setFlags(Qt.ItemIsEnabled) 
+        self.AlgorithmParamTbl.item(4,0).setFlags(Qt.ItemIsEnabled)
         self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
         self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
         self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
@@ -171,26 +170,6 @@ class leftwidget(QWidget):
             self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.8"))
             self.AlgorithmParamTbl.setItem(3,1,QTableWidgetItem("0.2"))
             self.AlgorithmParamTbl.setItem(4,1,QTableWidgetItem("0.8"))
-        elif(index==1):
-            self.AlgorithmParamTbl.setRowCount(6)
-            self.AlgorithmParamTbl.setItem(0,0,QTableWidgetItem("Max Iteration"))
-            self.AlgorithmParamTbl.item(0,0).setFlags(Qt.ItemIsEnabled)
-            self.AlgorithmParamTbl.setItem(1,0,QTableWidgetItem("Population Size"))
-            self.AlgorithmParamTbl.item(1,0).setFlags(Qt.ItemIsEnabled)
-            self.AlgorithmParamTbl.setItem(2,0,QTableWidgetItem("Vehicle Weight"))
-            self.AlgorithmParamTbl.item(2,0).setFlags(Qt.ItemIsEnabled)
-            self.AlgorithmParamTbl.setItem(3,0,QTableWidgetItem("Distance Weight"))
-            self.AlgorithmParamTbl.item(3,0).setFlags(Qt.ItemIsEnabled)
-            self.AlgorithmParamTbl.setItem(4,0,QTableWidgetItem("Time Handling Weight"))
-            self.AlgorithmParamTbl.item(4,0).setFlags(Qt.ItemIsEnabled)
-            self.AlgorithmParamTbl.setItem(5,0,QTableWidgetItem("Crossover Threshold"))
-            self.AlgorithmParamTbl.item(5,0).setFlags(Qt.ItemIsEnabled)
-            self.AlgorithmParamTbl.setItem(0,1,QTableWidgetItem("1000"))
-            self.AlgorithmParamTbl.setItem(1,1,QTableWidgetItem("50"))
-            self.AlgorithmParamTbl.setItem(2,1,QTableWidgetItem("0.6"))
-            self.AlgorithmParamTbl.setItem(3,1,QTableWidgetItem("0.2"))
-            self.AlgorithmParamTbl.setItem(4,1,QTableWidgetItem("0.2"))
-            self.AlgorithmParamTbl.setItem(5,1,QTableWidgetItem("0.8"))
     def createformtools(self):
         """create DC form toolbar"""
         self.FormToolbar=QToolBar()
@@ -769,14 +748,10 @@ class App(QMainWindow):
         DRank=float(self.leftwidget.AlgorithmParamTbl.item(3,1).text())
         Psize=int(self.leftwidget.AlgorithmParamTbl.item(1,1).text())
         CThold=float(self.leftwidget.AlgorithmParamTbl.item(4,1).text())
-        if(AlgoIndex==0):
-            HRank=0
-        else:
-            HRank=float(self.leftwidget.AlgorithmParamTbl.item(5,1).text())
         #calculation module
         BestSolutionValue=100000000
         for run in range(5):
-            GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,HRank)
+            GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank)
             LocGroup=GA.initGroup()
             GA.initpopulation(Psize,LocGroup)
             GA.mainloop(maxIter,CThold)
