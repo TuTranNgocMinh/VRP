@@ -6,6 +6,8 @@ from PyQt5.QtWebEngineWidgets import *
 from PyQt5 import QtSql
 import MySQLdb
 
+from multiprocessing import Pool
+
 import pandas as pd
 import location as loc
 import vehicle
@@ -691,12 +693,7 @@ class App(QMainWindow):
                 item=QTableWidgetItem(str(data.iat[i,j]))
                 item.setFlags(Qt.ItemIsEnabled)
                 self.leftwidget.datatable.setItem(i,j, item)
-        if(len(header)==4):
-            self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3]])
-        elif(len(header)==5):
-            self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3],header[4]])
-        else:
-            self.leftwidget.datatable.setHorizontalHeaderLabels([header[0],header[1],header[2],header[3],header[4],header[5]])
+        self.leftwidget.datatable.setHorizontalHeaderLabels(header)        
         #set hide button enabled
         self.leftwidget.hidebtn.setEnabled(True)
         return

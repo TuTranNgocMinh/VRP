@@ -377,12 +377,12 @@ class model_GA(object):
             rand=random.uniform(0,1)
             if(rand<=CThold):                
                 self.crossover(parent1,parent2)
-                for ChildIndex in range(len(self.__children)):
-                    TotalCustomer=0
-                    for DCIndex in range(len(self.__DCList)):
-                        for vIndex in range(self.__children[ChildIndex].DC[DCIndex].GetNumberVehicles()):
-                            TotalCustomer+=self.__children[ChildIndex].DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()
-                    print("Total Customer of child {0}: {1}".format(ChildIndex,TotalCustomer))
+                #for ChildIndex in range(len(self.__children)):
+                 #   TotalCustomer=0
+                  #  for DCIndex in range(len(self.__DCList)):
+                   #     for vIndex in range(self.__children[ChildIndex].DC[DCIndex].GetNumberVehicles()):
+                    #        TotalCustomer+=self.__children[ChildIndex].DC[DCIndex].VehicleList[vIndex].getNumberofRoutes()
+                    #print("Total Customer of child {0}: {1}".format(ChildIndex,TotalCustomer))
             else:
                 self.__children=[]
                 self.__children.append(copy.deepcopy(self.__population[parent1]))
@@ -404,14 +404,14 @@ class model_GA(object):
             #Survivor selection       
             self.SurvivorSelection()
             self.deleteChildren()
-            print("_________________________")
+            #print("_________________________")
             CurrentBest,index=self.__CurrentBest()
             if(CurrentBest<self.__bestSolution['Value']):
                 self.__bestSolution['Value']=CurrentBest
                 self.__bestSolution['route']=copy.deepcopy(self.__population[index])
                 count=0
-            print("current best solution: {0}, individual {1}".format(CurrentBest,index))
-            print("best solution: {0}".format(self.__bestSolution['Value']))
+            #print("current best solution: {0}, individual {1}".format(CurrentBest,index))
+            #print("best solution: {0}".format(self.__bestSolution['Value']))
             #self.BestSolutionDisplay()
             print(i)
             count+=1
@@ -419,4 +419,5 @@ class model_GA(object):
                 print("best solution obtained!")
                 self.BestSolutionDisplay()
                 return 0
-            
+        print("max iteration reached!")
+        self.BestSolutionDisplay()   
