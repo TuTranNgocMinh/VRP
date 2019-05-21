@@ -550,14 +550,22 @@ class MyProcess():
             results=[pool.apply_async(self.Calculate,(1,)) for i in range(4)]
             for res in results:
                 Solutions.append(res.get())
-        print(Solutions)
-        return Solutions
+        print(Solutions)        
+        return self.getBestSolution(Solutions)
     def Calculate(self,a):
         GA=model_GA(self.customerlist,self.VehicleList,self.distance,self.DCList,self.VRank,self.DRank)
         LocGroup=GA.initGroup()
         GA.initpopulation(self.Psize,LocGroup)
         GA.mainloop(self.maxIter,self.CThold)
         return GA.getBestSolution()
+    def getBestSolution(self,Solutions):
+        min=Solutions[0]
+        for res in Solutions:
+            print(res.getTotalCost())
+            if(res.getTotalCost()<min.getTotalCost()):
+                min=res
+        print("min={}".format(min.getTotalCost()))
+        return copy.deepcopy(min)
 class App(QMainWindow):
     
     def __init__(self):
@@ -774,9 +782,10 @@ class App(QMainWindow):
         #calculation module
 
         worker=MyProcess(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,Psize,maxIter,CThold)
-        worker.start()
+        self.BestSolution=worker.start()
+        self.corrBestSolution=copy.deepcopy(self.BestSolution)
         #create list of DC-Vehicle dictionary
-        #self.result()
+        self.result()
         return
     def result(self):
         #get vehicle number
