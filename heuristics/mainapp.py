@@ -532,6 +532,32 @@ class webdispwidget(QWidget):
         return
     def getFrameNumber(self):
         return self.layout.count()
+class MyProcess():
+    def __init__(self,customerlist,VehicleList,distance,DCList,VRank,DRank,Psize,maxIter,CThold):
+        self.customerlist=customerlist
+        self.VehicleList=VehicleList
+        self.distance=distance
+        self.DCList=DCList
+        self.VRank=VRank
+        self.DRank=DRank
+        self.Psize=Psize
+        self.maxIter=maxIter
+        self.CThold=CThold
+        return
+    def start(self):
+        Solutions=[]
+        with Pool(processes=4) as pool:
+            results=[pool.apply_async(self.Calculate,(1,)) for i in range(4)]
+            for res in results:
+                Solutions.append(res.get())
+        print(Solutions)
+        return Solutions
+    def Calculate(self,a):
+        GA=model_GA(self.customerlist,self.VehicleList,self.distance,self.DCList,self.VRank,self.DRank)
+        LocGroup=GA.initGroup()
+        GA.initpopulation(self.Psize,LocGroup)
+        GA.mainloop(self.maxIter,self.CThold)
+        return GA.getBestSolution()
 class App(QMainWindow):
     
     def __init__(self):
@@ -746,19 +772,11 @@ class App(QMainWindow):
         Psize=int(self.leftwidget.AlgorithmParamTbl.item(1,1).text())
         CThold=float(self.leftwidget.AlgorithmParamTbl.item(4,1).text())
         #calculation module
-        BestSolutionValue=100000000
-        for run in range(5):
-            GA=model_GA(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank)
-            LocGroup=GA.initGroup()
-            GA.initpopulation(Psize,LocGroup)
-            GA.mainloop(maxIter,CThold)
-            #print(BestSolutionValue)
-            if(GA.getBestValue()<BestSolutionValue):
-                BestSolutionValue=GA.getBestValue()
-                self.BestSolution=GA.getBestSolution()
-                self.corrBestSolution=GA.getBestSolution()
+
+        worker=MyProcess(self.customerlist,self.VehicleList,distance,self.DCList,VRank,DRank,Psize,maxIter,CThold)
+        worker.start()
         #create list of DC-Vehicle dictionary
-        self.result()
+        #self.result()
         return
     def result(self):
         #get vehicle number
