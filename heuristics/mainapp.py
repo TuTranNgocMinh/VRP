@@ -4,8 +4,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5 import QtSql
-import MySQLdb
-
+import mysql.connector as MySQLdb
 from multiprocessing import Pool
 
 import pandas as pd
@@ -674,13 +673,8 @@ class App(QMainWindow):
             print(dtbdialog.Password.text())
             print(dtbdialog.Database.text())
             #connect to database
-            conn=MySQLdb.connection(host=dtbdialog.IP.text(),user=dtbdialog.Name.text(),passwd=dtbdialog.Password.text(),db=dtbdialog.Database.text())
+            conn=MySQLdb.connect(host=dtbdialog.IP.text(),user=dtbdialog.Name.text(),passwd=dtbdialog.Password.text(),db=dtbdialog.Database.text())
             #unsafe query execution
-            conn.query("""SELECT Product.ProductName,Product.ProductVolume,Product.ProductWeight,Customer_List.Quantity,Customer_List.Address FROM `Customer_List` INNER JOIN Product ON Customer_List.ProductID=Product.ProductID""")
-            self.Data=conn.store_result()
-            a=self.Data.fetch_row(maxrows=0,how=1)
-            for i in range(len(a)):
-                print(a[i]['Address'])
             conn.close()
      
         else:
