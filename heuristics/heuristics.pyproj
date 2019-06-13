@@ -22,9 +22,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="cities.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="customer.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,12 +44,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="vehicle.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Simulated_Annealing.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SA.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
